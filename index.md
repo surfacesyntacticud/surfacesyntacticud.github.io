@@ -1,29 +1,123 @@
 ---
-layout: page
+layout: default
 ---
 
+Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-# Test
+[Link to another page](./another-page.html).
 
-## Try to draw
+There should be whitespace between paragraphs.
+
+There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+
+# Header 1
+
+This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+
+## Header 2
+
+> This is a blockquote following a header.
+>
+> When something is important enough, you do it even if the odds are not in your favor.
+
+### Header 3
+
+```js
+// Javascript code with syntax highlighting.
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
+```
+
+```ruby
+# Ruby code with syntax highlighting
+GitHubPages::Dependencies.gems.each do |gem, version|
+  s.add_dependency(gem, "= #{version}")
+end
+```
+
+#### Header 4
+
+*   This is an unordered list following a header.
+*   This is an unordered list following a header.
+*   This is an unordered list following a header.
+
+##### Header 5
+
+1.  This is an ordered list following a header.
+2.  This is an ordered list following a header.
+3.  This is an ordered list following a header.
+
+###### Header 6
+
+| head1        | head two          | three |
+|:-------------|:------------------|:------|
+| ok           | good swedish fish | nice  |
+| out of stock | good and plenty   | nice  |
+| ok           | good `oreos`      | hmm   |
+| ok           | good `zoute` drop | yumm  |
+
+### There's a horizontal rule below this.
+
+* * *
+
+### Here is an unordered list:
+
+*   Item foo
+*   Item bar
+*   Item baz
+*   Item zip
+
+### And an ordered list:
+
+1.  Item one
+1.  Item two
+1.  Item three
+1.  Item four
+
+### And a nested list:
+
+- level 1 item
+  - level 2 item
+  - level 2 item
+    - level 3 item
+    - level 3 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+
+### Small image
+
+![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+
+### Large image
+
+![Branching](https://guides.github.com/activities/hello-world/branching.png)
 
 
-<conll>
-1	Can	can	AUX	MD	VerbForm=Fin	3	aux	_	_
-2	you	you	PRON	PRP	Case=Nom|Person=2|PronType=Prs	3	nsubj	_	_
-3	use	use	VERB	VB	VerbForm=Inf	0	root	_	_
-4	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	_
-5	'	'	PUNCT	``	_	6	punct	_	SpaceAfter=No
-6	find	find	VERB	VB	VerbForm=Inf	10	compound	_	_
-7	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	8	nmod:poss	_	_
-8	phone	phone	NOUN	NN	Number=Sing	6	dobj	_	SpaceAfter=No
-9	'	'	PUNCT	''	_	6	punct	_	_
-10	feature	feature	NOUN	NN	Number=Sing	3	dobj	_	_
-11	to	to	PART	TO	_	12	mark	_	_
-12	track	track	VERB	VB	VerbForm=Inf	3	advcl	_	_
-13	someone	someone	NOUN	NN	Number=Sing	16	nmod:poss	_	_
-14	else	else	ADJ	JJ	Degree=Pos	13	amod	_	SpaceAfter=No
-15	's	's	PART	POS	_	13	case	_	_
-16	phone	phone	NOUN	NN	Number=Sing	12	dobj	_	SpaceAfter=No
-17	?	?	PUNCT	.	_	3	punct	_	_
-</conll>
+### Definition lists can be used with HTML syntax.
+
+<dl>
+<dt>Name</dt>
+<dd>Godzilla</dd>
+<dt>Born</dt>
+<dd>1952</dd>
+<dt>Birthplace</dt>
+<dd>Japan</dd>
+<dt>Color</dt>
+<dd>Green</dd>
+</dl>
+
+```
+Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+```
+
+```
+The final element.
+```

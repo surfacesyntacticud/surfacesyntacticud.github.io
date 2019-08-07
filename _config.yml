@@ -1,11 +1,5 @@
- github: [metadata]
- encoding: UTF-8
- kramdown:
-   input: GFM
-   hard_wrap: false
- future: true
- jailed: false
-remote_theme: daviddarnes/alembic
- gfm_quirks: paragraph_end
-plugins:
-  - jekyll-remote-theme
+title: Cayman theme
+description: Cayman is a clean, responsive theme for GitHub Pages.
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-cayman
