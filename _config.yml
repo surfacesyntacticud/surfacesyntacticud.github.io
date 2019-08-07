@@ -5,5 +5,7 @@
    hard_wrap: false
  future: true
  jailed: false
- theme: jekyll-theme-cayman
+remote_theme: daviddarnes/alembic
  gfm_quirks: paragraph_end
+plugins:
+  - jekyll-remote-theme
