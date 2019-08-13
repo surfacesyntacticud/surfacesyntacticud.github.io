@@ -2,33 +2,25 @@
 layout: default
 ---
 
-# Introduction to SUD
+<center>⚠️ This website is in construction ⚠️</center>
 
-SUD is an annotation scheme for syntactic dependency treebanks, near isomorphic to UD (Uni- versal Dependencies). Contrary to UD, it is based on syntactic criteria (favoring functional heads) and the relations are defined on distributional and functional bases.
+# Surface Syntactic Universal Dependencies (SUD)
 
-## Try to draw Conll
+SUD is an annotation scheme for syntactic dependency treebanks, near isomorphic to UD (Universal Dependencies). Contrary to UD, it is based on syntactic criteria (favoring functional heads) and the relations are defined on distributional and functional bases.
 
+## Publications
+The SUD annotation scheme is described in the publications below:
 
-<conll>
-1	Can	can	AUX	MD	VerbForm=Fin	3	aux	_	_
-2	you	you	PRON	PRP	Case=Nom|Person=2|PronType=Prs	3	nsubj	_	_
-3	use	use	VERB	VB	VerbForm=Inf	0	root	_	_
-4	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	_
-5	'	'	PUNCT	``	_	6	punct	_	SpaceAfter=No
-6	find	find	VERB	VB	VerbForm=Inf	10	compound	_	_
-7	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	8	nmod:poss	_	_
-8	phone	phone	NOUN	NN	Number=Sing	6	dobj	_	SpaceAfter=No
-9	'	'	PUNCT	''	_	6	punct	_	_
-10	feature	feature	NOUN	NN	Number=Sing	3	dobj	_	_
-11	to	to	PART	TO	_	12	mark	_	_
-12	track	track	VERB	VB	VerbForm=Inf	3	advcl	_	_
-13	someone	someone	NOUN	NN	Number=Sing	16	nmod:poss	_	_
-14	else	else	ADJ	JJ	Degree=Pos	13	amod	_	SpaceAfter=No
-15	's	's	PART	POS	_	13	case	_	_
-16	phone	phone	NOUN	NN	Number=Sing	12	dobj	_	SpaceAfter=No
-17	?	?	PUNCT	.	_	3	punct	_	_
-</conll>
+  * Kim Gerdes, Bruno Guillaume, Sylvain Kahane, Guy Perrier. [Improving Surface-syntactic Universal Dependencies (SUD): surface-syntactic relations and deep syntactic features](https://hal.inria.fr/hal-02266003v1). presented at [TLT 2019](https://syntaxfest.github.io/syntaxfest19/tlt2019/tlt2019.html)
+  * Kim Gerdes, Bruno Guillaume, Sylvain Kahane, Guy Perrier. [SUD or Surface-Syntactic Universal Dependencies: An annotation scheme near-isomorphic to UD](https://hal.inria.fr/hal-01930614v1). presented at [UDW 2018](https://universaldependencies.org/udw18/)
 
+## SUD relations overview
 
-## Need help?
-[Link to help page](./help.html).
+The picture below describes:
+  * in blue: the hierarchy of relations specific to SUD
+  * in green: the relations shared with UD
+  * in orange: the UD relations not used in SUD
+
+The light-blue boxes at the bottom correspond to the deep syntactic features.
+
+<img class="logo" src="draw/taxo.svg" width="100%">
