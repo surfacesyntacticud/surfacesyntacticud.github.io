@@ -5,7 +5,9 @@ layout: default
 
 ## Try to draw Conll
 
+### Conll n° 1
 
+<div>
 <conll>
 1	Can	can	AUX	MD	VerbForm=Fin	3	aux	_	_
 2	you	you	PRON	PRP	Case=Nom|Person=2|PronType=Prs	3	nsubj	_	_
@@ -25,7 +27,18 @@ layout: default
 16	phone	phone	NOUN	NN	Number=Sing	12	dobj	_	SpaceAfter=No
 17	?	?	PUNCT	.	_	3	punct	_	_
 </conll>
+</div>
 
+### Conll n° 2
+<div>
+<conll>
+1	Can	can	AUX	MD	VerbForm=Fin	3	aux	_	_
+2	you	you	PRON	PRP	Case=Nom|Person=2|PronType=Prs	3	nsubj	_	_
+3	use	use	VERB	VB	VerbForm=Inf	0	root	_	_
+</conll>
+</div>
+
+### After Conlls
 
 ## Need help?
 [Link to help page](./help.html).
