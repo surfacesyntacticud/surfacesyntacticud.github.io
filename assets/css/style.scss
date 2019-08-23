@@ -2,3 +2,16 @@
 ---
 
 @import 'jekyll-theme-cayman';
+
+.page-header {
+  margin-top: 0;
+  padding: 10px;
+}
+
+header a {
+  color: #DDD;
+}
+
+a:hover {
+	color:#D34;
+}
