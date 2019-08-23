@@ -8,6 +8,9 @@ layout: default
 
 SUD is an annotation scheme for syntactic dependency treebanks, near isomorphic to UD (Universal Dependencies). Contrary to UD, it is based on syntactic criteria (favoring functional heads) and the relations are defined on distributional and functional bases.
 
+## Data
+Automatic conversion to the SUD format are available [here](data).
+
 ## Publications
 The SUD annotation scheme is described in the publications below:
 
