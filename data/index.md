@@ -4,11 +4,11 @@ layout: default
 
 # Universal dependencies corpora converted in SUD
 
-The 146 UD corpora are converted in SUD format with the [UD⇒SUD conversion system](https://gitlab.inria.fr/grew/SUD) (usable with the [Grew](https://grew/fr) software).
+The 146 UD corpora are converted in SUD format with the [UD⇒SUD conversion system](https://github.com/surfacesyntacticud/tools/tree/master/converter) (usable with the [Grew](https://grew.fr) software).
 
 The data below are built with:
   * [version 2.4 of UD corpora](http://hdl.handle.net/11234/1-2988)
-  * [version 4a1ac344 of the conversion system](https://gitlab.inria.fr/grew/SUD/tree/4a1ac344507b26e13934a92683651a83c789430f)
+  * [version 4a1ac344 of the conversion system](https://github.com/surfacesyntacticud/tools/tree/4a1ac344507b26e13934a92683651a83c789430f)
 
 
 ## Download all corpora
