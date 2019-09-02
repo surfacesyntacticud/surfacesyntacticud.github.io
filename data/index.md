@@ -13,6 +13,7 @@ The data below are built with:
 
 ## Download all corpora
 Download the full set of 146 SUD corpora: [sud-treebanks-v2.4.tgz](http://www.grew.fr/download/sud-treebanks-v2.4_2019_08_13.tgz)
+(⚠️Note that a new file was updated on September 2 because of a format problem!).
 
 ## Access to each corpus
 
