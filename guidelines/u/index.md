@@ -4,8 +4,8 @@ layout: default
 
 # SUD Guidelines
 
-SUD is an alternative annotation schema.
-In SUD, the definition of syntactic relations and heads of syntactic structures are defined below.
+SUD is a Surface-syntax Universal Dependencies scheme. SUD follows the Surface syntax criteria (favoring functional heads) and can be automatically converted in the UD scheme.
+
 The other layers of annotations follow the UD guidelines. Please refer to UD for these aspects:
 
   * [Tokenization and word segmentation](https://universaldependencies.org/u/overview/tokenization.html)
@@ -15,7 +15,10 @@ The other layers of annotations follow the UD guidelines. Please refer to UD for
     * [Layered features](https://universaldependencies.org/u/overview/feat-layers.html)
     * [Language-specific features](https://universaldependencies.org/ext-feat-index.html)
 
-## specific SUD relations
+## [General principles](./general_principles/index.html)
+
+
+## Specific SUD relations
  * [`subj`](./relations/subj.html)
  * [`udep`](./relations/udep.html)
    * [`mod`](./relations/mod.html)
