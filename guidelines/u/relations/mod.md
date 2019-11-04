@@ -13,7 +13,7 @@ layout: default
 4	so	so	ADV	_	_	5	mod	_	_
 5	many	many	ADJ	_	_	8	mod	_	_
 6	different	different	ADJ	_	_	8	mod	_	_
-7	language	language	NOUN	_	_	8	mod	_	_
+7	language	language	NOUN	_	_	8	compound	_	_
 8	groups	group	NOUN	_	_	3	comp:obj	_	_
 </conll>
 </div>
