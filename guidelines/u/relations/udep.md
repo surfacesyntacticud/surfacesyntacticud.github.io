@@ -3,7 +3,7 @@ layout: default
 ---
 
 # **udep**
-`udep`relations are used for complements when one does not want to distinguish arguments from modifiers and for other modifiers such as attributive adjectives or adverbs.
+`udep`relations are used for complements when one does not want or cannot distinguish between arguments and modifiers .
 
 The gouvernor and the dependent of an `udep`relation can have any POS.
 
