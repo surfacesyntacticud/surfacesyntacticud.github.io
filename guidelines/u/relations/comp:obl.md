@@ -3,7 +3,7 @@ layout: default
 ---
 
 # **comp:obl**
-The `comp:obj` relation is used for oblique arguments of verbs, adjectives, adverbs, nouns or pronouns, regardless of their form.
+The `comp:obl` relation is used for oblique arguments of verbs, adjectives, adverbs, nouns or pronouns, regardless of their form.
 
 <div>
 <conll>
