@@ -4,9 +4,7 @@ layout: default
 
 # **subj**
 
-In SUD, the `subj` relation is used for all subjects.
-
-The subject can be nominal or verbal.
+The `subj` relation is used for all subjects, regardless of their form (nominal or verbal).
 
 <div>
 <conll>
