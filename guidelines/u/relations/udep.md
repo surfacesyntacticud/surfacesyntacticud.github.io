@@ -3,8 +3,7 @@ layout: default
 ---
 
 # **udep**
-`udep`relations are used for complements when one does not want or cannot distinguish between arguments and modifiers .
-
+The `udep` relation is used for complements when one does not want or cannot distinguish between arguments and modifiers .
 The gouvernor and the dependent of an `udep`relation can have any POS.
 
 <div>
