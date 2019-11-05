@@ -12,7 +12,7 @@ The `@relcl` feature is used for the relation between the head of a relative cla
 3	money	money	NOUN	_	_	2	comp:aux@pass	_	_
 4	you	you	PRON	_	_	5	subj	_	_
 5	've	have	AUX	_	_	3	mod@relcl	_	_
-6	earned	earn	VERB	_	_	5	comp:obj	_	_
+6	earned	earn	VERB	_	_	5	comp:aux@tense	_	_
 </conll>
 </div>
 
