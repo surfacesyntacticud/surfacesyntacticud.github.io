@@ -24,13 +24,14 @@ As a consequence, SUD has specific syntactic relations:
 
  * [`subj`](./relations/subj.html)
  * [`udep`](./relations/udep.html)
-   * [`mod`](./relations/mod.html)
    * [`comp`](./relations/comp.html)
-     * [`comp:obl`](./relations/comp:obl.html)
-     * [`comp:obj`](./relations/comp:obj.html)
      * [`comp:aux`](./relations/comp:aux.html)
-     * [`comp:pred`](./relations/comp:pred.html)
      * [`comp:cleft`](./relations/comp:cleft.html)
+     * [`comp:obj`](./relations/comp:obj.html)
+     * [`comp:obl`](./relations/comp:obl.html)
+     * [`comp:pred`](./relations/comp:pred.html)
+   * [`mod`](./relations/mod.html)
+
 
 ## SUD relations shared with UD
 Nevertheless, SUD share some syntactic relations with UD, the list of which is given below (links to UD related page are given):
