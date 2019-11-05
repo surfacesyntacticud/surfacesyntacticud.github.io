@@ -3,7 +3,7 @@ layout: default
 ---
 
 # **mod**
-`mod`relations are used for modifiers of verbs, nouns, adjectives, adverbs, auxiliaries, adpositions and conjunctions.
+The `mod`relation is used for modifiers of verbs, nouns, adjectives, adverbs, auxiliaries, adpositions and conjunctions.
 
 <div>
 <conll>
