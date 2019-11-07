@@ -29,11 +29,11 @@ When a MWE has no internal syntactic structure, all components are linked in a c
 4	what	what	PRON	_	_	5	subj	_	_
 5	's	be	AUX	_	_	3	comp:obj	_	_
 6	happening	happen	VERB	_	_	5	comp:aux	_	_
-7	as	as	SCONJ	_	_	6	mod	_	_
+7	as	as	SCONJ	_	_	5	mod	_	_
 8	soon	soon	ADV	_	_	7	unk@fixed	_	_
 9	as	as	SCONJ	_	_	8	unk@fixed	_	_
 10	you	you	PRON	_	_	11	subj	_	_
-11	can	can	AUX	_	_	5	comp:obj	_	_
+11	can	can	AUX	_	_	7	comp:obj	_	_
 </conll>
 </div>
 
