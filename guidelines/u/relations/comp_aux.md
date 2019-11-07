@@ -4,7 +4,7 @@ layout: default
 
 # **comp:aux**
 
-The `comp:aux` relation is used for arguments of auxiliaries.
+The `comp:aux` relation is used for the argument of auxiliaries.
 
 <div>
 <conll>
