@@ -4,7 +4,7 @@ layout: default
 
 # **@caus**
 
-The `@agent` feature is used for arguments of causative auxiliaries.
+The `@agent` feature is used for the argument of causative auxiliaries.
 
 <div>
 <conll>
