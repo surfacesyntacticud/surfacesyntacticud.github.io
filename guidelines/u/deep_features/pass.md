@@ -4,7 +4,7 @@ layout: default
 
 # **@pass**
 
-The `@pass` feature is used for arguments of passive auxiliaries.
+The `@pass` feature is used for the argument of passive auxiliaries.
 
 <div>
 <conll>
