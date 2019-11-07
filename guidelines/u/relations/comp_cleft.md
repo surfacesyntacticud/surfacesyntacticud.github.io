@@ -4,7 +4,7 @@ layout: default
 
 # **comp:cleft**
 
-The `comp:cleft` relation is used in cleft sentences for the dependency from the focus of the sentence to the head of the complement clause.
+The `comp:cleft` relation is used in cleft sentences for the dependency from the head of the sentence to the head of the complement clause.
 
 <div>
 <conll>
