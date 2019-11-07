@@ -25,11 +25,11 @@ As a consequence, SUD has specific syntactic relations:
  * [`subj`](./relations/subj.html)
  * [`udep`](./relations/udep.html)
    * [`comp`](./relations/comp.html)
-     * [`comp:aux`](./relations/comp:aux.html)
-     * [`comp:cleft`](./relations/comp:cleft.html)
-     * [`comp:obj`](./relations/comp:obj.html)
-     * [`comp:obl`](./relations/comp:obl.html)
-     * [`comp:pred`](./relations/comp:pred.html)
+     * [`comp:aux`](./relations/comp_aux.html)
+     * [`comp:cleft`](./relations/comp_cleft.html)
+     * [`comp:obj`](./relations/comp_obj.html)
+     * [`comp:obl`](./relations/comp_obl.html)
+     * [`comp:pred`](./relations/comp_pred.html)
    * [`mod`](./relations/mod.html)
 
 

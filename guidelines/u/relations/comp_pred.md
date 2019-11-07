@@ -3,7 +3,7 @@ layout: default
 ---
 
 # **comp:pred**
-The `comp:cleft` relation is used for predicative arguments of verbs.
+The `comp:pred` relation is used for predicative arguments of verbs.
 
 <div>
 <conll>
