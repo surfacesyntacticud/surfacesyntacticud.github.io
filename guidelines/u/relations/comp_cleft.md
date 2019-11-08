@@ -30,7 +30,7 @@ If someone says this sentence in a context where he has to choose between a gaso
 2	is	be	AUX	_	_	0	root	_	_
 3	the	the	DET	_	_	5	det	_	_
 4	electric	electric	ADJ	_	_	5	mod	_	_
-5	car	car	NOUN	_	_	2	comp:pred
+5	car	car	NOUN	_	_	2	comp:pred	_	_
 6	that	that	SCONJ	_	_	2	comp:cleft	_	_
 7	I	I	PRON	_	_	8	subj	_	_
 7	chose	choose	VERB	_	_	6	comp:obj	_	_
@@ -45,7 +45,7 @@ If someone says this sentence in a context where he shows a particular electric 
 2	is	be	AUX	_	_	0	root	_	_
 3	the	the	DET	_	_	5	det	_	_
 4	electric	electric	ADJ	_	_	5	mod	_	_
-5	car	car	NOUN	_	_	2	comp:pred
+5	car	car	NOUN	_	_	2	comp:pred	_	_
 6	that	that	PRON	_	_	7	comp:obj	_	_
 7	I	I	PRON	_	_	8	subj	_	_
 7	chose	choose	VERB	_	_	5	mod@relcl	_	_
