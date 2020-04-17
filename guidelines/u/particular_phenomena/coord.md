@@ -9,7 +9,7 @@ The first example below shows the annotation of a coordination in UD and the sec
 
 <div>
 <conll>
-1	John	John	PROPN	_	_	9	subj	_	_
+1	John	John	PROPN	_	_	7	subj	_	_
 2	,	,	PUNCT	_	_	3	punct	_	_
 3	Mary	Mary	PROPN	_	_	1	conj	_	_
 4	and	and	CCONJ	_	_	5	cc	_	_
@@ -19,9 +19,11 @@ The first example below shows the annotation of a coordination in UD and the sec
 </conll>
 </div>
 
+
+
 <div>
 <conll>
-1	John	John	PROPN	_	_	9	subj	_	_
+1	John	John	PROPN	_	_	6	subj	_	_
 2	,	,	PUNCT	_	_	3	punct	_	_
 3	Mary	Mary	PROPN	_	_	1	conj	_	_
 4	and	and	CCONJ	_	_	5	cc	_	_
@@ -42,7 +44,7 @@ In order to distinguish embedded `conj`relations from surface `conj` relations, 
 2	,	,	PUNCT	_	_	3	punct	_	_
 3	Mary	Mary	PROPN	_	_	1	conj	_	_
 4	or	or	CCONJ	_	_	6	cc	_	_
-5	her	her	DET	_	_	2	comp:cleft	_	_
+5	her	her	DET	_	_	2	det	_	_
 6	brother	brother	NOUN	_	_	3	conj:emb	_	_
 7	and	and	CCONJ	_	_	8	cc	_	_
 8	Peter	Peter	PROPN	_	_	6	conj	_	_
