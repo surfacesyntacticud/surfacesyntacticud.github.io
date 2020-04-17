@@ -59,6 +59,6 @@ The main deep features are: [`@agent`](./deep_features/agent.html), [`@caus`](./
 ## Particular linguistic phenomena
 For each linguistic phenomenon below, there is an explanation of how SUD takes it into account.
 
-* [`embedded coordination`](./particular_phenomena/emb_conj.html)
+* [`coordination`](./particular_phenomena/coord.html)
 
 
