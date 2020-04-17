@@ -55,3 +55,10 @@ In SUD, dependency relations are designed to describe syntactic surface relation
 Information related to deep syntax or semantics is given on dependencies with *deep features* which are extensions to dependency label introduced by the `@` symbol.
 
 The main deep features are: [`@agent`](./deep_features/agent.html), [`@caus`](./deep_features/caus.html), [`@expl`](./deep_features/expletive.html),[`@fixed`](./deep_features/fixed.html),[`@lvc`](./deep_features/lvc.html), [`@pass`](./deep_features/pass.html), [`@relcl`](./deep_features/relcl.html), [`@tense`](./deep_features/tense.html), [`@x`](./deep_features/x.html).
+
+## Particular linguistic phenomena
+For each linguistic phenomenon below, there is an explanation of how SUD takes it into account.
+
+* [`embedded coordination`](./particular_phenomena/emb_conj.html)
+
+
