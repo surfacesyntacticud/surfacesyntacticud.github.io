@@ -13,7 +13,6 @@ The first example below shows the annotation of a coordination in UD and the sec
 <div>
 <conll>
 1 John	John	PROPN	_	_	6	subj	_	_
-2	,	,	PUNCT	_	_	3	punct	_	_
 3 Mary	Mary	PROPN	_	_	1	conj	_	_
 4	and	and	CCONJ	_	_	5	cc	_	_
 5	Peter	Peter	PROPN	_	_	3	conj	_	_
