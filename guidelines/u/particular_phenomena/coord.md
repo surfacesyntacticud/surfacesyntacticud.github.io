@@ -14,7 +14,7 @@ The first example below shows the annotation of a coordination in UD and the sec
 3	Mary	Mary	PROPN	_	_	1	conj	_	_
 4	and	and	CCONJ	_	_	5	cc	_	_
 5	Peter	Peter	PROPN	_	_	1	conj	_	_
-6	will	will	AUX	_	_	0	aux	_	_
+6	will	will	AUX	_	_	7	aux	_	_
 7	come	come	VERB	_	_	0	root	_	_
 </conll>
 </div>
