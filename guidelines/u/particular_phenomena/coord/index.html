@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Hugo 0.70.0" />
+  <link rel="stylesheet" href="https://bguil.github.io/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  
+  
+  
+  <link rel="stylesheet" href="https://bguil.github.io/css/cayman.87415a4997c8d6c666624ff26c8812f27f42b4cf5dc18c45fc8dcb0cd7d6d2f5.css">
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+  <title> | Cayman</title>
+
+  
+  <link rel="stylesheet" href="/css/local.css">
+
+  
+  <script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.10.0/d3.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/arborator/arborator-draft.css">
+  <script language="JavaScript" type="text/javascript" src="/arborator/arborator-draft.js"></script>
+  <script>
+    window.onload = function() {
+      new ArboratorDraft(); 
+    }
+  </script>
+  
+
+</head>
+<body>
+  <section class="page-header">
+  <h1 class="project-name">
+    SUD
+  </h1>
+  <h2 class="project-tagline">
+    Surface Syntactic Universal Dependencies
+  </h2>
+  <nav>
+    
+    
+      
+      
+      
+      
+      <a href="/" class="btn">Home</a>
+    
+      
+      
+      
+      
+      <a href="/data/" class="btn">Data</a>
+    
+      
+      
+      
+      
+      <a href="/guidelines/u/" class="btn">Guidelines</a>
+    
+      
+      
+      
+      
+      <a href="https://github.com/surfacesyntacticud" class="btn">GitHub</a>
+    
+  </nav>
+</section>
+
+  <section class="main-content">
+    
+  <h1></h1>
+  <h1 id="coordination"><strong>Coordination</strong></h1>
+<h2 id="chained-conjuncts"><strong>Chained conjuncts</strong></h2>
+<p>In UD, all conjuncts of a coordination are attached to the head of the first conjunct in a bouquet. In SUD, each conjunct is attached to the head of the previous one in a chain.</p>
+<p>The first example below shows the annotation of a coordination in UD and the second one the corresponding annotation in SUD.</p>
+<div>
+<conll>
+
+1	John	John	PROPN	_	_	7	subj	_	_
+2	,	,	PUNCT	_	_	3	punct	_	_
+3	Mary	Mary	PROPN	_	_	1	conj	_	_
+4	and	and	CCONJ	_	_	5	cc	_	_
+5	Peter	Peter	PROPN	_	_	1	conj	_	_
+6	will	will	AUX	_	_	7	aux	_	_
+7	come	come	VERB	_	_	0	root	_	_
+
+</conll>
+</div>
+
+<div>
+<conll>
+
+1	John	John	PROPN	_	_	6	subj	_	_
+2	,	,	PUNCT	_	_	3	punct	_	_
+3	Mary	Mary	PROPN	_	_	1	conj	_	_
+4	and	and	CCONJ	_	_	5	cc	_	_
+5	Peter	Peter	PROPN	_	_	3	conj	_	_
+6	will	will	AUX	_	_	0	root	_	_
+7	come	come	VERB	_	_	6	comp:aux	_	_
+
+</conll>
+</div>
+
+<h2 id="embedded-coordination"><strong>Embedded coordination</strong></h2>
+<p>The conjunct of a coordination can be itself a coordination. Theoretically, this embedding can be iterated indefinetely but in corpora, there is generally one iteration.
+The use of the same label for all <code>conj</code> relations does not make it possible to distinguish embedded relations from surface relations in SUD because they form a single chain.
+In order to distinguish embedded <code>conj</code>relations from surface <code>conj</code> relations, we use the extension <code>emb</code>, as the following example shows.</p>
+<div>
+<conll>
+
+1	John	John	PROPN	_	_	9	subj	_	_
+2	,	,	PUNCT	_	_	3	punct	_	_
+3	Mary	Mary	PROPN	_	_	1	conj	_	_
+4	or	or	CCONJ	_	_	6	cc	_	_
+5	her	her	DET	_	_	6	det	_	_
+6	brother	brother	NOUN	_	_	3	conj:emb	_	_
+7	and	and	CCONJ	_	_	8	cc	_	_
+8	Peter	Peter	PROPN	_	_	6	conj	_	_
+9	will	will	AUX	_	_	0	root	_	_
+10	come	come	VERB	_	_	9	comp:aux	_	_
+
+</conll>
+</div>
+
+<h2 id="shared-dependents"><strong>Shared dependents</strong></h2>
+<p>Left dependents on coordination are attached to the head of the coordination. Since the head of a coordination is the head of the leftmost conjunct, it is not possible to distinguish these dependents from the own dependents of the leftmost conjunct.</p>
+<p>Right dependents on a coordination are attached to the head of the rightmost conjunct, but they can be confused with the own dependents of this conjunct.</p>
+<p>As a consequence, left and right dependents on a coordination are marked with feature <code>Shared=Yes</code>, which distinguishes them from the own dependents of the respective leftmost and rightmost conjuncts.</p>
+
+
+  </section>
+  
+  
+
+</body>
+</html>

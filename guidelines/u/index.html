@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Hugo 0.70.0" />
+  <link rel="stylesheet" href="https://bguil.github.io/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  
+  
+  
+  <link rel="stylesheet" href="https://bguil.github.io/css/cayman.87415a4997c8d6c666624ff26c8812f27f42b4cf5dc18c45fc8dcb0cd7d6d2f5.css">
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+  <title> | Cayman</title>
+
+  
+  <link rel="stylesheet" href="/css/local.css">
+
+  
+  <script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.10.0/d3.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/arborator/arborator-draft.css">
+  <script language="JavaScript" type="text/javascript" src="/arborator/arborator-draft.js"></script>
+  <script>
+    window.onload = function() {
+      new ArboratorDraft(); 
+    }
+  </script>
+  
+
+</head>
+<body>
+  <section class="page-header">
+  <h1 class="project-name">
+    SUD
+  </h1>
+  <h2 class="project-tagline">
+    Surface Syntactic Universal Dependencies
+  </h2>
+  <nav>
+    
+    
+      
+      
+      
+      
+      <a href="/" class="btn">Home</a>
+    
+      
+      
+      
+      
+      <a href="/data/" class="btn">Data</a>
+    
+      
+      
+      
+      
+      <a href="/guidelines/u/" class="btn">Guidelines</a>
+    
+      
+      
+      
+      
+      <a href="https://github.com/surfacesyntacticud" class="btn">GitHub</a>
+    
+  </nav>
+</section>
+
+  <section class="main-content">
+    
+  <h1></h1>
+  <h1 id="sud-guidelines">SUD Guidelines</h1>
+<p>SUD is a Surface-syntax Universal Dependencies scheme. SUD follows the Surface syntax criteria (favoring functional heads) and can be automatically converted in the UD scheme.</p>
+<p>The other layers of annotations follow the UD guidelines. Please refer to UD for these aspects:</p>
+<ul>
+<li><a href="https://universaldependencies.org/u/overview/tokenization.html">Tokenization and word segmentation</a></li>
+<li><a href="https://universaldependencies.org/u/overview/morphology.html">Morphology</a></li>
+<li><a href="https://universaldependencies.org/u/pos/index.html">POS tags</a> (<a href="https://universaldependencies.org/u/pos/all.html">single document</a>)</li>
+<li><a href="https://universaldependencies.org/u/feat/index.html">Features</a> (<a href="https://universaldependencies.org/u/feat/all.html">single document</a>)
+<ul>
+<li><a href="https://universaldependencies.org/u/overview/feat-layers.html">Layered features</a></li>
+<li><a href="https://universaldependencies.org/ext-feat-index.html">Language-specific features</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="general-principles">General Principles</h2>
+<p>SUD differs from UD in several <a href="./general_principles/index.html">general principles</a>.</p>
+<h2 id="specific-sud-relations">Specific SUD relations</h2>
+<p>As a consequence, SUD has specific syntactic relations:</p>
+<ul>
+<li><a href="relations/subj"><code>subj</code></a></li>
+<li><a href="relations/udep"><code>udep</code></a>
+<ul>
+<li><a href="relations/comp"><code>comp</code></a>
+<ul>
+<li><a href="relations/comp_aux"><code>comp:aux</code></a></li>
+<li><a href="relations/comp_cleft"><code>comp:cleft</code></a></li>
+<li><a href="relations/comp_obj"><code>comp:obj</code></a></li>
+<li><a href="relations/comp_obl"><code>comp:obl</code></a></li>
+<li><a href="relations/comp_pred"><code>comp:pred</code></a></li>
+</ul>
+</li>
+<li><a href="relations/mod"><code>mod</code></a></li>
+</ul>
+</li>
+</ul>
+<h2 id="sud-relations-shared-with-ud">SUD relations shared with UD</h2>
+<p>Nevertheless, SUD share some syntactic relations with UD, the list of which is given below (links to UD related page are given):
+<a href="https://universaldependencies.org/u/dep/vocative.html">vocative</a>,
+<a href="https://universaldependencies.org/u/dep/dislocated.html">dislocated</a>,
+<a href="https://universaldependencies.org/u/dep/discourse.html">discourse</a>,
+<a href="https://universaldependencies.org/u/dep/appos.html">appos</a>,
+<a href="https://universaldependencies.org/u/dep/det.html">det</a>,
+<a href="https://universaldependencies.org/u/dep/clf.html">clf</a>,
+<a href="https://universaldependencies.org/u/dep/conj.html">conj</a>,
+<a href="https://universaldependencies.org/u/dep/cc.html">cc</a>,
+<a href="https://universaldependencies.org/u/dep/flat.html">flat</a>,
+<a href="https://universaldependencies.org/u/dep/parataxis.html">parataxis</a>,
+<a href="https://universaldependencies.org/u/dep/orphan.html">orphan</a>,
+<a href="https://universaldependencies.org/u/dep/goeswith.html">goeswith</a>,
+<a href="https://universaldependencies.org/u/dep/reparandum.html">reparandum</a>,
+<a href="https://universaldependencies.org/u/dep/punct.html">punct</a>.</p>
+<h2 id="sud-deep-features">SUD deep features</h2>
+<p>In SUD, dependency relations are designed to describe syntactic surface relations.
+Information related to deep syntax or semantics is given on dependencies with <em>deep features</em> which are extensions to dependency label introduced by the <code>@</code> symbol.</p>
+<p>The main deep features are:
+<a href="deep_features/agent"><code>@agent</code></a>,
+<a href="deep_features/caus"><code>@caus</code></a>,
+<a href="deep_features/expletive"><code>@expl</code></a>,
+<a href="deep_features/fixed"><code>@fixed</code></a>,
+<a href="deep_features/lvc"><code>@lvc</code></a>,
+<a href="deep_features/pass"><code>@pass</code></a>,
+<a href="deep_features/relcl"><code>@relcl</code></a>,
+<a href="deep_features/tense"><code>@tense</code></a>,
+<a href="deep_features/x"><code>@x</code></a>.</p>
+<h2 id="particular-linguistic-phenomena">Particular linguistic phenomena</h2>
+<p>For each linguistic phenomenon below, there is an explanation of how SUD takes it into account.</p>
+<ul>
+<li><a href="./particular_phenomena/coord"><code>coordination</code></a></li>
+</ul>
+
+
+  </section>
+  
+  
+
+</body>
+</html>

@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Hugo 0.70.0" />
+  <link rel="stylesheet" href="https://bguil.github.io/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  
+  
+  
+  <link rel="stylesheet" href="https://bguil.github.io/css/cayman.87415a4997c8d6c666624ff26c8812f27f42b4cf5dc18c45fc8dcb0cd7d6d2f5.css">
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+  <title> | Cayman</title>
+
+  
+  <link rel="stylesheet" href="/css/local.css">
+
+  
+  <script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.10.0/d3.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/arborator/arborator-draft.css">
+  <script language="JavaScript" type="text/javascript" src="/arborator/arborator-draft.js"></script>
+  <script>
+    window.onload = function() {
+      new ArboratorDraft(); 
+    }
+  </script>
+  
+
+</head>
+<body>
+  <section class="page-header">
+  <h1 class="project-name">
+    SUD
+  </h1>
+  <h2 class="project-tagline">
+    Surface Syntactic Universal Dependencies
+  </h2>
+  <nav>
+    
+    
+      
+      
+      
+      
+      <a href="/" class="btn">Home</a>
+    
+      
+      
+      
+      
+      <a href="/data/" class="btn">Data</a>
+    
+      
+      
+      
+      
+      <a href="/guidelines/u/" class="btn">Guidelines</a>
+    
+      
+      
+      
+      
+      <a href="https://github.com/surfacesyntacticud" class="btn">GitHub</a>
+    
+  </nav>
+</section>
+
+  <section class="main-content">
+    
+  <h1></h1>
+  <h1 id="universal-dependencies-corpora-converted-in-sud">Universal dependencies corpora converted in SUD</h1>
+<p>The 146 UD corpora are converted in SUD format with the <a href="https://github.com/surfacesyntacticud/tools/tree/master/converter">UD⇒SUD conversion system</a> (usable with the <a href="https://grew.fr">Grew</a> software).</p>
+<p>The data below are built with:</p>
+<ul>
+<li><a href="http://hdl.handle.net/11234/1-3105">version 2.5 of UD corpora</a></li>
+<li><a href="https://github.com/surfacesyntacticud/tools/tree/f36507aab226262632bdebd3457a32a0642050a6">version f36507aa of the conversion system</a></li>
+</ul>
+<h2 id="download-all-corpora">Download all corpora</h2>
+<p>Download the full set of 157 SUD corpora: <a href="http://www.grew.fr/download/sud-treebanks-v2.5.tgz">sud-treebanks-v2.5.tgz</a>.</p>
+<h2 id="access-to-each-corpus">Access to each corpus</h2>
+<p>In the table below, for each corpus you can access to the <a href="http://match.grew.fr">Grew-match</a> query system and download the <code>conllu</code> files.</p>
+<table>
+<thead>
+<tr>
+<th>Corpus</th>
+<th>Grew-match</th>
+<th>Files</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Afrikaans-AfriBooms</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Afrikaans-AfriBooms@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Afrikaans-AfriBooms@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Afrikaans-AfriBooms/af_afribooms-sud-dev.conllu"><code>af_afribooms-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Afrikaans-AfriBooms/af_afribooms-sud-test.conllu"><code>af_afribooms-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Afrikaans-AfriBooms/af_afribooms-sud-train.conllu"><code>af_afribooms-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Akkadian-PISANDUB</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Akkadian-PISANDUB@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Akkadian-PISANDUB@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Akkadian-PISANDUB/akk_pisandub-sud-test.conllu"><code>akk_pisandub-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Amharic-ATT</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Amharic-ATT@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Amharic-ATT@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Amharic-ATT/am_att-sud-test.conllu"><code>am_att-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Ancient_Greek-Perseus</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Ancient_Greek-Perseus@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Ancient_Greek-Perseus@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Ancient_Greek-Perseus/grc_perseus-sud-dev.conllu"><code>grc_perseus-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Ancient_Greek-Perseus/grc_perseus-sud-test.conllu"><code>grc_perseus-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Ancient_Greek-Perseus/grc_perseus-sud-train.conllu"><code>grc_perseus-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Ancient_Greek-PROIEL</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Ancient_Greek-PROIEL@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Ancient_Greek-PROIEL@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Ancient_Greek-PROIEL/grc_proiel-sud-dev.conllu"><code>grc_proiel-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Ancient_Greek-PROIEL/grc_proiel-sud-test.conllu"><code>grc_proiel-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Ancient_Greek-PROIEL/grc_proiel-sud-train.conllu"><code>grc_proiel-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Arabic-NYUAD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Arabic-NYUAD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Arabic-NYUAD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Arabic-NYUAD/ar_nyuad-sud-dev.conllu"><code>ar_nyuad-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Arabic-NYUAD/ar_nyuad-sud-test.conllu"><code>ar_nyuad-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Arabic-NYUAD/ar_nyuad-sud-train.conllu"><code>ar_nyuad-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Arabic-PADT</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Arabic-PADT@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Arabic-PADT@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Arabic-PADT/ar_padt-sud-dev.conllu"><code>ar_padt-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Arabic-PADT/ar_padt-sud-test.conllu"><code>ar_padt-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Arabic-PADT/ar_padt-sud-train.conllu"><code>ar_padt-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Arabic-PUD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Arabic-PUD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Arabic-PUD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Arabic-PUD/ar_pud-sud-test.conllu"><code>ar_pud-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Armenian-ArmTDP</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Armenian-ArmTDP@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Armenian-ArmTDP@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Armenian-ArmTDP/hy_armtdp-sud-dev.conllu"><code>hy_armtdp-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Armenian-ArmTDP/hy_armtdp-sud-test.conllu"><code>hy_armtdp-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Armenian-ArmTDP/hy_armtdp-sud-train.conllu"><code>hy_armtdp-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Assyrian-AS</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Assyrian-AS@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Assyrian-AS@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Assyrian-AS/aii_as-sud-test.conllu"><code>aii_as-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Bambara-CRB</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Bambara-CRB@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Bambara-CRB@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Bambara-CRB/bm_crb-sud-test.conllu"><code>bm_crb-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Basque-BDT</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Basque-BDT@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Basque-BDT@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Basque-BDT/eu_bdt-sud-dev.conllu"><code>eu_bdt-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Basque-BDT/eu_bdt-sud-test.conllu"><code>eu_bdt-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Basque-BDT/eu_bdt-sud-train.conllu"><code>eu_bdt-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Belarusian-HSE</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Belarusian-HSE@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Belarusian-HSE@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Belarusian-HSE/be_hse-sud-dev.conllu"><code>be_hse-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Belarusian-HSE/be_hse-sud-test.conllu"><code>be_hse-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Belarusian-HSE/be_hse-sud-train.conllu"><code>be_hse-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Bhojpuri-BHTB</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Bhojpuri-BHTB@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Bhojpuri-BHTB@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Bhojpuri-BHTB/bho_bhtb-sud-test.conllu"><code>br_keb-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Breton-KEB</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Breton-KEB@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Breton-KEB@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Breton-KEB/br_keb-sud-test.conllu"><code>br_keb-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Bulgarian-BTB</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Bulgarian-BTB@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Bulgarian-BTB@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Bulgarian-BTB/bg_btb-sud-dev.conllu"><code>bg_btb-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Bulgarian-BTB/bg_btb-sud-test.conllu"><code>bg_btb-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Bulgarian-BTB/bg_btb-sud-train.conllu"><code>bg_btb-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Buryat-BDT</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Buryat-BDT@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Buryat-BDT@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Buryat-BDT/bxr_bdt-sud-test.conllu"><code>bxr_bdt-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Buryat-BDT/bxr_bdt-sud-train.conllu"><code>bxr_bdt-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Cantonese-HK</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Cantonese-HK@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Cantonese-HK@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Cantonese-HK/yue_hk-sud-test.conllu"><code>yue_hk-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Catalan-AnCora</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Catalan-AnCora@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Catalan-AnCora@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Catalan-AnCora/ca_ancora-sud-dev.conllu"><code>ca_ancora-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Catalan-AnCora/ca_ancora-sud-test.conllu"><code>ca_ancora-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Catalan-AnCora/ca_ancora-sud-train.conllu"><code>ca_ancora-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Chinese-CFL</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Chinese-CFL@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Chinese-CFL@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Chinese-CFL/zh_cfl-sud-test.conllu"><code>zh_cfl-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Chinese-GSD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Chinese-GSD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Chinese-GSD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Chinese-GSD/zh_gsd-sud-dev.conllu"><code>zh_gsd-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Chinese-GSD/zh_gsd-sud-test.conllu"><code>zh_gsd-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Chinese-GSD/zh_gsd-sud-train.conllu"><code>zh_gsd-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Chinese-GSDSimp</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Chinese-GSDSimp@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Chinese-GSDSimp@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Chinese-GSDSimp/zh_gsdsimp-sud-dev.conllu"><code>zh_gsdsimp-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Chinese-GSDSimp/zh_gsdsimp-sud-test.conllu"><code>zh_gsdsimp-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Chinese-GSDSimp/zh_gsdsimp-sud-train.conllu"><code>zh_gsdsimp-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Chinese-HK</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Chinese-HK@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Chinese-HK@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Chinese-HK/zh_hk-sud-test.conllu"><code>zh_hk-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Chinese-PUD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Chinese-PUD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Chinese-PUD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Chinese-PUD/zh_pud-sud-test.conllu"><code>zh_pud-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Classical_Chinese-Kyoto</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Classical_Chinese-Kyoto@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Classical_Chinese-Kyoto@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Classical_Chinese-Kyoto/lzh_kyoto-sud-dev.conllu"><code>lzh_kyoto-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Classical_Chinese-Kyoto/lzh_kyoto-sud-test.conllu"><code>lzh_kyoto-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Classical_Chinese-Kyoto/lzh_kyoto-sud-train.conllu"><code>lzh_kyoto-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Coptic-Scriptorium</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Coptic-Scriptorium@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Coptic-Scriptorium@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Coptic-Scriptorium/cop_scriptorium-sud-dev.conllu"><code>cop_scriptorium-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Coptic-Scriptorium/cop_scriptorium-sud-test.conllu"><code>cop_scriptorium-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Coptic-Scriptorium/cop_scriptorium-sud-train.conllu"><code>cop_scriptorium-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Croatian-SET</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Croatian-SET@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Croatian-SET@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Croatian-SET/hr_set-sud-dev.conllu"><code>hr_set-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Croatian-SET/hr_set-sud-test.conllu"><code>hr_set-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Croatian-SET/hr_set-sud-train.conllu"><code>hr_set-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Czech-CAC</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Czech-CAC@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Czech-CAC@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Czech-CAC/cs_cac-sud-dev.conllu"><code>cs_cac-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Czech-CAC/cs_cac-sud-test.conllu"><code>cs_cac-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Czech-CAC/cs_cac-sud-train.conllu"><code>cs_cac-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Czech-CLTT</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Czech-CLTT@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Czech-CLTT@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Czech-CLTT/cs_cltt-sud-dev.conllu"><code>cs_cltt-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Czech-CLTT/cs_cltt-sud-test.conllu"><code>cs_cltt-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Czech-CLTT/cs_cltt-sud-train.conllu"><code>cs_cltt-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Czech-FicTree</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Czech-FicTree@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Czech-FicTree@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Czech-FicTree/cs_fictree-sud-dev.conllu"><code>cs_fictree-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Czech-FicTree/cs_fictree-sud-test.conllu"><code>cs_fictree-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Czech-FicTree/cs_fictree-sud-train.conllu"><code>cs_fictree-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Czech-PDT</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Czech-PDT@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Czech-PDT@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Czech-PDT/cs_pdt-sud-dev.conllu"><code>cs_pdt-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Czech-PDT/cs_pdt-sud-test.conllu"><code>cs_pdt-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Czech-PDT/cs_pdt-sud-train.conllu"><code>cs_pdt-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Czech-PUD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Czech-PUD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Czech-PUD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Czech-PUD/cs_pud-sud-test.conllu"><code>cs_pud-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Danish-DDT</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Danish-DDT@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Danish-DDT@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Danish-DDT/da_ddt-sud-dev.conllu"><code>da_ddt-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Danish-DDT/da_ddt-sud-test.conllu"><code>da_ddt-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Danish-DDT/da_ddt-sud-train.conllu"><code>da_ddt-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Dutch-Alpino</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Dutch-Alpino@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Dutch-Alpino@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Dutch-Alpino/nl_alpino-sud-dev.conllu"><code>nl_alpino-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Dutch-Alpino/nl_alpino-sud-test.conllu"><code>nl_alpino-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Dutch-Alpino/nl_alpino-sud-train.conllu"><code>nl_alpino-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Dutch-LassySmall</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Dutch-LassySmall@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Dutch-LassySmall@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Dutch-LassySmall/nl_lassysmall-sud-dev.conllu"><code>nl_lassysmall-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Dutch-LassySmall/nl_lassysmall-sud-test.conllu"><code>nl_lassysmall-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Dutch-LassySmall/nl_lassysmall-sud-train.conllu"><code>nl_lassysmall-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>English-ESL</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_English-ESL@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_English-ESL@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_English-ESL/en_esl-sud-dev.conllu"><code>en_esl-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_English-ESL/en_esl-sud-test.conllu"><code>en_esl-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_English-ESL/en_esl-sud-train.conllu"><code>en_esl-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>English-EWT</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_English-EWT@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_English-EWT@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_English-EWT/en_ewt-sud-dev.conllu"><code>en_ewt-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_English-EWT/en_ewt-sud-test.conllu"><code>en_ewt-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_English-EWT/en_ewt-sud-train.conllu"><code>en_ewt-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>English-GUM</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_English-GUM@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_English-GUM@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_English-GUM/en_gum-sud-dev.conllu"><code>en_gum-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_English-GUM/en_gum-sud-test.conllu"><code>en_gum-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_English-GUM/en_gum-sud-train.conllu"><code>en_gum-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>English-LinES</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_English-LinES@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_English-LinES@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_English-LinES/en_lines-sud-dev.conllu"><code>en_lines-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_English-LinES/en_lines-sud-test.conllu"><code>en_lines-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_English-LinES/en_lines-sud-train.conllu"><code>en_lines-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>English-ParTUT</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_English-ParTUT@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_English-ParTUT@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_English-ParTUT/en_partut-sud-dev.conllu"><code>en_partut-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_English-ParTUT/en_partut-sud-test.conllu"><code>en_partut-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_English-ParTUT/en_partut-sud-train.conllu"><code>en_partut-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>English-PUD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_English-PUD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_English-PUD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_English-PUD/en_pud-sud-test.conllu"><code>en_pud-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>English-Pronouns</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_English-Pronouns@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_English-Pronouns@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_English-Pronouns/en_pronouns-sud-test.conllu"><code>en_pud-pronouns-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Erzya-JR</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Erzya-JR@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Erzya-JR@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Erzya-JR/myv_jr-sud-test.conllu"><code>myv_jr-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Estonian-EDT</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Estonian-EDT@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Estonian-EDT@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Estonian-EDT/et_edt-sud-dev.conllu"><code>et_edt-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Estonian-EDT/et_edt-sud-test.conllu"><code>et_edt-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Estonian-EDT/et_edt-sud-train.conllu"><code>et_edt-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Estonian-EWT</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Estonian-EWT@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Estonian-EWT@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Estonian-EWT/et_ewt-sud-test.conllu"><code>et_ewt-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Estonian-EWT/et_ewt-sud-train.conllu"><code>et_ewt-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Faroese-OFT</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Faroese-OFT@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Faroese-OFT@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Faroese-OFT/fo_oft-sud-test.conllu"><code>fo_oft-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Finnish-FTB</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Finnish-FTB@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Finnish-FTB@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Finnish-FTB/fi_ftb-sud-dev.conllu"><code>fi_ftb-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Finnish-FTB/fi_ftb-sud-test.conllu"><code>fi_ftb-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Finnish-FTB/fi_ftb-sud-train.conllu"><code>fi_ftb-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Finnish-PUD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Finnish-PUD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Finnish-PUD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Finnish-PUD/fi_pud-sud-test.conllu"><code>fi_pud-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Finnish-TDT</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Finnish-TDT@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Finnish-TDT@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Finnish-TDT/fi_tdt-sud-dev.conllu"><code>fi_tdt-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Finnish-TDT/fi_tdt-sud-test.conllu"><code>fi_tdt-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Finnish-TDT/fi_tdt-sud-train.conllu"><code>fi_tdt-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>French-FQB</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_French-FQB@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_French-FQB@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_French-FQB/fr_fqb-sud-test.conllu"><code>fr_fqb-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>French-FTB</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_French-FTB@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_French-FTB@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_French-FTB/fr_ftb-sud-dev.conllu"><code>fr_ftb-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_French-FTB/fr_ftb-sud-test.conllu"><code>fr_ftb-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_French-FTB/fr_ftb-sud-train.conllu"><code>fr_ftb-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>French-GSD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_French-GSD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_French-GSD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_French-GSD/fr_gsd-sud-dev.conllu"><code>fr_gsd-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_French-GSD/fr_gsd-sud-test.conllu"><code>fr_gsd-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_French-GSD/fr_gsd-sud-train.conllu"><code>fr_gsd-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>French-ParTUT</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_French-ParTUT@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_French-ParTUT@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_French-ParTUT/fr_partut-sud-dev.conllu"><code>fr_partut-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_French-ParTUT/fr_partut-sud-test.conllu"><code>fr_partut-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_French-ParTUT/fr_partut-sud-train.conllu"><code>fr_partut-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>French-PUD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_French-PUD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_French-PUD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_French-PUD/fr_pud-sud-test.conllu"><code>fr_pud-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>French-Sequoia</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_French-Sequoia@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_French-Sequoia@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_French-Sequoia/fr_sequoia-sud-dev.conllu"><code>fr_sequoia-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_French-Sequoia/fr_sequoia-sud-test.conllu"><code>fr_sequoia-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_French-Sequoia/fr_sequoia-sud-train.conllu"><code>fr_sequoia-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>French-Spoken</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_French-Spoken@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_French-Spoken@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_French-Spoken/fr_spoken-sud-dev.conllu"><code>fr_spoken-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_French-Spoken/fr_spoken-sud-test.conllu"><code>fr_spoken-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_French-Spoken/fr_spoken-sud-train.conllu"><code>fr_spoken-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Galician-CTG</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Galician-CTG@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Galician-CTG@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Galician-CTG/gl_ctg-sud-dev.conllu"><code>gl_ctg-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Galician-CTG/gl_ctg-sud-test.conllu"><code>gl_ctg-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Galician-CTG/gl_ctg-sud-train.conllu"><code>gl_ctg-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Galician-TreeGal</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Galician-TreeGal@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Galician-TreeGal@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Galician-TreeGal/gl_treegal-sud-test.conllu"><code>gl_treegal-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Galician-TreeGal/gl_treegal-sud-train.conllu"><code>gl_treegal-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>German-GSD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_German-GSD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_German-GSD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_German-GSD/de_gsd-sud-dev.conllu"><code>de_gsd-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_German-GSD/de_gsd-sud-test.conllu"><code>de_gsd-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_German-GSD/de_gsd-sud-train.conllu"><code>de_gsd-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>German-HDT</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_German-HDT@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_German-HDT@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_German-HDT/de_hdt-sud-dev.conllu"><code>de_hdt-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_German-HDT/de_hdt-sud-test.conllu"><code>de_hdt-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_German-HDT/de_hdt-sud-train.conllu"><code>de_hdt-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>German-LIT</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_German-LIT@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_German-LIT@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_German-LIT/de_lit-sud-test.conllu"><code>de_lit-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>German-PUD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_German-PUD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_German-PUD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_German-PUD/de_pud-sud-test.conllu"><code>de_pud-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Gothic-PROIEL</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Gothic-PROIEL@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Gothic-PROIEL@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Gothic-PROIEL/got_proiel-sud-dev.conllu"><code>got_proiel-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Gothic-PROIEL/got_proiel-sud-test.conllu"><code>got_proiel-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Gothic-PROIEL/got_proiel-sud-train.conllu"><code>got_proiel-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Greek-GDT</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Greek-GDT@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Greek-GDT@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Greek-GDT/el_gdt-sud-dev.conllu"><code>el_gdt-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Greek-GDT/el_gdt-sud-test.conllu"><code>el_gdt-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Greek-GDT/el_gdt-sud-train.conllu"><code>el_gdt-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Hebrew-HTB</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Hebrew-HTB@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Hebrew-HTB@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Hebrew-HTB/he_htb-sud-dev.conllu"><code>he_htb-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Hebrew-HTB/he_htb-sud-test.conllu"><code>he_htb-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Hebrew-HTB/he_htb-sud-train.conllu"><code>he_htb-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Hindi_English-HIENCS</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Hindi_English-HIENCS@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Hindi_English-HIENCS@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Hindi_English-HIENCS/qhe_hiencs-sud-dev.conllu"><code>qhe_hiencs-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Hindi_English-HIENCS/qhe_hiencs-sud-test.conllu"><code>qhe_hiencs-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Hindi_English-HIENCS/qhe_hiencs-sud-train.conllu"><code>qhe_hiencs-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Hindi-HDTB</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Hindi-HDTB@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Hindi-HDTB@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Hindi-HDTB/hi_hdtb-sud-dev.conllu"><code>hi_hdtb-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Hindi-HDTB/hi_hdtb-sud-test.conllu"><code>hi_hdtb-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Hindi-HDTB/hi_hdtb-sud-train.conllu"><code>hi_hdtb-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Hindi-PUD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Hindi-PUD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Hindi-PUD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Hindi-PUD/hi_pud-sud-test.conllu"><code>hi_pud-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Hungarian-Szeged</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Hungarian-Szeged@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Hungarian-Szeged@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Hungarian-Szeged/hu_szeged-sud-dev.conllu"><code>hu_szeged-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Hungarian-Szeged/hu_szeged-sud-test.conllu"><code>hu_szeged-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Hungarian-Szeged/hu_szeged-sud-train.conllu"><code>hu_szeged-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Indonesian-GSD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Indonesian-GSD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Indonesian-GSD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Indonesian-GSD/id_gsd-sud-dev.conllu"><code>id_gsd-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Indonesian-GSD/id_gsd-sud-test.conllu"><code>id_gsd-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Indonesian-GSD/id_gsd-sud-train.conllu"><code>id_gsd-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Indonesian-PUD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Indonesian-PUD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Indonesian-PUD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Indonesian-PUD/id_pud-sud-test.conllu"><code>id_pud-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Irish-IDT</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Irish-IDT@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Irish-IDT@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Irish-IDT/ga_idt-sud-dev.conllu"><code>ga_idt-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Irish-IDT/ga_idt-sud-test.conllu"><code>ga_idt-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Irish-IDT/ga_idt-sud-train.conllu"><code>ga_idt-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Italian-ISDT</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Italian-ISDT@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Italian-ISDT@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Italian-ISDT/it_isdt-sud-dev.conllu"><code>it_isdt-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Italian-ISDT/it_isdt-sud-test.conllu"><code>it_isdt-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Italian-ISDT/it_isdt-sud-train.conllu"><code>it_isdt-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Italian-ParTUT</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Italian-ParTUT@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Italian-ParTUT@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Italian-ParTUT/it_partut-sud-dev.conllu"><code>it_partut-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Italian-ParTUT/it_partut-sud-test.conllu"><code>it_partut-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Italian-ParTUT/it_partut-sud-train.conllu"><code>it_partut-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Italian-PoSTWITA</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Italian-PoSTWITA@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Italian-PoSTWITA@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Italian-PoSTWITA/it_postwita-sud-dev.conllu"><code>it_postwita-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Italian-PoSTWITA/it_postwita-sud-test.conllu"><code>it_postwita-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Italian-PoSTWITA/it_postwita-sud-train.conllu"><code>it_postwita-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Italian-TWITTIRO</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Italian-TWITTIRO@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Italian-TWITTIRO@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Italian-TWITTIRO/it_twittiro-sud-dev.conllu"><code>it_twittiro-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Italian-TWITTIRO/it_twittiro-sud-test.conllu"><code>it_twittiro-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Italian-TWITTIRO/it_twittiro-sud-train.conllu"><code>it_twittiro-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Italian-PUD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Italian-PUD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Italian-PUD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Italian-PUD/it_pud-sud-test.conllu"><code>it_pud-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Italian-VIT</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Italian-VIT@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Italian-VIT@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Italian-VIT/it_vit-sud-dev.conllu"><code>it_vit-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Italian-VIT/it_vit-sud-test.conllu"><code>it_vit-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Italian-VIT/it_vit-sud-train.conllu"><code>it_vit-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Japanese-BCCWJ</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Japanese-BCCWJ@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Japanese-BCCWJ@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Japanese-BCCWJ/ja_bccwj-sud-dev.conllu"><code>ja_bccwj-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Japanese-BCCWJ/ja_bccwj-sud-test.conllu"><code>ja_bccwj-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Japanese-BCCWJ/ja_bccwj-sud-train.conllu"><code>ja_bccwj-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Japanese-GSD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Japanese-GSD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Japanese-GSD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Japanese-GSD/ja_gsd-sud-dev.conllu"><code>ja_gsd-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Japanese-GSD/ja_gsd-sud-test.conllu"><code>ja_gsd-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Japanese-GSD/ja_gsd-sud-train.conllu"><code>ja_gsd-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Japanese-Modern</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Japanese-Modern@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Japanese-Modern@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Japanese-Modern/ja_modern-sud-test.conllu"><code>ja_modern-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Japanese-PUD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Japanese-PUD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Japanese-PUD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Japanese-PUD/ja_pud-sud-test.conllu"><code>ja_pud-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Karelian-KKPP</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Karelian-KKPP@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Karelian-KKPP@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Karelian-KKPP/krl_kkpp-sud-test.conllu"><code>krl_kkpp-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Kazakh-KTB</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Kazakh-KTB@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Kazakh-KTB@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Kazakh-KTB/kk_ktb-sud-test.conllu"><code>kk_ktb-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Kazakh-KTB/kk_ktb-sud-train.conllu"><code>kk_ktb-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Komi_Permyak-UH</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Komi_Permyak-UH@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Komi_Permyak-UH@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Komi_Permyak-UH/koi_uh-sud-test.conllu"><code>koi_uh-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Komi_Zyrian-IKDP</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Komi_Zyrian-IKDP@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Komi_Zyrian-IKDP@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Komi_Zyrian-IKDP/kpv_ikdp-sud-test.conllu"><code>kpv_ikdp-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Komi_Zyrian-Lattice</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Komi_Zyrian-Lattice@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Komi_Zyrian-Lattice@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Komi_Zyrian-Lattice/kpv_lattice-sud-test.conllu"><code>kpv_lattice-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Korean-GSD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Korean-GSD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Korean-GSD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Korean-GSD/ko_gsd-sud-dev.conllu"><code>ko_gsd-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Korean-GSD/ko_gsd-sud-test.conllu"><code>ko_gsd-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Korean-GSD/ko_gsd-sud-train.conllu"><code>ko_gsd-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Korean-Kaist</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Korean-Kaist@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Korean-Kaist@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Korean-Kaist/ko_kaist-sud-dev.conllu"><code>ko_kaist-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Korean-Kaist/ko_kaist-sud-test.conllu"><code>ko_kaist-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Korean-Kaist/ko_kaist-sud-train.conllu"><code>ko_kaist-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Korean-PUD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Korean-PUD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Korean-PUD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Korean-PUD/ko_pud-sud-test.conllu"><code>ko_pud-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Kurmanji-MG</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Kurmanji-MG@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Kurmanji-MG@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Kurmanji-MG/kmr_mg-sud-test.conllu"><code>kmr_mg-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Kurmanji-MG/kmr_mg-sud-train.conllu"><code>kmr_mg-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Latin-ITTB</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Latin-ITTB@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Latin-ITTB@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Latin-ITTB/la_ittb-sud-dev.conllu"><code>la_ittb-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Latin-ITTB/la_ittb-sud-test.conllu"><code>la_ittb-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Latin-ITTB/la_ittb-sud-train.conllu"><code>la_ittb-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Latin-Perseus</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Latin-Perseus@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Latin-Perseus@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Latin-Perseus/la_perseus-sud-test.conllu"><code>la_perseus-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Latin-Perseus/la_perseus-sud-train.conllu"><code>la_perseus-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Latin-PROIEL</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Latin-PROIEL@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Latin-PROIEL@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Latin-PROIEL/la_proiel-sud-dev.conllu"><code>la_proiel-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Latin-PROIEL/la_proiel-sud-test.conllu"><code>la_proiel-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Latin-PROIEL/la_proiel-sud-train.conllu"><code>la_proiel-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Latvian-LVTB</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Latvian-LVTB@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Latvian-LVTB@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Latvian-LVTB/lv_lvtb-sud-dev.conllu"><code>lv_lvtb-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Latvian-LVTB/lv_lvtb-sud-test.conllu"><code>lv_lvtb-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Latvian-LVTB/lv_lvtb-sud-train.conllu"><code>lv_lvtb-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Lithuanian-ALKSNIS</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Lithuanian-ALKSNIS@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Lithuanian-ALKSNIS@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Lithuanian-ALKSNIS/lt_alksnis-sud-dev.conllu"><code>lt_alksnis-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Lithuanian-ALKSNIS/lt_alksnis-sud-test.conllu"><code>lt_alksnis-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Lithuanian-ALKSNIS/lt_alksnis-sud-train.conllu"><code>lt_alksnis-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Lithuanian-HSE</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Lithuanian-HSE@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Lithuanian-HSE@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Lithuanian-HSE/lt_hse-sud-dev.conllu"><code>lt_hse-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Lithuanian-HSE/lt_hse-sud-test.conllu"><code>lt_hse-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Lithuanian-HSE/lt_hse-sud-train.conllu"><code>lt_hse-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Livvi-KKPP</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Livvi-KKPP@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Livvi-KKPP@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Livvi-KKPP/olo_kkpp-sud-test.conllu"><code>olo_kkpp-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Livvi-KKPP/olo_kkpp-sud-train.conllu"><code>olo_kkpp-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Maltese-MUDT</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Maltese-MUDT@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Maltese-MUDT@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Maltese-MUDT/mt_mudt-sud-dev.conllu"><code>mt_mudt-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Maltese-MUDT/mt_mudt-sud-test.conllu"><code>mt_mudt-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Maltese-MUDT/mt_mudt-sud-train.conllu"><code>mt_mudt-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Marathi-UFAL</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Marathi-UFAL@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Marathi-UFAL@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Marathi-UFAL/mr_ufal-sud-dev.conllu"><code>mr_ufal-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Marathi-UFAL/mr_ufal-sud-test.conllu"><code>mr_ufal-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Marathi-UFAL/mr_ufal-sud-train.conllu"><code>mr_ufal-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Mbya_Guarani-Dooley</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Mbya_Guarani-Dooley@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Mbya_Guarani-Dooley@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Mbya_Guarani-Dooley/gun_dooley-sud-test.conllu"><code>gun_dooley-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Mbya_Guarani-Thomas</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Mbya_Guarani-Thomas@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Mbya_Guarani-Thomas@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Mbya_Guarani-Thomas/gun_thomas-sud-test.conllu"><code>gun_thomas-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Moksha-JR</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Moksha-JR@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Moksha-JR@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Moksha-JR/mdf_jr-sud-test.conllu"><code>mdf_jr-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Naija-NSC</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Naija-NSC@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Naija-NSC@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Naija-NSC/pcm_nsc-sud-test.conllu"><code>pcm_nsc-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>North_Sami-Giella</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_North_Sami-Giella@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_North_Sami-Giella@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_North_Sami-Giella/sme_giella-sud-test.conllu"><code>sme_giella-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_North_Sami-Giella/sme_giella-sud-train.conllu"><code>sme_giella-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Norwegian-Bokmaal</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Norwegian-Bokmaal@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Norwegian-Bokmaal@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Norwegian-Bokmaal/no_bokmaal-sud-dev.conllu"><code>no_bokmaal-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Norwegian-Bokmaal/no_bokmaal-sud-test.conllu"><code>no_bokmaal-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Norwegian-Bokmaal/no_bokmaal-sud-train.conllu"><code>no_bokmaal-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Norwegian-Nynorsk</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Norwegian-Nynorsk@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Norwegian-Nynorsk@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Norwegian-Nynorsk/no_nynorsk-sud-dev.conllu"><code>no_nynorsk-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Norwegian-Nynorsk/no_nynorsk-sud-test.conllu"><code>no_nynorsk-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Norwegian-Nynorsk/no_nynorsk-sud-train.conllu"><code>no_nynorsk-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Norwegian-NynorskLIA</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Norwegian-NynorskLIA@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Norwegian-NynorskLIA@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Norwegian-NynorskLIA/no_nynorsklia-sud-dev.conllu"><code>no_nynorsklia-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Norwegian-NynorskLIA/no_nynorsklia-sud-test.conllu"><code>no_nynorsklia-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Norwegian-NynorskLIA/no_nynorsklia-sud-train.conllu"><code>no_nynorsklia-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Old_Church_Slavonic-PROIEL</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Old_Church_Slavonic-PROIEL@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Old_Church_Slavonic-PROIEL@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Old_Church_Slavonic-PROIEL/cu_proiel-sud-dev.conllu"><code>cu_proiel-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Old_Church_Slavonic-PROIEL/cu_proiel-sud-test.conllu"><code>cu_proiel-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Old_Church_Slavonic-PROIEL/cu_proiel-sud-train.conllu"><code>cu_proiel-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Old_French-SRCMF</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Old_French-SRCMF@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Old_French-SRCMF@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Old_French-SRCMF/fro_srcmf-sud-dev.conllu"><code>fro_srcmf-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Old_French-SRCMF/fro_srcmf-sud-test.conllu"><code>fro_srcmf-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Old_French-SRCMF/fro_srcmf-sud-train.conllu"><code>fro_srcmf-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Old_Russian-RNC</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Old_Russian-RNC@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Old_Russian-RNC@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Old_Russian-RNC/orv_rnc-sud-test.conllu"><code>orv_rnc-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Old_Russian-TOROT</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Old_Russian-TOROT@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Old_Russian-TOROT@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Old_Russian-TOROT/orv_torot-sud-dev.conllu"><code>orv_torot-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Old_Russian-TOROT/orv_torot-sud-test.conllu"><code>orv_torot-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Old_Russian-TOROT/orv_torot-sud-train.conllu"><code>orv_torot-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Persian-Seraji</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Persian-Seraji@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Persian-Seraji@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Persian-Seraji/fa_seraji-sud-dev.conllu"><code>fa_seraji-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Persian-Seraji/fa_seraji-sud-test.conllu"><code>fa_seraji-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Persian-Seraji/fa_seraji-sud-train.conllu"><code>fa_seraji-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Polish-LFG</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Polish-LFG@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Polish-LFG@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Polish-LFG/pl_lfg-sud-dev.conllu"><code>pl_lfg-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Polish-LFG/pl_lfg-sud-test.conllu"><code>pl_lfg-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Polish-LFG/pl_lfg-sud-train.conllu"><code>pl_lfg-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Polish-PDB</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Polish-PDB@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Polish-PDB@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Polish-PDB/pl_pdb-sud-dev.conllu"><code>pl_pdb-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Polish-PDB/pl_pdb-sud-test.conllu"><code>pl_pdb-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Polish-PDB/pl_pdb-sud-train.conllu"><code>pl_pdb-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Polish-PUD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Polish-PUD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Polish-PUD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Polish-PUD/pl_pud-sud-test.conllu"><code>pl_pud-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Portuguese-Bosque</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Portuguese-Bosque@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Portuguese-Bosque@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Portuguese-Bosque/pt_bosque-sud-dev.conllu"><code>pt_bosque-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Portuguese-Bosque/pt_bosque-sud-test.conllu"><code>pt_bosque-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Portuguese-Bosque/pt_bosque-sud-train.conllu"><code>pt_bosque-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Portuguese-GSD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Portuguese-GSD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Portuguese-GSD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Portuguese-GSD/pt_gsd-sud-dev.conllu"><code>pt_gsd-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Portuguese-GSD/pt_gsd-sud-test.conllu"><code>pt_gsd-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Portuguese-GSD/pt_gsd-sud-train.conllu"><code>pt_gsd-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Portuguese-PUD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Portuguese-PUD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Portuguese-PUD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Portuguese-PUD/pt_pud-sud-test.conllu"><code>pt_pud-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Romanian-Nonstandard</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Romanian-Nonstandard@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Romanian-Nonstandard@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Romanian-Nonstandard/ro_nonstandard-sud-dev.conllu"><code>ro_nonstandard-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Romanian-Nonstandard/ro_nonstandard-sud-test.conllu"><code>ro_nonstandard-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Romanian-Nonstandard/ro_nonstandard-sud-train.conllu"><code>ro_nonstandard-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Romanian-RRT</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Romanian-RRT@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Romanian-RRT@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Romanian-RRT/ro_rrt-sud-dev.conllu"><code>ro_rrt-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Romanian-RRT/ro_rrt-sud-test.conllu"><code>ro_rrt-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Romanian-RRT/ro_rrt-sud-train.conllu"><code>ro_rrt-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Romanian-SiMoNERo</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Romanian-SiMoNERo@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Romanian-SiMoNERo@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Romanian-SiMoNERo/ro_simonero-sud-test.conllu"><code>ro_simonero-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Russian-GSD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Russian-GSD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Russian-GSD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Russian-GSD/ru_gsd-sud-dev.conllu"><code>ru_gsd-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Russian-GSD/ru_gsd-sud-test.conllu"><code>ru_gsd-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Russian-GSD/ru_gsd-sud-train.conllu"><code>ru_gsd-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Russian-PUD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Russian-PUD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Russian-PUD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Russian-PUD/ru_pud-sud-test.conllu"><code>ru_pud-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Russian-SynTagRus</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Russian-SynTagRus@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Russian-SynTagRus@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Russian-SynTagRus/ru_syntagrus-sud-dev.conllu"><code>ru_syntagrus-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Russian-SynTagRus/ru_syntagrus-sud-test.conllu"><code>ru_syntagrus-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Russian-SynTagRus/ru_syntagrus-sud-train.conllu"><code>ru_syntagrus-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Russian-Taiga</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Russian-Taiga@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Russian-Taiga@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Russian-Taiga/ru_taiga-sud-dev.conllu"><code>ru_taiga-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Russian-Taiga/ru_taiga-sud-test.conllu"><code>ru_taiga-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Russian-Taiga/ru_taiga-sud-train.conllu"><code>ru_taiga-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Sanskrit-UFAL</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Sanskrit-UFAL@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Sanskrit-UFAL@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Sanskrit-UFAL/sa_ufal-sud-test.conllu"><code>sa_ufal-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Scottish_Gaelic-ARCOSG</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Scottish_Gaelic-ARCOSG@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Scottish_Gaelic-ARCOSG@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Scottish_Gaelic-ARCOSG/gd_arcosg-sud-dev.conllu"><code>gd_arcosg-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Scottish_Gaelic-ARCOSG/gd_arcosg-sud-test.conllu"><code>gd_arcosg-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Scottish_Gaelic-ARCOSG/gd_arcosg-sud-train.conllu"><code>gd_arcosg-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Serbian-SET</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Serbian-SET@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Serbian-SET@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Serbian-SET/sr_set-sud-dev.conllu"><code>sr_set-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Serbian-SET/sr_set-sud-test.conllu"><code>sr_set-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Serbian-SET/sr_set-sud-train.conllu"><code>sr_set-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Skolt_Sami-Giellagas</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Skolt_Sami-Giellagas@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Skolt_Sami-Giellagas@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Skolt_Sami-Giellagas/sms_giellagas-sud-test.conllu"><code>sms_giellagas-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Slovak-SNK</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Slovak-SNK@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Slovak-SNK@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Slovak-SNK/sk_snk-sud-dev.conllu"><code>sk_snk-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Slovak-SNK/sk_snk-sud-test.conllu"><code>sk_snk-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Slovak-SNK/sk_snk-sud-train.conllu"><code>sk_snk-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Slovenian-SSJ</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Slovenian-SSJ@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Slovenian-SSJ@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Slovenian-SSJ/sl_ssj-sud-dev.conllu"><code>sl_ssj-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Slovenian-SSJ/sl_ssj-sud-test.conllu"><code>sl_ssj-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Slovenian-SSJ/sl_ssj-sud-train.conllu"><code>sl_ssj-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Slovenian-SST</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Slovenian-SST@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Slovenian-SST@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Slovenian-SST/sl_sst-sud-test.conllu"><code>sl_sst-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Slovenian-SST/sl_sst-sud-train.conllu"><code>sl_sst-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Spanish-AnCora</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Spanish-AnCora@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Spanish-AnCora@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Spanish-AnCora/es_ancora-sud-dev.conllu"><code>es_ancora-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Spanish-AnCora/es_ancora-sud-test.conllu"><code>es_ancora-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Spanish-AnCora/es_ancora-sud-train.conllu"><code>es_ancora-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Spanish-GSD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Spanish-GSD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Spanish-GSD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Spanish-GSD/es_gsd-sud-dev.conllu"><code>es_gsd-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Spanish-GSD/es_gsd-sud-test.conllu"><code>es_gsd-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Spanish-GSD/es_gsd-sud-train.conllu"><code>es_gsd-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Spanish-PUD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Spanish-PUD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Spanish-PUD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Spanish-PUD/es_pud-sud-test.conllu"><code>es_pud-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Swedish-LinES</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Swedish-LinES@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Swedish-LinES@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Swedish-LinES/sv_lines-sud-dev.conllu"><code>sv_lines-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Swedish-LinES/sv_lines-sud-test.conllu"><code>sv_lines-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Swedish-LinES/sv_lines-sud-train.conllu"><code>sv_lines-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Swedish-PUD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Swedish-PUD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Swedish-PUD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Swedish-PUD/sv_pud-sud-test.conllu"><code>sv_pud-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Swedish_Sign_Language-SSLC</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Swedish_Sign_Language-SSLC@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Swedish_Sign_Language-SSLC@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Swedish_Sign_Language-SSLC/swl_sslc-sud-dev.conllu"><code>swl_sslc-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Swedish_Sign_Language-SSLC/swl_sslc-sud-test.conllu"><code>swl_sslc-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Swedish_Sign_Language-SSLC/swl_sslc-sud-train.conllu"><code>swl_sslc-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Swedish-Talbanken</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Swedish-Talbanken@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Swedish-Talbanken@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Swedish-Talbanken/sv_talbanken-sud-dev.conllu"><code>sv_talbanken-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Swedish-Talbanken/sv_talbanken-sud-test.conllu"><code>sv_talbanken-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Swedish-Talbanken/sv_talbanken-sud-train.conllu"><code>sv_talbanken-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Swiss_German-UZH</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Swiss_German-UZH@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Swiss_German-UZH@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Swiss_German-UZH/gsw_uzh-sud-test.conllu"><code>gsw_uzh-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Tagalog-TRG</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Tagalog-TRG@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Tagalog-TRG@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Tagalog-TRG/tl_trg-sud-test.conllu"><code>tl_trg-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Tamil-TTB</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Tamil-TTB@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Tamil-TTB@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Tamil-TTB/ta_ttb-sud-dev.conllu"><code>ta_ttb-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Tamil-TTB/ta_ttb-sud-test.conllu"><code>ta_ttb-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Tamil-TTB/ta_ttb-sud-train.conllu"><code>ta_ttb-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Telugu-MTG</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Telugu-MTG@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Telugu-MTG@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Telugu-MTG/te_mtg-sud-dev.conllu"><code>te_mtg-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Telugu-MTG/te_mtg-sud-test.conllu"><code>te_mtg-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Telugu-MTG/te_mtg-sud-train.conllu"><code>te_mtg-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Thai-PUD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Thai-PUD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Thai-PUD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Thai-PUD/th_pud-sud-test.conllu"><code>th_pud-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Turkish-GB</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Turkish-GB@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Turkish-GB@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Turkish-GB/tr_gb-sud-test.conllu"><code>tr_gb-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Turkish-IMST</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Turkish-IMST@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Turkish-IMST@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Turkish-IMST/tr_imst-sud-dev.conllu"><code>tr_imst-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Turkish-IMST/tr_imst-sud-test.conllu"><code>tr_imst-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Turkish-IMST/tr_imst-sud-train.conllu"><code>tr_imst-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Turkish-PUD</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Turkish-PUD@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Turkish-PUD@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Turkish-PUD/tr_pud-sud-test.conllu"><code>tr_pud-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Ukrainian-IU</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Ukrainian-IU@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Ukrainian-IU@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Ukrainian-IU/uk_iu-sud-dev.conllu"><code>uk_iu-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Ukrainian-IU/uk_iu-sud-test.conllu"><code>uk_iu-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Ukrainian-IU/uk_iu-sud-train.conllu"><code>uk_iu-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Upper_Sorbian-UFAL</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Upper_Sorbian-UFAL@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Upper_Sorbian-UFAL@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Upper_Sorbian-UFAL/hsb_ufal-sud-test.conllu"><code>hsb_ufal-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Upper_Sorbian-UFAL/hsb_ufal-sud-train.conllu"><code>hsb_ufal-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Urdu-UDTB</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Urdu-UDTB@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Urdu-UDTB@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Urdu-UDTB/ur_udtb-sud-dev.conllu"><code>ur_udtb-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Urdu-UDTB/ur_udtb-sud-test.conllu"><code>ur_udtb-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Urdu-UDTB/ur_udtb-sud-train.conllu"><code>ur_udtb-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Uyghur-UDT</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Uyghur-UDT@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Uyghur-UDT@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Uyghur-UDT/ug_udt-sud-dev.conllu"><code>ug_udt-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Uyghur-UDT/ug_udt-sud-test.conllu"><code>ug_udt-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Uyghur-UDT/ug_udt-sud-train.conllu"><code>ug_udt-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Vietnamese-VTB</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Vietnamese-VTB@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Vietnamese-VTB@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Vietnamese-VTB/vi_vtb-sud-dev.conllu"><code>vi_vtb-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Vietnamese-VTB/vi_vtb-sud-test.conllu"><code>vi_vtb-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Vietnamese-VTB/vi_vtb-sud-train.conllu"><code>vi_vtb-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Warlpiri-UFAL</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Warlpiri-UFAL@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Warlpiri-UFAL@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Warlpiri-UFAL/wbp_ufal-sud-test.conllu"><code>wbp_ufal-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Welsh-CCG</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Welsh-CCG@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Welsh-CCG@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Welsh-CCG/cy_ccg-sud-test.conllu"><code>cy_ccg-sud-test.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Wolof-WTB</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Wolof-WTB@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Wolof-WTB@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Wolof-WTB/wo_wtb-sud-dev.conllu"><code>wo_wtb-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Wolof-WTB/wo_wtb-sud-test.conllu"><code>wo_wtb-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Wolof-WTB/wo_wtb-sud-train.conllu"><code>wo_wtb-sud-train.conllu</code></a></td>
+</tr>
+<tr>
+<td><code>Yoruba-YTB</code></td>
+<td>[<a href="http://match.grew.fr/?corpus=SUD_Yoruba-YTB@2.5">Query</a>] [<a href="http://match.grew.fr/_tables/SUD_Yoruba-YTB@2.5.html">Relations</a>]</td>
+<td><a href="http://grew.fr/download/sud-treebanks-v2.5/SUD_Yoruba-YTB/yo_ytb-sud-test.conllu"><code>yo_ytb-sud-test.conllu</code></a></td>
+</tr>
+</tbody>
+</table>
+
+
+  </section>
+  
+  
+
+</body>
+</html>

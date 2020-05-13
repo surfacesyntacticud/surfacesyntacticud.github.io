@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Hugo 0.70.0" />
+  <link rel="stylesheet" href="https://bguil.github.io/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  
+  
+  
+  <link rel="stylesheet" href="https://bguil.github.io/css/cayman.87415a4997c8d6c666624ff26c8812f27f42b4cf5dc18c45fc8dcb0cd7d6d2f5.css">
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+  <title> | Cayman</title>
+
+  
+  <link rel="stylesheet" href="/css/local.css">
+
+  
+  <script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.10.0/d3.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/arborator/arborator-draft.css">
+  <script language="JavaScript" type="text/javascript" src="/arborator/arborator-draft.js"></script>
+  <script>
+    window.onload = function() {
+      new ArboratorDraft(); 
+    }
+  </script>
+  
+
+</head>
+<body>
+  <section class="page-header">
+  <h1 class="project-name">
+    SUD
+  </h1>
+  <h2 class="project-tagline">
+    Surface Syntactic Universal Dependencies
+  </h2>
+  <nav>
+    
+    
+      
+      
+      
+      
+      <a href="/" class="btn">Home</a>
+    
+      
+      
+      
+      
+      <a href="/data/" class="btn">Data</a>
+    
+      
+      
+      
+      
+      <a href="/guidelines/u/" class="btn">Guidelines</a>
+    
+      
+      
+      
+      
+      <a href="https://github.com/surfacesyntacticud" class="btn">GitHub</a>
+    
+  </nav>
+</section>
+
+  <section class="main-content">
+    
+  <h1></h1>
+  <h2 id="general-principles">General principles</h2>
+<p>The main differences with respect to UD are the following:</p>
+<ul>
+<li>
+<p>The definition of relations is based on the <strong>syntactic position</strong> and not on semantic relations or the category of the dependents. In other words, two units that commute and exclude each other occupy the same position and must have the same function.</p>
+</li>
+<li>
+<p><strong>Functional heads</strong> (instead of lexical heads): The head of a unit is the distributional head, that is, the element that control the distribution of the unit. This points out the functional head in most cases. For instance, the adposition <em>to</em> is the head of <em>to Mary</em> because <em>Mary</em> and <em>to Mary</em> do not have the same distribution (at all).</p>
+</li>
+<li>
+<p>In some cases, this criterion does not give a clear situation because two words have head features. In this case, a second gradual criterion comes into play where we prefer to give the status of dependent to the one that changes less the distribution of the unit. According to this principle, a coordinative conjunction such as <em>and</em> does not govern the conjunct following it, because <em>and Mary</em>, <em>and red</em>, or <em>and is sleeping</em> occupy completely different positions. In the same way, the determiner is analyzed as a dependent of the noun because nouns partly control the distribution of a combination determiner-noun (<em>this morning</em> can work as a modifier of a verb contrary to <em>this boy</em>).</p>
+</li>
+<li>
+<p>SUD relations are organized in a <strong>taxonomic hierarchy</strong>: A relation that is the daughter of another one inherits its syntactic properties with the addition of specific properties. Indeed, sometimes, we cannot take into account all possible distinctions, either because of the conversion from different treebanks not containing enough information, or because a sentence does not allow to make a clear decision.
+A way of naming a daughter of a relation <code>R</code> is to add an extension <code>EXT</code> to <code>R</code>, calling this new relation <code>R:EXT</code>.</p>
+</li>
+<li>
+<p>It is possible to distinguish between <strong>arguments</strong> and <strong>modifiers</strong>: Although this distinction involves semantic criteria (an argument of a lexical unit L is an obligatory participant in the semantic description of L), we consider that it is hard to avoid, because especially for verb dependents, most language have special functions.</p>
+</li>
+<li>
+<p>A <strong>multiple coordination</strong> is analyzed as a chain instead of a bouquet: One of the main argument for the chain-analysis is that it reduces the dependency length.</p>
+</li>
+<li>
+<p>There is a strict distinction between surface-syntactic relations and deep-syntactic features expressed as extensions of syntactic relation names using the <code>@</code> symbol.</p>
+</li>
+</ul>
+<p>UD relations that are not used in <strong>SUD</strong>: <code>nsubj</code>, <code>csubj</code>, <code>obj</code>, <code>iobj</code>, <code>obl</code>, <code>xcomp</code>, <code>ccomp</code>, <code>amod</code>, <code>nmod</code>, <code>nummod</code>, <code>advmod</code>, <code>acl</code>, <code>advcl</code>, <code>aux</code>, <code>cop</code>, <code>case</code>, <code>mark</code>.
+These 17 relations are replaced by 4 major relations in SUD - <code>subj</code>, <code>comp</code>, <code>mod</code>, <code>udep</code> (subject, complement, modifier, underspecified dependency) - with possible sub-relations.</p>
+
+
+  </section>
+  
+  
+
+</body>
+</html>
