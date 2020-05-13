@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Guidelines on Cayman</title>
-    <link>https://bguil.github.io/guidelines/</link>
+    <link>https://surfacesyntacticud.github.io/guidelines/</link>
     <description>Recent content in Guidelines on Cayman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 28 Apr 2020 10:38:53 +0200</lastBuildDate>
     
-	<atom:link href="https://bguil.github.io/guidelines/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://surfacesyntacticud.github.io/guidelines/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
