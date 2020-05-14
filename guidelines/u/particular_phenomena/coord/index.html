@@ -81,14 +81,14 @@
   <section class="main-content">
     
   <h1></h1>
-  <h1 id="coordination"><strong>Coordination</strong></h1>
-<h2 id="chained-conjuncts"><strong>Chained conjuncts</strong></h2>
+  <h1 id="coordination">Coordination</h1>
+<h2 id="chained-conjuncts">Chained conjuncts</h2>
 <p>In UD, all conjuncts of a coordination are attached to the head of the first conjunct in a bouquet. In SUD, each conjunct is attached to the head of the previous one in a chain.</p>
 <p>The first example below shows the annotation of a coordination in UD and the second one the corresponding annotation in SUD.</p>
 <div>
 <conll>
 
-1	John	John	PROPN	_	_	7	subj	_	_
+1	John	John	PROPN	_	_	7	nsubj	_	_
 2	,	,	PUNCT	_	_	3	punct	_	_
 3	Mary	Mary	PROPN	_	_	1	conj	_	_
 4	and	and	CCONJ	_	_	5	cc	_	_
@@ -113,10 +113,10 @@
 </conll>
 </div>
 
-<h2 id="embedded-coordination"><strong>Embedded coordination</strong></h2>
+<h2 id="embedded-coordination">Embedded coordination</h2>
 <p>The conjunct of a coordination can be itself a coordination. Theoretically, this embedding can be iterated indefinetely but in corpora, there is generally one iteration.
 The use of the same label for all <code>conj</code> relations does not make it possible to distinguish embedded relations from surface relations in SUD because they form a single chain.
-In order to distinguish embedded <code>conj</code>relations from surface <code>conj</code> relations, we use the extension <code>emb</code>, as the following example shows.</p>
+In order to distinguish embedded <code>conj</code> relations from surface <code>conj</code> relations, we use the extension <code>emb</code>, as the following example shows.</p>
 <div>
 <conll>
 
@@ -134,7 +134,7 @@ In order to distinguish embedded <code>conj</code>relations from surface <code>c
 </conll>
 </div>
 
-<h2 id="shared-dependents"><strong>Shared dependents</strong></h2>
+<h2 id="shared-dependents">Shared dependents</h2>
 <p>Left dependents on coordination are attached to the head of the coordination. Since the head of a coordination is the head of the leftmost conjunct, it is not possible to distinguish these dependents from the own dependents of the leftmost conjunct.</p>
 <p>Right dependents on a coordination are attached to the head of the rightmost conjunct, but they can be confused with the own dependents of this conjunct.</p>
 <p>As a consequence, left and right dependents on a coordination are marked with feature <code>Shared=Yes</code>, which distinguishes them from the own dependents of the respective leftmost and rightmost conjuncts.</p>
