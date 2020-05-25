@@ -10,7 +10,7 @@
   
   
   
-  <link rel="stylesheet" href="https://surfacesyntacticud.github.io/css/cayman.87415a4997c8d6c666624ff26c8812f27f42b4cf5dc18c45fc8dcb0cd7d6d2f5.css">
+  <link rel="stylesheet" href="https://surfacesyntacticud.github.io/css/cayman.ea0e967413f3851071cc8ace3621bc4205fe8fa79b2abe3d7bf94ff2841f0d47.css">
   
   
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -82,8 +82,8 @@
     
   <h1></h1>
   <h1 id="udep"><strong>udep</strong></h1>
-<p>The <code>udep</code> relation is used for complements when one does not want or cannot distinguish between arguments and modifiers .
-The gouvernor and the dependent of an <code>udep</code>relation can have any POS.</p>
+<p>The <code>udep</code> relation is used for complements when one does not wish to or is unable to distinguish between arguments and modifiers. This is relationship can notably be used in cases where the complement&rsquo;s relationship with its governor is ambiguous. When there is little debate about the nature of the relationship, the more specific label is preferred.</p>
+<p>The governor and the dependent of a <code>udep</code> relation can have any POS.</p>
 <div>
 <conll>
 
@@ -103,6 +103,20 @@ The gouvernor and the dependent of an <code>udep</code>relation can have any POS
 3	at	at	ADP	_	_	2	udep	_	_
 4	this	this	DET	_	_	5	det	_	_
 5	discomfiture	discomfiture	NOUN	_	_	3	comp:obj	_	_
+
+</conll>
+</div>
+
+<div>
+<conll>
+
+1	Ficha	ficha	PRON	_	_	0	root	_	_
+2	de	de	ADP	_	_	1	udep	_	_
+3	Juanjo	juanjo	PROPN	_	_	2	comp:obl	_	_
+4	Ciércoles	ciércoles	PROPN	_	_	3	flat	_	_
+5	en	en	ADP	_	_	1	udep	_	_
+6	Don	don	PROPN	_	_	5	comp:obj	_	_
+7	Balón	balón	PROPN	_	_	6	appos	_	_
 
 </conll>
 </div>
