@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Hugo 0.70.0" />
+  <link rel="stylesheet" href="https://surfacesyntacticud.github.io/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  
+  
+  
+  <link rel="stylesheet" href="https://surfacesyntacticud.github.io/css/cayman.ea0e967413f3851071cc8ace3621bc4205fe8fa79b2abe3d7bf94ff2841f0d47.css">
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+  <title> | SUD</title>
+
+  
+  <link rel="stylesheet" href="/css/local.css">
+
+  
+  <script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.10.0/d3.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/arborator/arborator-draft.css">
+  <script language="JavaScript" type="text/javascript" src="/arborator/arborator-draft.js"></script>
+  <script>
+    window.onload = function() {
+      new ArboratorDraft(); 
+    }
+  </script>
+  
+
+</head>
+<body>
+  <section class="page-header">
+  <h1 class="project-name">
+    SUD
+  </h1>
+  <h2 class="project-tagline">
+    Surface Syntactic Universal Dependencies
+  </h2>
+  <nav>
+    
+    
+      
+      
+      
+      
+      <a href="/" class="btn">Home</a>
+    
+      
+      
+      
+      
+      <a href="/data/" class="btn">Data</a>
+    
+      
+      
+      
+      
+      <a href="/guidelines/u/" class="btn">Guidelines</a>
+    
+      
+      
+      
+      
+      <a href="https://github.com/surfacesyntacticud" class="btn">GitHub</a>
+    
+  </nav>
+</section>
+
+  <section class="main-content">
+    
+  <h1></h1>
+  <h2 id="correspondences-between-sud-and-ud">Correspondences between SUD and UD</h2>
+<p>SUD represents an alternative to UD rather than a competing annotation scheme, and was designed in such a way that the two can convey the same informational content. The two schemes exhibit nearly perfect isomorphism, meaning that conversion can go both ways without informational loss in most cases. This means that correspondences between the two are most often regular and predictable.</p>
+<p>Correspondences between SUD and and UD relationships are impacted by several key properties. Firstly, SUD annotations are less redundant and more economical than UD annotations. For example, we can see in the table below that SUD uses a single <code>subj</code> relation which comprises both the <code>nsubj</code> (nominal subject) and <code>csubj</code> (clausal subject) relationships in UD. However, the information provided by UD&rsquo;s distinction between nominal and clausal subjects is not lost in under the simpler SUD scheme: the differentiation can be recovered automatically from the POS of the subject and its context, though how this context is taken into account depends on the language.</p>
+<p>Secondly, SUD also diverges from UD in the sense that it does not systematically label content words as heads. Instead, SUD treats adpositions, subordinating conjunctions, auxiliaries, and copulas as heads. This is because SUD identifies surface syntactic heads using the main criterion that they determine the distribution of the syntactic unit in question. For example, the SUD scheme would identify the preposition <em>to</em> in the sentence <em>Peter talked to Mary</em> as a head, since it determines the distribution of <em>Mary</em>. The UD scheme would label <em>Mary</em> as a head based on the fact that it is a function word. Because of this difference, <strong>the direction of certain syntactic relationships is reversed between SUD and UD</strong>. This namely applies to the SUD relationships <code>aux</code>, <code>cop</code>, <code>case</code>, and <code>mark</code>, which are also highlighted in <strong>bold</strong> in the correspondence table below.</p>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>UD</th>
+            <th>SUD</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>nsubj</td>
+          <td rowspan=2>subj</td>
+        </tr>
+        <tr>
+          <td>csubj</td>
+        </tr>
+        <tr>
+          <td><b>aux</b></td>
+          <td>comp:aux</td>
+        </tr>
+        <tr>
+          <td><b>cop</b></td>
+          <td>comp:pred</td>
+        </tr>
+        <tr>
+          <td>xcomp</td>
+          <td rowspan=4>comp:obj</td>
+        <tr>
+          <td><b>case</b></td>
+        </tr>
+        <tr><td><b>mark</b></td></tr>
+        <tr><td>obj</td></tr>
+        <tr>
+          <td>ccomp</td>
+          <td rowspan=2>comp:obl</td>
+        </tr>
+        <tr>
+          <td>iobj</td>
+        </tr>
+        <tr><td>obl</td><td>udep</td></tr>
+        <tr>
+          <td rowspan>obl, acl, nmod</td>
+          <td rowspan=5>mod</td>
+        </tr>
+        <tr><td>advcl</td></tr>
+        <tr><td>advmod</td></tr>
+        <tr><td>amod</td></tr>
+        <tr><td>nummod</td></tr>
+        <tr>
+          <td rowspan=2>fixed</td>
+          <td>unk@fixed</td>
+        </tr>
+        <tr>
+          <td>...@fixed</td>
+        </tr>
+
+    </tbody>
+</table>
+
+
+
+
+  </section>
+  
+  
+
+</body>
+</html>
