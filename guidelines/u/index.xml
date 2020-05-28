@@ -27,8 +27,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/correspondences/</guid>
-      <description>Correspondences between SUD and UD SUD represents an alternative to UD rather than a competing annotation scheme, and was designed in such a way that the two can convey the same informational content. The two schemes exhibit nearly perfect isomorphism, meaning that conversion can go both ways without informational loss in most cases. This means that correspondences between the two are most often regular and predictable.
-Correspondences between SUD and and UD relationships are impacted by several key properties.</description>
+      <description>Correspondences between SUD and UD This page is dedicated to exploring several key differences between SUD and UD labels, and the correspondences between the two schemes.
+A sentence annotated in UD (above) and SUD (below). SUD represents an alternative to UD rather than a competing annotation scheme, and was designed in such a way that the two can convey the same informational content. The two schemes exhibit nearly perfect isomorphism, meaning that conversion can go both ways without informational loss in most cases.</description>
     </item>
     
     <item>
