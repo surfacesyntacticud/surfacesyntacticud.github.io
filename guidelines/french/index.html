@@ -83,6 +83,47 @@
   <h1></h1>
   <h1 id="sud-for-french">SUD for French</h1>
 <p>This page outlines various features specific to French.</p>
+<h3 id="compaux">comp:aux</h3>
+<p>In French, only three verbs are considered as auxiliary verbs: <strong>être</strong>, <strong>avoir</strong> and <strong>faire</strong>.</p>
+<p>The <code>comp:aux</code> reation can be used with one of the three sub-relations: <code>@tense</code>, <code>@pass</code> or <code>@cause</code>, depending on whether the auxiliary is expressing a tense, a passive or a causative construction. The relation <code>comp:aux@tense</code> is in French used with both verbs <strong>être</strong> and <strong>avoir</strong> and it is the most commun sub-relation. The relation <code>comp:aux@pass</code> is only used with the verb <strong>être</strong> and <code>comp:aux@cause</code> is only used with the verb <strong>faire</strong>.</p>
+<h4 id="example-of-an-auxiliary-expressing-a-tense">Example of an auxiliary expressing a tense</h4>
+<div>
+<conll>
+
+1	ses	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	2	det	_	_
+2	méthodes	méthode	NOUN	_	Gender=Fem|Number=Plur	3	subj@pass	_	_
+3	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	comp:aux@tense	_	_
+5	utilisées	utiliser	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	4	comp:aux@pass	_	_
+
+</conll>
+</div>
+
+<h4 id="example-of-a-passive-construction">Example of a passive construction</h4>
+<div>
+<conll>
+
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	wordform=le
+2	château	château	NOUN	_	Gender=Masc|Number=Sing	3	subj@pass	_	_
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	ensuite	ensuite	ADV	_	_	3	mod	_	_
+5	vendu	vendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	comp:aux@pass	_	_
+
+</conll>
+</div>
+
+<h4 id="example-of-a-causative-construction">Example of a causative construction</h4>
+<div>
+<conll>
+
+1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	subj	_	_
+2	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	comp:obj@agent	_	_
+3	fait	faire	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	tomber	tomber	VERB	_	VerbForm=Inf	3	comp:aux@caus	_	_
+
+</conll>
+</div>
+
 
 
   </section>
