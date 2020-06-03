@@ -28,7 +28,8 @@
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/correspondences/</guid>
       <description>Correspondences between SUD and UD This page is dedicated to exploring several key differences between SUD and UD labels, and the correspondences between the two schemes.
-A sentence annotated in SUD (above) and UD (below).   # sent_id = email-enronsent38_01-0114 # text = I am out of the office today but will be back tomorrow. 1	I	_	PRON	_	_	2	subj	_	_ 2	am	_	AUX	_	_	0	root	_	_ 3	out	_	ADP	_	_	2	comp:pred	_	_ 4	of	_	ADP	_	_	3	comp:obj	_	_ 5	the	_	DET	_	_	6	det	_	_ 6	office	_	NOUN	_	_	4	comp:obj	_	_ 7	today	_	NOUN	_	_	2	mod	_	_ 8	but	_	CCONJ	_	_	9	cc	_	_ 9	will	_	AUX	_	_	2	conj	_	_ 10	be	_	AUX	_	_	9	comp:aux	_	_ 11	back	_	ADV	_	_	10	comp:pred	_	_ 12	tomorrow	_	NOUN	_	_	9	mod	_	_ 13	.</description>
+SUD is a dependency-based annotation scheme. Annotation choices rely on surface-syntactic distributional criteria, while at the same time attempting to maintain convertibility with the UD annotation scheme as much as possible.
+SUD represents an alternative rather than a competitor to UD, and was designed in such a way that the two can convey the same informational content.</description>
     </item>
     
     <item>
@@ -152,7 +153,7 @@ The first example below shows the annotation of a coordination in UD and the sec
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp/</guid>
       <description>comp The comp relation is used for arguments of verbs, nouns, adjectives, adverbs, auxiliaries, adpositions and conjunctions.
 This relation is refined into several sub-relations: comp:aux (auxiliary argument), comp:cleft (cleft clauses), comp:obj (direct object),comp:obl (oblique argument), comp:pred (predicative argument).
-In virtually all cases, SUD native corpora are directly annotated with the sub-relations, rather than with the comp relation. However, comp may sometimes be used when one has difficulty deciding between comp:obj and comp:obl.</description>
+In most cases, SUD native corpora are directly annotated with the sub-relations, rather than with the comp relation. However, comp may sometimes be used when one has difficulty deciding between comp:obj and comp:obl.</description>
     </item>
     
     <item>

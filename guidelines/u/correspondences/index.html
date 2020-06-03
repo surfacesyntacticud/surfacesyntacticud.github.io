@@ -83,11 +83,77 @@
   <h1></h1>
   <h2 id="correspondences-between-sud-and-ud">Correspondences between SUD and UD</h2>
 <p>This page is dedicated to exploring several key differences between SUD and UD labels, and the correspondences between the two schemes.</p>
+<p>SUD is a dependency-based annotation scheme. Annotation choices rely on surface-syntactic distributional criteria, while at the same time attempting to maintain convertibility with the UD annotation scheme as much as possible.</p>
+<p>SUD represents an alternative rather than a competitor to UD, and was designed in such a way that the two can convey the same informational content. The two schemes enjoy a nearly perfect degree of two-way convertibility, meaning that conversions between the two schemes can take place without informational loss in most cases. Because of this, correspondences between the two are most often regular and predictable.</p>
+<p>Correspondences between SUD and UD relationships are impacted by several key properties. Firstly, SUD annotations are less redundant and more economical than UD annotations. For example, we can see in the table below that SUD uses a single <code>subj</code> relation which comprises both the <code>nsubj</code> (nominal subject) and <code>csubj</code> (clausal subject) relationships in UD. However, the information provided by UD&rsquo;s distinction between nominal and clausal subjects is not lost in under the simpler SUD scheme: the differentiation can be recovered automatically from the POS of the subject and its context, though how this context is taken into account depends on the language. In total, a subset of 17 UD relations (<code>nsubj</code>, <code>csubj</code>, <code>obj</code>, <code>iobj</code>, <code>obl</code>, <code>xcomp</code>, <code>ccomp</code>, <code>amod</code>, <code>nmod</code>, <code>nummod</code>, <code>advmod</code>, <code>acl</code>, <code>advcl</code>, <code>aux</code>, <code>cop</code>, <code>case</code>, <code>mark</code>) is replaced by three major relations in SUD: <code>subj</code>, <code>comp</code>, <code>mod</code>, as well as <code>udep</code> to a marginal extent.</p>
+<p>In addition to its more economical set of labels, SUD also diverges from UD in the sense that it does not systematically label content words as heads. Instead, SUD treats adpositions, subordinating conjunctions, auxiliaries, and copulas as heads. This is because SUD identifies surface syntactic heads using the main criterion that they determine the distribution of the syntactic unit in question. For example, the SUD scheme would identify the preposition <em>to</em> in the sentence <em>Peter talked to Mary</em> as a head, since it determines the distribution of <em>Mary</em>. The UD scheme would label <em>Mary</em> as a head based on the fact that it is a content word. Because of this difference, <strong>the direction of certain syntactic relationships is reversed between SUD and UD</strong>. This namely applies to the SUD relationships <code>aux</code>, <code>cop</code>, <code>case</code>, and <code>mark</code>, which are also highlighted in <strong>bold</strong> in the correspondence table below. You may also find more information about this aspect of SUD relations on the <a href="../general_principles">general principles</a> page.</p>
+<h3 id="table-of-correspondences-between-ud-and-sud">Table of correspondences between UD and SUD</h3>
 
 
-<div align="center"><b>A sentence annotated in SUD (above) and UD (below).</b></div>
+
+<table class="center">
+    <thead>
+        <tr>
+            <th>UD</th>
+            <th>SUD</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>nsubj</td>
+          <td rowspan=2>subj</td>
+        </tr>
+        <tr>
+          <td>csubj</td>
+        </tr>
+        <tr>
+          <td><b>aux</b></td>
+          <td>comp:aux</td>
+        </tr>
+        <tr>
+          <td><b>cop</b></td>
+          <td>comp:pred</td>
+        </tr>
+        <tr>
+          <td>xcomp</td>
+          <td rowspan=5>comp:obj</td>
+        <tr>
+          <td><b>case</b></td>
+        </tr>
+        <tr><td><b>mark</b></td></tr>
+        <tr><td>obj</td></tr>
+        <tr><td>ccomp</td></tr>
+        <tr>
+          <td>ccomp</td>
+          <td rowspan=3>comp:obl</td>
+        </tr>
+        <tr><td>obj</td></tr>
+        <tr>
+          <td>iobj</td>
+        </tr>
+        <tr><td>obl</td><td>udep</td></tr>
+        <tr>
+          <td rowspan>obl, acl, nmod</td>
+          <td rowspan=5>mod</td>
+        </tr>
+        <tr><td>advcl</td></tr>
+        <tr><td>advmod</td></tr>
+        <tr><td>amod</td></tr>
+        <tr><td>nummod</td></tr>
+        <tr>
+          <td rowspan=2>fixed</td>
+          <td>unk@fixed</td>
+        </tr>
+        <tr>
+          <td>...@fixed</td>
+        </tr>
+
+    </tbody>
+</table>
+</div>
 
 
+<h3 id="example-of-a-sentence-annotated-in-sud-above-and-ud-below">Example of a sentence annotated in SUD (above) and UD (below).</h3>
 <div>
 <conll>
 
@@ -131,73 +197,6 @@
 
 </conll>
 </div>
-
-<p>SUD represents an alternative to UD rather than a competing annotation scheme, and was designed in such a way that the two can convey the same informational content. The two schemes exhibit nearly perfect isomorphism, meaning that conversion can go both ways without informational loss in most cases. This means that correspondences between the two are most often regular and predictable.</p>
-<p>Correspondences between SUD and and UD relationships are impacted by several key properties. Firstly, SUD annotations are less redundant and more economical than UD annotations. For example, we can see in the table below that SUD uses a single <code>subj</code> relation which comprises both the <code>nsubj</code> (nominal subject) and <code>csubj</code> (clausal subject) relationships in UD. However, the information provided by UD&rsquo;s distinction between nominal and clausal subjects is not lost in under the simpler SUD scheme: the differentiation can be recovered automatically from the POS of the subject and its context, though how this context is taken into account depends on the language. In total, a subset of 17 UD relations (<code>nsubj</code>, <code>csubj</code>, <code>obj</code>, <code>iobj</code>, <code>obl</code>, <code>xcomp</code>, <code>ccomp</code>, <code>amod</code>, <code>nmod</code>, <code>nummod</code>, <code>advmod</code>, <code>acl</code>, <code>advcl</code>, <code>aux</code>, <code>cop</code>, <code>case</code>, <code>mark</code>) is replaced by four major relations in SUD: <code>subj</code>, <code>comp</code>, <code>mod</code>, and <code>udep</code>.</p>
-<p>In addition to its more economical set of labels, SUD also diverges from UD in the sense that it does not systematically label content words as heads. Instead, SUD treats adpositions, subordinating conjunctions, auxiliaries, and copulas as heads. This is because SUD identifies surface syntactic heads using the main criterion that they determine the distribution of the syntactic unit in question. For example, the SUD scheme would identify the preposition <em>to</em> in the sentence <em>Peter talked to Mary</em> as a head, since it determines the distribution of <em>Mary</em>. The UD scheme would label <em>Mary</em> as a head based on the fact that it is a function word. Because of this difference, <strong>the direction of certain syntactic relationships is reversed between SUD and UD</strong>. This namely applies to the SUD relationships <code>aux</code>, <code>cop</code>, <code>case</code>, and <code>mark</code>, which are also highlighted in <strong>bold</strong> in the correspondence table below. You may also find more information about this aspect of SUD relations on the <a href="../general_principles">general principles</a> page.</p>
-<p><strong>Table of correspondences between UD and SUD</strong></p>
-
-
-
-<table class="center">
-    <thead>
-        <tr>
-            <th>UD</th>
-            <th>SUD</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td>nsubj</td>
-          <td rowspan=2>subj</td>
-        </tr>
-        <tr>
-          <td>csubj</td>
-        </tr>
-        <tr>
-          <td><b>aux</b></td>
-          <td>comp:aux</td>
-        </tr>
-        <tr>
-          <td><b>cop</b></td>
-          <td>comp:pred</td>
-        </tr>
-        <tr>
-          <td>xcomp</td>
-          <td rowspan=4>comp:obj</td>
-        <tr>
-          <td><b>case</b></td>
-        </tr>
-        <tr><td><b>mark</b></td></tr>
-        <tr><td>obj</td></tr>
-        <tr>
-          <td>ccomp</td>
-          <td rowspan=2>comp:obl</td>
-        </tr>
-        <tr>
-          <td>iobj</td>
-        </tr>
-        <tr><td>obl</td><td>udep</td></tr>
-        <tr>
-          <td rowspan>obl, acl, nmod</td>
-          <td rowspan=5>mod</td>
-        </tr>
-        <tr><td>advcl</td></tr>
-        <tr><td>advmod</td></tr>
-        <tr><td>amod</td></tr>
-        <tr><td>nummod</td></tr>
-        <tr>
-          <td rowspan=2>fixed</td>
-          <td>unk@fixed</td>
-        </tr>
-        <tr>
-          <td>...@fixed</td>
-        </tr>
-
-    </tbody>
-</table>
-</div>
-
 
 
 
