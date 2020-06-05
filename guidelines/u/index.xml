@@ -6,20 +6,9 @@
     <description>Recent content on SUD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Apr 2020 10:38:53 +0200</lastBuildDate>
     
 	<atom:link href="https://surfacesyntacticud.github.io/guidelines/u/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Comp_cleft</title>
-      <link>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_cleft/</link>
-      <pubDate>Tue, 28 Apr 2020 10:38:53 +0200</pubDate>
-      
-      <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_cleft/</guid>
-      <description>comp:cleft The comp:cleft relation is used in cleft sentences for the dependency from the head of the sentence to the head of the complement clause.
-  1	It	it	PRON	_	_	2	subj	_	_ 2	was	be	AUX	_	_	0	root	_	_ 3	from	from	ADP	_	_	2	comp:pred	_	_ 4	John	John	PROPN	_	_	3	comp:obj	_	_ 5	that	that	SCONJ	_	_	2	comp:cleft	_	_ 6	she	she	PRON	_	_	7	subj	_	_ 7	heard	hear	VERB	_	_	5	comp:obj	_	_ 8	the	the	DET	_	_	9	det	_	_ 9	news	news	NOUN	_	_	7	comp:obj	_	_   Sometimes, there is an ambiguity between a relative clause and a cleft clause.</description>
-    </item>
     
     <item>
       <title></title>
@@ -153,7 +142,7 @@ The first example below shows the annotation of a coordination in UD and the sec
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp/</guid>
       <description>comp The comp relation is used for arguments of verbs, nouns, adjectives, adverbs, auxiliaries, adpositions and conjunctions.
 This relation is refined into several sub-relations: comp:aux (auxiliary argument), comp:cleft (cleft clauses), comp:obj (direct object),comp:obl (oblique argument), comp:pred (predicative argument).
-In most cases, SUD native corpora are directly annotated with the sub-relations, rather than with the comp relation. However, comp may sometimes be used when one has difficulty deciding between comp:obj and comp:obl.</description>
+In most cases, SUD native corpora are directly annotated with the sub-relations, rather than with the comp relation. However, comp may sometimes be used when one has difficulty deciding between comp:obj and comp:obl, such as with certain French reflexive verbs.</description>
     </item>
     
     <item>
@@ -168,12 +157,22 @@ In most cases, SUD native corpora are directly annotated with the sub-relations,
     
     <item>
       <title></title>
+      <link>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_cleft/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_cleft/</guid>
+      <description>comp:cleft The comp:cleft relation is used in cleft sentences for the dependency from the head of the sentence to the head of the complement clause.
+  1	It	it	PRON	_	_	2	subj	_	_ 2	was	be	AUX	_	_	0	root	_	_ 3	from	from	ADP	_	_	2	comp:pred	_	_ 4	John	John	PROPN	_	_	3	comp:obj	_	_ 5	that	that	SCONJ	_	_	2	comp:cleft	_	_ 6	she	she	PRON	_	_	7	subj	_	_ 7	heard	hear	VERB	_	_	5	comp:obj	_	_ 8	the	the	DET	_	_	9	det	_	_ 9	news	news	NOUN	_	_	7	comp:obj	_	_   Sometimes, there is an ambiguity between a relative clause and a cleft clause.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_obj/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_obj/</guid>
       <description>comp:obj The comp:obj relation is used for direct object complements, including direct complements of an adposition or a subordinating conjunction.
-  1	Norton	Norton	PROPN	_	_	2	subj	_	_ 2	spent	spend	VERB	_	_	0	root	_	_ 3	most	most	ADV	_	_	2	comp:obj	_	_ 4	of	of	ADP	_	_	3	comp:obl	_	_ 5	his	his	PRON	_	_	7	udep	_	_ 6	earley	earley	ADJ	_	_	7	mod	_	_ 7	life	life	NOUN	_	_	4	comp:obj	_	_     1	this	this	PRON	_	_	2	subj	_	_ 2	means	mean	VERB	_	_	0	root	_	_ 3	that	that	SCONJ	_	_	2	comp:obj	_	_ 4	you	you	PRON	_	_	5	subj	_	_ 5	have	have	VERB	_	_	3	comp:obj	_	_ 6	to	to	PART	_	_	5	comp:obj	_	_ 7	make	make	VERB	_	_	6	comp:obj	_	_ 8	one	one	PRON	_	_	7	comp:obj	_	_ 9	of	of	ADP	_	_	8	udep	_	_ 10	two	two	NUM	_	_	11	det	_	_ 11	sacrifices	sacrifice	NOUN	_	_	9	comp:obj	_	_     1	on	on	PRON	_	_	2	subj	_	we 2	a	avoir	AUX	_	_	0	root	_	have 3	décidé	décider	VERB	_	_	2	comp:aux	_	decided 4	d&#39;	d&#39;	ADP	_	_	3	comp:obj	_	SpaceAfter=No 5	aller	aller	VERB	_	_	4	comp:obj	_	to go 6	à	à	ADP	_	_	5	comp:obl	_	to 7	le	le	DET	_	_	8	det	_	the 8	CROUS	crous	PROPN	_	_	6	comp:obj	_	CROUS 9	de	de	ADP	_	_	8	mod	_	of 10	Censier	censier	PROPN	_	_	9	comp:obj	_	Censier 11	,	_	PUNCT	_	_	12	punct	_	_ 12	parce	parce	SCONJ	_	_	3	mod	_	because 13	que	que	SCONJ	_	_	12	fixed	_	_ 14	c&#39;	ce	PRON	_	_	15	subj	_	SpaceAfter=No|it 15	est	être	AUX	_	_	12	comp:obj	_	is 16	chouette	chouette	ADJ	_	_	15	comp:pred	_	great     1	il	il	PRON	_	_	2	subj	_	it is 2	faut	falloir	VERB	_	_	0	parataxis:parenth	_	necessary 3	que	que	SCONJ	_	_	2	comp:obj	_	that 4	tu	tu	PRON	_	_	5	subj	_	you 5	deviennes	devenir	VERB	_	_	3	comp:obj	_	become 6	script	script	NOUN	_	_	7	compound	_	script 7	girl	girl	NOUN	_	_	5	comp:obj	_	girl   </description>
+  1	Norton	Norton	PROPN	_	_	2	subj	_	_ 2	spent	spend	VERB	_	_	0	root	_	_ 3	most	most	ADV	_	_	2	comp:obj	_	_ 4	of	of	ADP	_	_	3	comp:obl	_	_ 5	his	his	PRON	_	_	7	udep	_	_ 6	earley	earley	ADJ	_	_	7	mod	_	_ 7	life	life	NOUN	_	_	4	comp:obj	_	_     1	this	this	PRON	_	_	2	subj	_	_ 2	means	mean	VERB	_	_	0	root	_	_ 3	that	that	SCONJ	_	_	2	comp:obj	_	_ 4	you	you	PRON	_	_	5	subj	_	_ 5	have	have	VERB	_	_	3	comp:obj	_	_ 6	to	to	PART	_	_	5	comp:obj	_	_ 7	make	make	VERB	_	_	6	comp:obj	_	_ 8	one	one	PRON	_	_	7	comp:obj	_	_ 9	of	of	ADP	_	_	8	udep	_	_ 10	two	two	NUM	_	_	11	det	_	_ 11	sacrifices	sacrifice	NOUN	_	_	9	comp:obj	_	_     1	Afirmó	afirmar	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	affirmed 2	que	que	SCONJ	SCONJ	_	1	comp:obj	_	that 3	sigue	seguir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	comp:obj	_	follows 4	el	el	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	the 5	criterio	criterio	NOUN	NOUN	Gender=Masc|Number=Sing	3	comp:obj	_	criterion 6	europeo	europeo	ADJ	ADJ	Gender=Masc|Number=Sing	5	mod	_	European 7	y	y	CCONJ	CCONJ	_	8	cc	_	and 8	que	que	SCONJ	SCONJ	_	2	conj	_	that 9	trata	tratar	VERB	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	comp:obj	_	try 10	de	de	ADP	ADP	AdpType=Prep	9	comp:obl@x	_	of 11	incentivar	incentivar	VERB	VERB	VerbForm=Inf	10	comp:obj	_	to incentivize 12	el	el	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	the 13	mercado	mercado	NOUN	NOUN	Gender=Masc|Number=Sing	11	comp:obj	_	market 14	donde	donde	PRON	PRON	PronType=Ind	17	udep	_	where 15	no	no	ADV	ADV	Polarity=Neg	17	mod	_	not 16	lo	él	PRON	PRON	Case=Acc|Gender=Masc|Number=Sing|Person=3|PrepCase=Npr|PronType=Prs	17	comp:obj	_	it 17	hay	haber	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	mod	_	there is 18	.</description>
     </item>
     
     <item>
@@ -183,7 +182,7 @@ In most cases, SUD native corpora are directly annotated with the sub-relations,
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_obl/</guid>
       <description>comp:obl The comp:obl relation is used for oblique arguments of verbs, adjectives, adverbs, nouns or pronouns, regardless of their form.
-  1	it	it	PROPN	_	_	2	subj	_	_ 2	belongs	belong	VERB	_	_	0	root	_	_ 3	to	to	ADP	_	_	2	comp:obl	_	_ 4	a	a	DET	_	_	5	det	_	_ 5	past	past	NOUN	_	_	3	comp:obj	_	_     1	coming	come	VERB	_	_	0	root	_	_ 2	into	into	ADP	_	_	1	comp:obl	_	_ 3	the	the	DET	_	_	4	det	_	_ 4	area	area	NOUN	_	_	2	comp:obj	_	_ 5	to	to	PART	_	_	1	comp:obl	_	_ 6	see	see	VERB	_	_	5	comp:obj	_	_ 7	concerts	concert	NOUN	_	_	6	comp:obj	_	_     1	j&#39;	je	PRON	_	_	2	subj	_	I 2	ai	avoir	VERB	_	_	0	root	_	have 3	peur	peur	NOUN	_	_	2	comp:obj@lvc	_	fear 4	que	que	SCONJ	_	_	3	comp:obl	_	that 5	ça	ça	PRON	_	_	6	subj	_	this 6	marche	marcher	VERB	_	_	4	comp:obj	_	works     1	beaucoup	beaucoup	ADV	_	_	0	root	_	many 2	de	de	VERB	_	_	1	comp:obl	_	of 3	bâtiments	bâtiment	NOUN	_	_	2	comp:obj	_	buildings 4	modernes	moderne	ADJ	_	_	3	mod	_	modern   </description>
+  1	it	it	PROPN	_	_	2	subj	_	_ 2	belongs	belong	VERB	_	_	0	root	_	_ 3	to	to	ADP	_	_	2	comp:obl	_	_ 4	a	a	DET	_	_	5	det	_	_ 5	past	past	NOUN	_	_	3	comp:obj	_	_     1	coming	come	VERB	_	_	0	root	_	_ 2	into	into	ADP	_	_	1	comp:obl	_	_ 3	the	the	DET	_	_	4	det	_	_ 4	area	area	NOUN	_	_	2	comp:obj	_	_ 5	to	to	PART	_	_	1	comp:obl	_	_ 6	see	see	VERB	_	_	5	comp:obj	_	_ 7	concerts	concert	NOUN	_	_	6	comp:obj	_	_     1	He	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	subj	_	Entity=(person-8) 2	gives	give	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_ 3	you	you	PRON	PRP	Case=Acc|Person=2|PronType=Prs	2	comp:obl	_	Entity=(person-2) 4	a	a	DET	DT	Definite=Ind|PronType=Art	6	det	_	Entity=(abstract-96 5	hooded	hooded	ADJ	JJ	Degree=Pos	6	mod	_	_ 6	look	look	NOUN	NN	Number=Sing	2	comp:obj	_	Entity=abstract-96)|SpaceAfter=No 7	.</description>
     </item>
     
     <item>
@@ -203,7 +202,7 @@ In most cases, SUD native corpora are directly annotated with the sub-relations,
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/mod/</guid>
       <description>mod The modrelation is used for modifiers of verbs, nouns, adjectives, adverbs, auxiliaries, adpositions and conjunctions.
-  1	a	a	DET	_	_	2	det	_	_ 2	country	country	NOUN	_	_	0	root	_	_ 3	with	with	ADP	_	_	2	mod	_	_ 4	so	so	ADV	_	_	5	mod	_	_ 5	many	many	ADJ	_	_	8	mod	_	_ 6	different	different	ADJ	_	_	8	mod	_	_ 7	language	language	NOUN	_	_	8	compound	_	_ 8	groups	group	NOUN	_	_	3	comp:obj	_	_     1	Even	even	ADV	_	_	2	mod	_	_ 2	when	when	SCONJ	_	_	8	mod	_	_ 3	he	he	PRON	_	_	4	subj	_	_ 4	robbed	rob	VERB	_	_	2	comp:obj	_	_ 5	Dostoevski	Dostoevski	PROPN	_	_	4	comp:obj	_	_ 6	,	,	PUNCT	_	_	2	punct	_	_ 7	he	he	PRON	_	_	8	subj	_	_ 8	pitied	pity	VERB	_	_	0	root	_	_ 9	him	he	PRON	_	_	8	comp:obj	_	_   </description>
+  1	a	a	DET	_	_	2	det	_	_ 2	country	country	NOUN	_	_	0	root	_	_ 3	with	with	ADP	_	_	2	mod	_	_ 4	so	so	ADV	_	_	5	mod	_	_ 5	many	many	ADJ	_	_	8	mod	_	_ 6	different	different	ADJ	_	_	8	mod	_	_ 7	language	language	NOUN	_	_	8	compound	_	_ 8	groups	group	NOUN	_	_	3	comp:obj	_	_     1	Even	even	ADV	_	_	2	mod	_	_ 2	when	when	SCONJ	_	_	8	mod	_	_ 3	he	he	PRON	_	_	4	subj	_	_ 4	robbed	rob	VERB	_	_	2	comp:obj	_	_ 5	Dostoevski	Dostoevski	PROPN	_	_	4	comp:obj	_	_ 6	,	,	PUNCT	_	_	2	punct	_	_ 7	he	he	PRON	_	_	8	subj	_	_ 8	pitied	pity	VERB	_	_	0	root	_	_ 9	him	he	PRON	_	_	8	comp:obj	_	_     1	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	the 2	commotions	commotion	NOUN	_	Gender=Fem|Number=Plur	4	subj	_	commotions 3	cérébrales	cérébral	ADJ	_	Gender=Fem|Number=Plur	2	mod	_	cerebral 4	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	are 5	devenu	devenir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|Typo=Yes|VerbForm=Part	4	comp:aux@tense	_ become 6	si	si	ADV	_	_	7	mod	_	so 7	courantes	courant	ADJ	_	Gender=Fem|Number=Plur	5	comp:pred	_	common 8	dans	dans	ADP	_	_	7	mod	_	in 9	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	10	det	_	this 10	sport	sport	NOUN	_	Gender=Masc|Number=Sing	8	comp:obj	_	sport 11	qu&#39;	que	SCONJ	_	_	7	mod	_	that 12	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	14	subj	_	one 13	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	14	comp:obj	_	them 14	considére	considérer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|Typo=Yes|VerbForm=Fin	11	comp:obj	_	considers 15	presque	presque	ADV	_	_	14	mod	_	almost 16	comme	comme	ADP	_	_	14	comp:obl@x	_	like 17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	the 18	routine	routine	NOUN	_	Gender=Fem|Number=Sing	16	comp:obj	_	routine 19	.</description>
     </item>
     
     <item>
