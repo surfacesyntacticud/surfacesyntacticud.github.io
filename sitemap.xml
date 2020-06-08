@@ -12,18 +12,6 @@
   </url>
   
   <url>
-    <loc>https://surfacesyntacticud.github.io/guidelines/french/</loc>
-  </url>
-  
-  <url>
-    <loc>https://surfacesyntacticud.github.io/guidelines/pcm/</loc>
-  </url>
-  
-  <url>
-    <loc>https://surfacesyntacticud.github.io/guidelines/u/</loc>
-  </url>
-  
-  <url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/correspondences/</loc>
   </url>
   
@@ -108,7 +96,19 @@
   </url>
   
   <url>
+    <loc>https://surfacesyntacticud.github.io/guidelines/french/</loc>
+  </url>
+  
+  <url>
     <loc>https://surfacesyntacticud.github.io/guidelines/</loc>
+  </url>
+  
+  <url>
+    <loc>https://surfacesyntacticud.github.io/guidelines/pcm/</loc>
+  </url>
+  
+  <url>
+    <loc>https://surfacesyntacticud.github.io/guidelines/u/</loc>
   </url>
   
   <url>

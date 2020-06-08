@@ -10,7 +10,7 @@
   
   
   
-  <link rel="stylesheet" href="https://surfacesyntacticud.github.io/css/cayman.ea0e967413f3851071cc8ace3621bc4205fe8fa79b2abe3d7bf94ff2841f0d47.css">
+  <link rel="stylesheet" href="https://surfacesyntacticud.github.io/css/cayman.18bbf17ef3fb7992f6be19b80462c006f93364c1427abc0c8fcf1c33cedf6db7.css">
   
   
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -21,7 +21,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
 
-  <title> | SUD</title>
+  <title>Surface Syntactic Universal Dependencies | SUD</title>
 
   
   <link rel="stylesheet" href="/css/local.css">
@@ -80,17 +80,41 @@
 
   <section class="main-content">
     
-  <h1></h1>
+  <h1>Surface Syntactic Universal Dependencies</h1>
   <!-- raw HTML omitted -->
 <h1 id="surface-syntactic-universal-dependencies-sud">Surface Syntactic Universal Dependencies (SUD)</h1>
 <p>SUD is an annotation scheme for syntactic dependency treebanks, near isomorphic to UD (Universal Dependencies). Contrary to UD, it is based on syntactic criteria (favoring functional heads) and the relations are defined on distributional and functional bases.</p>
+<h2 id="an-example">An Example:</h2>
+<div>
+<conll>
+
+# sent_id = email-enronsent19_01-0071
+# text = I'm happy about this.
+1	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	subj	_	SpaceAfter=No
+2	'm	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	happy	happy	ADJ	JJ	Degree=Pos	2	comp:pred	_	_
+4	about	about	ADP	IN	_	3	mod	_	_
+5	SUD	SUD	PROPN	DT	Number=Sing	4	comp:obj	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	2	punct	_	_
+
+</conll>
+</div>
+
+<p>To see more examples, head over to the <a href="guidelines/u/">universal SUD guidelines</a>, or to the <a href="guidelines/french/">French</a> or <a href="guidelines/pcm/">Naija</a> specific pages.</p>
 <h2 id="data">Data</h2>
 <p>Automatic conversion to the SUD format are available <a href="data">here</a>.</p>
 <h2 id="publications">Publications</h2>
 <p>The SUD annotation scheme is described in the publications below:</p>
 <ul>
-<li>Kim Gerdes, Bruno Guillaume, Sylvain Kahane, Guy Perrier. <a href="https://hal.inria.fr/hal-02266003v1">Improving Surface-syntactic Universal Dependencies (SUD): surface-syntactic relations and deep syntactic features</a>. presented at <a href="https://syntaxfest.github.io/syntaxfest19/tlt2019/tlt2019.html">TLT 2019</a></li>
-<li>Kim Gerdes, Bruno Guillaume, Sylvain Kahane, Guy Perrier. <a href="https://hal.inria.fr/hal-01930614v1">SUD or Surface-Syntactic Universal Dependencies: An annotation scheme near-isomorphic to UD</a>. presented at <a href="https://universaldependencies.org/udw18/">UDW 2018</a></li>
+<li>
+<p>Kim Gerdes, Bruno Guillaume, Sylvain Kahane, Guy Perrier. <a href="https://hal.inria.fr/hal-02266003v1">Improving Surface-syntactic Universal Dependencies (SUD): surface-syntactic relations and deep syntactic features</a> presented at <a href="https://syntaxfest.github.io/syntaxfest19/tlt2019/tlt2019.html">TLT 2019</a>.</p>
+</li>
+<li>
+<p>Kim Gerdes, Bruno Guillaume, Sylvain Kahane, Guy Perrier. <a href="https://hal.inria.fr/hal-01930614v1">SUD or Surface-Syntactic Universal Dependencies: An annotation scheme near-isomorphic to UD</a> presented at <a href="https://universaldependencies.org/udw18/">UDW 2018</a>.</p>
+</li>
+<li>
+<p>Some linguistic arguments in favor of SUD can be found in the Glossa article: Timothy Osborne, Kim Gerdes <a href="https://www.glossa-journal.org/article/10.5334/gjgl.537/">The status of function words in dependency grammar: A critique of Universal Dependencies (UD)</a></p>
+</li>
 </ul>
 <h2 id="sud-relations-overview">SUD relations overview</h2>
 <p>The picture below describes:</p>
