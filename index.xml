@@ -143,7 +143,7 @@ The first example below shows the annotation of a coordination in UD and the sec
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp/</guid>
       <description>comp The comp relation is used for arguments of verbs, nouns, adjectives, adverbs, auxiliaries, adpositions and conjunctions.
 This relation is refined into several sub-relations: comp:aux (auxiliary argument), comp:cleft (cleft clauses), comp:obj (direct object),comp:obl (oblique argument), comp:pred (predicative argument).
-In most cases, SUD native corpora are directly annotated with the sub-relations, rather than with the comp relation. However, comp may sometimes be used when one has difficulty deciding between comp:obj and comp:obl, such as with certain French reflexive verbs.</description>
+In most cases, SUD native corpora are directly annotated with the sub-relations, rather than with the comp relation. However, comp may sometimes be used when one has difficulty deciding between comp:obj and comp:obl.</description>
     </item>
     
     <item>
@@ -173,7 +173,7 @@ In most cases, SUD native corpora are directly annotated with the sub-relations,
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_obj/</guid>
       <description>comp:obj The comp:obj relation is used for direct object complements, including direct complements of an adposition or a subordinating conjunction.
-Direct object complements   1	Norton	Norton	PROPN	_	_	2	subj	_	_ 2	spent	spend	VERB	_	_	0	root	_	_ 3	most	most	ADV	_	_	2	comp:obj	_	_ 4	of	of	ADP	_	_	3	comp:obl	_	_ 5	his	his	PRON	_	_	7	udep	_	_ 6	early	early	ADJ	_	_	7	mod	_	_ 7	life	life	NOUN	_	_	4	comp:obj	_	_     # text = j&#39;adore ce bar.</description>
+Direct object complements   1	Norton	Norton	PROPN	_	_	2	subj	_	_ 2	spent	spend	VERB	_	_	0	root	_	_ 3	most	most	ADV	_	_	2	comp:obj	_	_ 4	of	of	ADP	_	_	3	comp:obl	_	_ 5	his	his	PRON	_	_	7	udep	_	_ 6	early	early	ADJ	_	_	7	mod	_	_ 7	life	life	NOUN	_	_	4	comp:obj	_	_     # text_fr = j&#39;adore ce bar.</description>
     </item>
     
     <item>
