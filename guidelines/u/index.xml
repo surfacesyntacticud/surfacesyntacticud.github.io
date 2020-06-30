@@ -181,7 +181,7 @@ In most cases, SUD native corpora are directly annotated with the sub-relations,
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_obj/</guid>
       <description>comp:obj The comp:obj relation is used for direct object complements, including direct complements of an adposition or a subordinating conjunction.
-Direct object complements   1	Norton	Norton	PROPN	_	_	2	subj	_	_ 2	spent	spend	VERB	_	_	0	root	_	_ 3	most	most	ADV	_	_	2	comp:obj	_	_ 4	of	of	ADP	_	_	3	comp:obl	_	_ 5	his	his	PRON	_	_	7	udep	_	_ 6	early	early	ADJ	_	_	7	mod	_	_ 7	life	life	NOUN	_	_	4	comp:obj	_	_     # text_fr = j&#39;adore ce bar.</description>
+Usually, in order to determine whether an object is direct or not, it suffices to know if it forms a construction with a preposition. If it doesn&amp;rsquo;t, the object is direct. According to different languages, this criterion may be insufficient. In the following examples we can see direct objects of the Spanish verb ver.</description>
     </item>
     
     <item>
