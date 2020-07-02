@@ -126,6 +126,15 @@ When a MWE has no internal syntactic structure, all components are linked in a c
     
     <item>
       <title></title>
+      <link>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/comparative/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/comparative/</guid>
+      <description>Comparative and superlative degree On this page we will explain how we analyse comparative and superlative degree.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/coord/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -191,7 +200,7 @@ In most cases, SUD native corpora are directly annotated with the sub-relations,
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_obj/</guid>
       <description>comp:obj The comp:obj relation is used for direct object complements, including direct complements of an adposition or a subordinating conjunction.
-Usually, in order to determine whether an object is direct or not, it suffices to know if it forms a construction with a preposition. If it doesn&amp;rsquo;t, the object is direct. According to different languages, this criterion may be insufficient. In the following examples we can see direct objects of the Spanish verb ver.</description>
+Direct object complements   1	Norton	Norton	PROPN	_	_	2	subj	_	_ 2	spent	spend	VERB	_	_	0	root	_	_ 3	most	most	ADV	_	_	2	comp:obj	_	_ 4	of	of	ADP	_	_	3	comp:obl	_	_ 5	his	his	PRON	_	_	7	udep	_	_ 6	early	early	ADJ	_	_	7	mod	_	_ 7	life	life	NOUN	_	_	4	comp:obj	_	_     # text_fr = j&#39;adore ce bar # text_en = I love this bar 1	j&#39;	I	PRON	_	Number=Sing|Person=1|PronType=Prs	2	subj	_	SpaceAfter=No 2	adore	love	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_ 3	ce	this	DET	_	Gender=Masc|Number=Sing|PronType=Dem	4	det	_	_ 4	bar	bar	NOUN	_	Gender=Masc|Number=Sing	2	comp:obj	_	SpaceAfter=No   Usually, in order to determine whether an object is direct or not, it suffices to know if it forms a construction with a preposition.</description>
     </item>
     
     <item>
