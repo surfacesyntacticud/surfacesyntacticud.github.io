@@ -82,7 +82,7 @@
     
   <h1></h1>
   <h1 id="compobl"><strong>comp:obl</strong></h1>
-<p>The <code>comp:obl</code> relation is used for oblique arguments of verbs, adjectives, adverbs, nouns or pronouns, regardless of their form. In SUD we do not make a difference between indirect objects and oblique arguments. On the other hand, we do distinguish between core arguments and modifiers.</p>
+<p>The <code>comp:obl</code> relation is used for oblique arguments of verbs, adjectives, adverbs, nouns or pronouns, regardless of their form. In SUD we do not differentiate between indirect objects and oblique arguments. However, we do distinguish between core arguments and modifiers.</p>
 <p>Consider the following sentence <strong>analysed in UD</strong>.</p>
 <div>
 <conll>
@@ -99,7 +99,7 @@
 </conll>
 </div>
 
-<p><strong>In SUD</strong> it would be analysed as follows:</p>
+<p><strong>In SUD</strong>, it would be analysed as follows:</p>
 <div>
 <conll>
 
@@ -165,7 +165,7 @@ Consider the two following examples:</li>
 
 # text_en = he's afraid of immigration
 # text_fr = il a peur de l'immigration
-1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	subj	_	Gloss=I
+1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	subj	_	Gloss=he
 2	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Gloss=have
 3	peur	peur	NOUN	_	Gender=Fem|Number=Sing	2	comp:obj@lvc	_	Gloss=fear
 4	de	de	ADP	_	_	3	comp:obl	_	Gloss=of
@@ -192,7 +192,7 @@ Consider the two following examples:</li>
 
 <p>In the last sentence, <em>que ça marche</em> commutes with <em>de l&rsquo;immigration</em>, therefore the relation going from <em>peur</em> to the head of the complement is labelled <code>comp:obl</code>.</p>
 <h2 id="oblique-complement-of-a-noun">Oblique complement of a noun</h2>
-<p>Like the example above shows (<em>J&rsquo;ai peur des araignées</em>) <code>comp:obl</code> can also be used for the complement of a noun. This happens when the noun is part of a light verb construction. To learn more about these constructions, clic <a href="../../particular_phenomena/lvc">here</a>.</p>
+<p>Like the example above shows (<em>J&rsquo;ai peur des araignées</em>) <code>comp:obl</code> can also be used for the complement of a noun. This happens when the noun is part of a light verb construction. For more information about these constructions, please visit our <a href="../../particular_phenomena/lvc">dedicated page</a>.</p>
 <div>
 <conll>
 
