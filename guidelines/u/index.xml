@@ -129,8 +129,8 @@ When a MWE has no internal syntactic structure, all components are linked in a c
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/comparative/</guid>
-      <description>Comparative and consecutive constructions In comparative constructions where each term is introduced with a grammatical word like more&amp;hellip; than, the relation between the two grammatical words is laballed comp:obj, the first word being the head of the second. Consider the example:
-  # text = vous êtes plus jeune que moi # text_en = You are younger than I 1	Vous	vous	PRON	_	_	2	subj	_	Gloss=you 2	êtes	être	AUX	_	_	0	root	_	Gloss=are 3	plus	plus	ADV	_	_	4	mod	_	Gloss=more 4	jeune	jeune	ADJ	_	_	2	comp:pred	_	Gloss=young 5	que	que	SCONJ	_	_	3	comp:obj	_	Gloss=than 6	moi	lui	PRON	_	_	5	comp:obj	_	Gloss=I   Note that the first grammatical word of the comparison (plus) is considered a modifier of the property being compared.</description>
+      <description>Comparative, superlative and consecutive constructions In comparative constructions where each term is introduced with a grammatical pair like more&amp;hellip; than, the relation between the two grammatical words is labeled comp:obj, with the first word being the head of the second. Consider the example:
+  # text = vous êtes plus jeune que moi # text_en = You are younger than me 1	Vous	vous	PRON	_	_	2	subj	_	Gloss=you 2	êtes	être	AUX	_	_	0	root	_	Gloss=are 3	plus	plus	ADV	_	_	4	mod	_	Gloss=more 4	jeune	jeune	ADJ	_	_	2	comp:pred	_	Gloss=young 5	que	que	SCONJ	_	_	3	comp:obj	_	Gloss=than 6	moi	lui	PRON	_	_	5	comp:obj	_	Gloss=I   Note that the first grammatical word of the comparison (plus) is considered a modifier of the property being compared.</description>
     </item>
     
     <item>
