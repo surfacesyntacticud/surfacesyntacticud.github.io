@@ -159,7 +159,8 @@ The first example below shows the annotation of a coordination in UD and the sec
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/lvc/</guid>
-      <description>Light verb constructions On this page we will explain how we analyse light verb constructions.</description>
+      <description>Light verb constructions A light verb is a verb that has little semantic content of its own and forms a construction with another word, usually a noun that brings the semantic value. The complements of these constructions are often attached to the noun (and not the verb), that is because:
+ the noun can form a phrase with the complement : &amp;ldquo;le projectile a tendance à se mettre en travers&amp;rdquo; -&amp;gt; &amp;ldquo;cette tendance à se mettre en travers doit être rectifiée&amp;rdquo; it&amp;rsquo;s the noun that is the predicate and controls the valency.</description>
     </item>
     
     <item>
