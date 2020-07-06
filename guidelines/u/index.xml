@@ -78,8 +78,9 @@ When a MWE has no internal syntactic structure, all components are linked in a c
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/pass/</guid>
-      <description>@pass The @pass feature is used for the argument of passive auxiliaries.
-  1	They	they	PRON	_	_	2	subj	_	_ 2	were	be	AUX	_	_	0	root	_	_ 3	killed	kill	VERB	_	_	2	comp:aux@pass	_	_   </description>
+      <description>@pass The @pass feature is used for the arguments of passive auxiliaries.
+The relation between the auxiliary and the verb is marked comp:aux@pass and the subject of the auxiliary bears the subj@pass feature.
+  1	They	they	PRON	_	_	2	subj@pass	_	_ 2	were	be	AUX	_	_	0	root	_	_ 3	killed	kill	VERB	_	_	2	comp:aux@pass	_	_     # text_fr = Le château est ensuite vendu # text_en = Later the castle is sold 1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|Person=3|PronType=Art	2	det	_	wordform=le|Gloss=The 2	château	château	NOUN	_	Gender=Masc|Number=Sing	3	subj@pass	_	Gloss=castle 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Gloss=is 4	ensuite	ensuite	ADV	_	_	3	mod	_	Gloss=then 5	vendu	vendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	comp:aux@pass	_	Gloss=sold   In case of passive reflexive constructions, the subject is analysed with a regular subj relation and the pronoun with the comp@pass relation.</description>
     </item>
     
     <item>
