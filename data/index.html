@@ -61,19 +61,25 @@
       
       
       
-      <a href="/data/" class="btn">Data</a>
-    
-      
-      
-      
-      
       <a href="/guidelines/u/" class="btn">Guidelines</a>
     
       
       
       
       
-      <a href="https://github.com/surfacesyntacticud" class="btn">GitHub</a>
+      <a href="/data/" class="btn">SUD Corpora</a>
+    
+      
+      
+      
+      
+      <a href="/guidelines/u/correspondences" class="btn">Comparison with UD</a>
+    
+      
+      
+      
+      
+      <a href="https://github.com/surfacesyntacticud" class="btn">GitHub project</a>
     
   </nav>
 </section>
@@ -81,8 +87,45 @@
   <section class="main-content">
     
   <h1></h1>
-  <h1 id="universal-dependencies-corpora-converted-in-sud">Universal dependencies corpora converted in SUD</h1>
-<p>The 163 UD (version 2.6) corpora are converted in SUD format with the <a href="https://github.com/surfacesyntacticud/tools/tree/master/converter">UD⇒SUD conversion system</a> (usable with the <a href="https://grew.fr">Grew</a> software).</p>
+  <p>In version 2.6 of (S)UD data, released in May 2020:</p>
+<ul>
+<li>3 corpora are maintained in the SUD format (called <strong>Native SUD</strong>)</li>
+<li>All 163 corpora of UD 2.6 are automatically converted to SUD from the corresponding UD data.</li>
+</ul>
+<h1 id="native-sud-corpora">Native SUD corpora</h1>
+<p>In the table below, the 3 native SUD corpora are given.
+Note that de corresponding UD version id obtained by automatic conversion.</p>
+<table>
+<thead>
+<tr>
+<th>Corpus</th>
+<th>Grew-match</th>
+<th>Files</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/surfacesyntacticud/SUD_French-GSD"><code>SUD_French-GSD</code></a></td>
+<td><a href="http://match.grew.fr/?corpus=SUD_French-GSD@latest"><code>latest</code></a></td>
+<td><a href="https://github.com/surfacesyntacticud/SUD_French-GSD/tree/r2.6"><code>2.6</code></a> <a href="https://github.com/surfacesyntacticud/SUD_French-GSD/tree/master"><code>latest</code></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/surfacesyntacticud/SUD_French-Spoken"><code>SUD_French-Spoken</code></a></td>
+<td><a href="http://match.grew.fr/?corpus=SUD_French-Spoken@latest"><code>latest</code></a></td>
+<td><a href="https://github.com/surfacesyntacticud/SUD_French-Spoken/tree/r2.6"><code>2.6</code></a> <a href="https://github.com/surfacesyntacticud/SUD_French-Spoken/tree/master"><code>latest</code></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/surfacesyntacticud/SUD_Naija-NSC"><code>SUD_Naija-NSC</code></a></td>
+<td><a href="http://match.grew.fr/?corpus=SUD_Naija-NSC@latest"><code>latest</code></a></td>
+<td><a href="https://github.com/surfacesyntacticud/SUD_Naija-NSC/tree/r2.6"><code>2.6</code></a> <a href="https://github.com/surfacesyntacticud/SUD_Naija-NSC/tree/master"><code>latest</code></a></td>
+</tr>
+</tbody>
+</table>
+<h1 id="universal-dependencies-corpora-converted-in-sud">Universal dependencies corpora converted in SUD</h1>
+<p><strong>NB</strong> In order to give a consistent set of corpora, the 3 native SUD corpora also appear in this list.
+But the data below for these 3 corpora is the result of the conversion from UD version (hence a double conversion SUD → UD → SUD).
+The concerned corpora are marked with a &ldquo;⚠️&rdquo; symbol.</p>
+<p>The 163 UD (version 2.6) corpora are converted in SUD format with the <a href="https://github.com/surfacesyntacticud/tools/tree/master/converter">UD → SUD conversion system</a> (usable with the <a href="https://grew.fr">Grew</a> software).</p>
 <p>The data below are built with:</p>
 <ul>
 <li><a href="http://hdl.handle.net/11234/1-3226">version 2.6 of UD corpora</a></li>
@@ -367,7 +410,7 @@
 <td><a href="http://grew.fr/download/sud-treebanks-v2.6/SUD_French-FTB/fr_ftb-sud-dev.conllu"><code>fr_ftb-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.6/SUD_French-FTB/fr_ftb-sud-test.conllu"><code>fr_ftb-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.6/SUD_French-FTB/fr_ftb-sud-train.conllu"><code>fr_ftb-sud-train.conllu</code></a></td>
 </tr>
 <tr>
-<td><code>French-GSD</code></td>
+<td><code>French-GSD</code> ⚠️: see <a href="./#native-sud-corpora">Native</a></td>
 <td>[<a href="http://match.grew.fr/?corpus=SUD_French-GSD@2.6">Query</a>] [<a href="http://match.grew.fr/_meta/SUD_French-GSD@2.6_table.html">Relations</a>]</td>
 <td><a href="http://grew.fr/download/sud-treebanks-v2.6/SUD_French-GSD/fr_gsd-sud-dev.conllu"><code>fr_gsd-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.6/SUD_French-GSD/fr_gsd-sud-test.conllu"><code>fr_gsd-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.6/SUD_French-GSD/fr_gsd-sud-train.conllu"><code>fr_gsd-sud-train.conllu</code></a></td>
 </tr>
@@ -387,7 +430,7 @@
 <td><a href="http://grew.fr/download/sud-treebanks-v2.6/SUD_French-Sequoia/fr_sequoia-sud-dev.conllu"><code>fr_sequoia-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.6/SUD_French-Sequoia/fr_sequoia-sud-test.conllu"><code>fr_sequoia-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.6/SUD_French-Sequoia/fr_sequoia-sud-train.conllu"><code>fr_sequoia-sud-train.conllu</code></a></td>
 </tr>
 <tr>
-<td><code>French-Spoken</code></td>
+<td><code>French-Spoken</code> ⚠️: see <a href="./#native-sud-corpora">Native</a></td>
 <td>[<a href="http://match.grew.fr/?corpus=SUD_French-Spoken@2.6">Query</a>] [<a href="http://match.grew.fr/_meta/SUD_French-Spoken@2.6_table.html">Relations</a>]</td>
 <td><a href="http://grew.fr/download/sud-treebanks-v2.6/SUD_French-Spoken/fr_spoken-sud-dev.conllu"><code>fr_spoken-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.6/SUD_French-Spoken/fr_spoken-sud-test.conllu"><code>fr_spoken-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.6/SUD_French-Spoken/fr_spoken-sud-train.conllu"><code>fr_spoken-sud-train.conllu</code></a></td>
 </tr>
@@ -637,7 +680,7 @@
 <td><a href="http://grew.fr/download/sud-treebanks-v2.6/SUD_Moksha-JR/mdf_jr-sud-test.conllu"><code>mdf_jr-sud-test.conllu</code></a></td>
 </tr>
 <tr>
-<td><code>Naija-NSC</code></td>
+<td><code>Naija-NSC</code> ⚠️: see <a href="./#native-sud-corpora">Native</a></td>
 <td>[<a href="http://match.grew.fr/?corpus=SUD_Naija-NSC@2.6">Query</a>] [<a href="http://match.grew.fr/_meta/SUD_Naija-NSC@2.6_table.html">Relations</a>]</td>
 <td><a href="http://grew.fr/download/sud-treebanks-v2.6/SUD_Naija-NSC/pcm_nsc-sud-dev.conllu"><code>pcm_nsc-sud-dev.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.6/SUD_Naija-NSC/pcm_nsc-sud-test.conllu"><code>pcm_nsc-sud-test.conllu</code></a> <a href="http://grew.fr/download/sud-treebanks-v2.6/SUD_Naija-NSC/pcm_nsc-sud-train.conllu"><code>pcm_nsc-sud-train.conllu</code></a></td>
 </tr>

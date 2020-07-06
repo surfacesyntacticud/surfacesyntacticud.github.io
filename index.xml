@@ -17,7 +17,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/correspondences/</guid>
-      <description>Correspondences between SUD and UD This page is dedicated to exploring several key differences between SUD and UD labels, and the correspondences between the two schemes.
+      <description>Correspondences between SUD and UD This page is dedicated to exploring several key differences between SUD and UD labels, and the correspondences between the two schemes (For information about the conversion process, see SUD corpora).
 SUD is a dependency-based annotation scheme. Annotation choices rely on surface-syntactic distributional criteria, while at the same time attempting to maintain convertibility with the UD annotation scheme as much as possible.
 SUD represents an alternative rather than a competitor to UD, and was designed in such a way that the two can convey the same informational content.</description>
     </item>

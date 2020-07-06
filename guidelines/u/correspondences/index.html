@@ -61,19 +61,25 @@
       
       
       
-      <a href="/data/" class="btn">Data</a>
-    
-      
-      
-      
-      
       <a href="/guidelines/u/" class="btn">Guidelines</a>
     
       
       
       
       
-      <a href="https://github.com/surfacesyntacticud" class="btn">GitHub</a>
+      <a href="/data/" class="btn">SUD Corpora</a>
+    
+      
+      
+      
+      
+      <a href="/guidelines/u/correspondences" class="btn">Comparison with UD</a>
+    
+      
+      
+      
+      
+      <a href="https://github.com/surfacesyntacticud" class="btn">GitHub project</a>
     
   </nav>
 </section>
@@ -82,7 +88,7 @@
     
   <h1></h1>
   <h2 id="correspondences-between-sud-and-ud">Correspondences between SUD and UD</h2>
-<p>This page is dedicated to exploring several key differences between SUD and UD labels, and the correspondences between the two schemes.</p>
+<p>This page is dedicated to exploring several key differences between SUD and UD labels, and the correspondences between the two schemes (For information about the conversion process, see <a href="../../../data">SUD corpora</a>).</p>
 <p>SUD is a dependency-based annotation scheme. Annotation choices rely on surface-syntactic distributional criteria, while at the same time attempting to maintain convertibility with the UD annotation scheme as much as possible.</p>
 <p>SUD represents an alternative rather than a competitor to UD, and was designed in such a way that the two can convey the same informational content. The two schemes enjoy a nearly perfect degree of two-way convertibility, meaning that conversions between the two schemes can take place without informational loss in most cases. Because of this, correspondences between the two are most often regular and predictable.</p>
 <p>Correspondences between SUD and UD relationships are impacted by several key properties. Firstly, SUD annotations are less redundant and more economical than UD annotations. For example, we can see in the table below that SUD uses a single <code>subj</code> relation which comprises both the <code>nsubj</code> (nominal subject) and <code>csubj</code> (clausal subject) relationships in UD. However, the information provided by UD&rsquo;s distinction between nominal and clausal subjects is not lost in under the simpler SUD scheme: the differentiation can be recovered automatically from the POS of the subject and its context, though how this context is taken into account depends on the language. In total, a subset of 17 UD relations (<code>nsubj</code>, <code>csubj</code>, <code>obj</code>, <code>iobj</code>, <code>obl</code>, <code>xcomp</code>, <code>ccomp</code>, <code>amod</code>, <code>nmod</code>, <code>nummod</code>, <code>advmod</code>, <code>acl</code>, <code>advcl</code>, <code>aux</code>, <code>cop</code>, <code>case</code>, <code>mark</code>) is replaced by three major relations in SUD: <code>subj</code>, <code>comp</code>, <code>mod</code>, as well as <code>udep</code> to a marginal extent.</p>
