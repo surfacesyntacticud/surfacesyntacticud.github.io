@@ -88,7 +88,47 @@
     
   <h1></h1>
   <h1 id="idioms-and-titles">Idioms and titles</h1>
-<p>On this page we will explain how we analyse idioms and titles in SUD.</p>
+<p>SUD offers several traits which allow annotators to mark idiomatic expressions and titles while still preserving the internal syntactic relationships between their various components. We have decided to distinguish these two categories from Multi-Word Expressions (MWEs), which represent a broader category which also includes named entities.</p>
+<p>For our purposes, &ldquo;titles&rdquo; refer to any title given to a film, book, painting, or other work of art, such as &ldquo;Planet of the Apes,&rdquo; &ldquo;Dark Side of the Moon,&rdquo; &ldquo;American Gothic,&rdquo; or &ldquo;Super Mario Bros.&rdquo; However, this excludes other named entities like events, holidays or locations, such as &ldquo;The Gulf War&rdquo;, &ldquo;Good Friday&rdquo;, or &ldquo;The Eiffel Tower&rdquo;.</p>
+<p>Idioms, meanwhile, refer to any figurative expression ranging from classic examples like &ldquo;kick the bucket&rdquo; to to extremely common phrases like &ldquo;in general&rdquo; whose precise meaning cannot directly be deduced from its constituents.</p>
+<p>Idioms and titles are annotated in the following way:</p>
+<ul>
+<li>The <strong>head</strong> of the idiom or title contains the feature PhraseType=Idiom or PhraseType=Title</li>
+<li>The <strong>head</strong> also contains an &ldquo;external part of speech&rdquo; feature (ExtPos) which denotes the element&rsquo;s function within the wider sentence.</li>
+<li>The <strong>remaining components</strong> of the element will contain the feature PhraseType=Title or PhraseType=Idiom</li>
+</ul>
+<p>This approach has several advantages. By marking these categories with features rather than a <code>fixed</code> relation, we are able to preserve its internal syntactic relationships.</p>
+<div>
+<conll>
+
+1	Karen	Karen	PROPN	_	_	2	subj	_	_
+2	loved	love	VERB	_	_	0	root	_	_
+3	One	one	PRON	_	_	4	subj	_	_
+4	Flew	fly	VERB	_	ExtPos=PROPN|PhraseType=Title	2	comp:obj	_	_
+5	Over	over	ADP	_	InTitle=Yes	4	comp:obl	_	_
+6	the	the	DET	_	InTitle=Yes	7	det	_	_
+7	Cuckoo	cuckoo	NOUN	_	InTitle=Yes	8	comp:obj	_	_
+8	's	's	PART	_	InTitle=Yes	9	mod@poss	_	_
+9	Nest	nest	VERB	_	InTitle=Yes	5	comp:obj	_	_
+
+</conll>
+</div>
+
+<div>
+<conll>
+
+1	That	that	PRON	_	InIdiom=Yes	2	subj@pass	_	_
+2	said	say	VERB	_	ExtPos=ADV|PhraseType=Idiom	5	mod	_	_
+3	,	,	PUNCT	_	_	2	punct	_	_
+4	it	it	PRON	_	_	5	subj	_	_
+5	was	be	AUX	_	_	0	root	_	_
+6	not	not	ADV	_	_	5	mod	_	_
+7	my	my	DET	_	_	8	det	_	_
+8	favorite	favorite	NOUN	_	_	5	comp:pred	_	_
+
+</conll>
+</div>
+
 
 
   </section>
