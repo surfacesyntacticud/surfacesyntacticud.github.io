@@ -153,7 +153,7 @@ The first example below shows the annotation of a coordination in UD and the sec
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/idioms_titles/</guid>
       <description>Idioms and titles SUD offers several traits which allow annotators to mark idiomatic expressions and titles while still preserving the internal syntactic relationships between their various components. We have decided to distinguish these two categories from Multi-Word Expressions (MWEs), which represent a broader category which also includes named entities.
-For our purposes, &amp;ldquo;titles&amp;rdquo; refer to any title given to a film, book, painting, or other work of art, such as &amp;ldquo;Planet of the Apes,&amp;rdquo; &amp;ldquo;Dark Side of the Moon,&amp;rdquo; &amp;ldquo;American Gothic,&amp;rdquo; or &amp;ldquo;Super Mario Bros.</description>
+For our purposes, &amp;ldquo;titles&amp;rdquo; refer to any title given to a film, book, painting, or other work of art, such as Planet of the Apes, Dark Side of the Moon, American Gothic, or Super Mario Bros.</description>
     </item>
     
     <item>
