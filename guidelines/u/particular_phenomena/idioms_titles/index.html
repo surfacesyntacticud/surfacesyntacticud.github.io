@@ -90,11 +90,11 @@
   <h1 id="idioms-and-titles">Idioms and titles</h1>
 <p>SUD offers several traits which allow annotators to mark idiomatic expressions and titles while still preserving the internal syntactic relationships between their various components. We have decided to distinguish these two categories from Multi-Word Expressions (MWEs), which represent a broader category which also includes named entities.</p>
 <p>For our purposes, &ldquo;titles&rdquo; refer to any title given to a film, book, painting, or other work of art, such as <em>Planet of the Apes</em>, <em>Dark Side of the Moon</em>, <em>American Gothic</em>, or <em>Super Mario Bros</em>. However, this excludes other named entities like events, holidays or locations, such as The Gulf War, Good Friday, or The Eiffel Tower.</p>
-<p>Idioms, meanwhile, refer to any figurative expression ranging from classic examples like &ldquo;kick the bucket&rdquo; to to extremely common phrases like &ldquo;in general&rdquo; whose precise meaning cannot directly be deduced from its constituents.</p>
+<p>Idioms, meanwhile, refer to any figurative expression ranging from classic examples like &ldquo;kick the bucket&rdquo; to to extremely common phrases like &ldquo;in general&rdquo; whose precise meaning cannot directly be deduced from its constituents. Pronominal verbs, such as those common in Romance languages, are also treated as idioms.</p>
 <p>Idioms and titles are annotated in the following way:</p>
 <ul>
 <li>The <strong>head</strong> of the idiom or title contains the feature PhraseType=Idiom or PhraseType=Title</li>
-<li>The <strong>head</strong> also contains an &ldquo;external part of speech&rdquo; feature (ExtPos) which denotes the element&rsquo;s function within the wider sentence.</li>
+<li>The <strong>head</strong> also contains an &ldquo;external part of speech&rdquo; feature (ExtPos) which denotes the element&rsquo;s function within the wider sentence. Please note that all titles will carry the ExtPos value of PROPN.</li>
 <li>The <strong>remaining components</strong> of the element will contain the feature InIdiom=Yes or InTitle=Yes.</li>
 </ul>
 <p>This approach has several advantages. By marking these categories with features rather than a <code>fixed</code> relation, we are able to preserve its internal syntactic relationships.</p>
@@ -125,6 +125,17 @@
 6	not	not	ADV	_	_	5	mod	_	_
 7	my	my	DET	_	_	8	det	_	_
 8	favorite	favorite	NOUN	_	_	5	comp:pred	_	_
+
+</conll>
+</div>
+
+<div>
+<conll>
+
+# text_en = His name is Alejandro.
+1	Se	se	PRON	_	InIdiom=Yes	2	comp	_	Gloss=himself
+2	llama	llamar	VERB	_	ExtPos=VERB|PhraseType=Idiom	0	root	_	Gloss=calls
+3	Alejandro	Alejandro	PROPN	_	_	2	comp:pred	_	Gloss=Alejandro
 
 </conll>
 </div>
