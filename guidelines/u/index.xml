@@ -80,7 +80,8 @@ When a MWE has no internal syntactic structure, all components are linked in a c
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/pass/</guid>
       <description>@pass The @pass feature is used for the arguments of passive auxiliaries.
 The relation between the auxiliary and the verb is marked comp:aux@pass and the subject of the auxiliary bears the subj@pass feature.
-  1	They	they	PRON	_	_	2	subj@pass	_	_ 2	were	be	AUX	_	_	0	root	_	_ 3	killed	kill	VERB	_	_	2	comp:aux@pass	_	_     # text_fr = Le château est ensuite vendu # text_en = Later the castle is sold 1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|Person=3|PronType=Art	2	det	_	wordform=le|Gloss=The 2	château	château	NOUN	_	Gender=Masc|Number=Sing	3	subj@pass	_	Gloss=castle 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Gloss=is 4	ensuite	ensuite	ADV	_	_	3	mod	_	Gloss=then 5	vendu	vendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	comp:aux@pass	_	Gloss=sold   In case of passive reflexive constructions, the subject is analysed with a regular subj relation and the pronoun with the comp@pass relation.</description>
+ English
+   1	They	they	PRON	_	_	2	subj@pass	_	_ 2	were	be	AUX	_	_	0	root	_	_ 3	killed	kill	VERB	_	_	2	comp:aux@pass	_	_    French</description>
     </item>
     
     <item>
@@ -183,7 +184,8 @@ In most cases, SUD native corpora are directly annotated with the sub-relations,
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_aux/</guid>
       <description>comp:aux The comp:aux relation is used for the argument of auxiliaries, and corresponds to the aux relationship as defined by UD.
-  1	Do	do	AUX	_	_	0	root	_	_ 2	you	you	PRON	_	_	1	subj	_	_ 3	remember	remember	VERB	_	_	1	comp:aux	_	_ 4	?	?	PUNCT	_	_	1	punct	_	_     1	It	it	PRON	_	_	2	subj	_	_ 2	had	had	AUX	_	_	0	root	_	_ 3	nearly	nearly	ADV	_	_	4	mod	_	_ 4	stopped	stop	VERB	_	_	2	comp:aux	_	_ 5	raining	rain	VERB	_	_	4	comp:pred	_	_ 6	.</description>
+ English
+   1	Do	do	AUX	_	_	0	root	_	_ 2	you	you	PRON	_	_	1	subj	_	_ 3	remember	remember	VERB	_	_	1	comp:aux	_	_ 4	?	?	PUNCT	_	_	1	punct	_	_    English</description>
     </item>
     
     <item>
@@ -193,7 +195,8 @@ In most cases, SUD native corpora are directly annotated with the sub-relations,
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_cleft/</guid>
       <description>comp:cleft The comp:cleft relation is used in cleft sentences for the dependency from the head of the sentence to the head of the complement clause.
-  1	It	it	PRON	_	_	2	subj	_	_ 2	was	be	AUX	_	_	0	root	_	_ 3	from	from	ADP	_	_	2	comp:pred	_	_ 4	John	John	PROPN	_	_	3	comp:obj	_	_ 5	that	that	SCONJ	_	_	2	comp:cleft	_	_ 6	she	she	PRON	_	_	7	subj	_	_ 7	heard	hear	VERB	_	_	5	comp:obj	_	_ 8	the	the	DET	_	_	9	det	_	_ 9	news	news	NOUN	_	_	7	comp:obj	_	_   Sometimes, there is an ambiguity between a relative clause and a cleft clause.</description>
+ English
+   1	It	it	PRON	_	_	2	subj	_	_ 2	was	be	AUX	_	_	0	root	_	_ 3	from	from	ADP	_	_	2	comp:pred	_	_ 4	John	John	PROPN	_	_	3	comp:obj	_	_ 5	that	that	SCONJ	_	_	2	comp:cleft	_	_ 6	she	she	PRON	_	_	7	subj	_	_ 7	heard	hear	VERB	_	_	5	comp:obj	_	_ 8	the	the	DET	_	_	9	det	_	_ 9	news	news	NOUN	_	_	7	comp:obj	_	_   Sometimes, there is an ambiguity between a relative clause and a cleft clause.</description>
     </item>
     
     <item>
@@ -203,7 +206,8 @@ In most cases, SUD native corpora are directly annotated with the sub-relations,
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_obj/</guid>
       <description>comp:obj The comp:obj relation is used for direct object complements, including direct complements of an adposition or a subordinating conjunction.
-Direct object complements   1	Norton	Norton	PROPN	_	_	2	subj	_	_ 2	spent	spend	VERB	_	_	0	root	_	_ 3	most	most	ADV	_	_	2	comp:obj	_	_ 4	of	of	ADP	_	_	3	comp:obl	_	_ 5	his	his	PRON	_	_	7	udep	_	_ 6	early	early	ADJ	_	_	7	mod	_	_ 7	life	life	NOUN	_	_	4	comp:obj	_	_     # text_fr = j&#39;adore ce bar # text_en = I love this bar 1	j&#39;	I	PRON	_	Number=Sing|Person=1|PronType=Prs	2	subj	_	SpaceAfter=No 2	adore	love	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_ 3	ce	this	DET	_	Gender=Masc|Number=Sing|PronType=Dem	4	det	_	_ 4	bar	bar	NOUN	_	Gender=Masc|Number=Sing	2	comp:obj	_	SpaceAfter=No   Usually, in order to determine whether an object is direct or not, it suffices to know if it forms a construction with a preposition.</description>
+Direct object complements  English
+   1	Norton	Norton	PROPN	_	_	2	subj	_	_ 2	spent	spend	VERB	_	_	0	root	_	_ 3	most	most	ADV	_	_	2	comp:obj	_	_ 4	of	of	ADP	_	_	3	comp:obl	_	_ 5	his	his	PRON	_	_	7	udep	_	_ 6	early	early	ADJ	_	_	7	mod	_	_ 7	life	life	NOUN	_	_	4	comp:obj	_	_    French</description>
     </item>
     
     <item>
@@ -214,7 +218,8 @@ Direct object complements   1	Norton	Norton	PROPN	_	_	2	subj	_	_ 2	spent	spend	V
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_obl/</guid>
       <description>comp:obl The comp:obl relation is used for oblique arguments of verbs, adjectives, adverbs, nouns or pronouns, regardless of their form. In SUD we do not differentiate between indirect objects and oblique arguments. However, we do distinguish between core arguments and modifiers.
 Consider the following sentence analysed in UD.
-  1	Last	last	ADJ	_	_	2	amod	_	_ 2	night	night	NOUN	_	_	5	obl:tmod	_	_ 3	,	,	PUNCT	_	_	5	punct	_	_ 4	I	I	PRON	_	_	5	nsubj	_	_ 5	swam	swim	VERB	_	_	0	root	_	_ 6	in	in	ADP	IN	_	8	case	_	_ 7	the	the	DET	DT	_	8	det	_	_ 8	pool	pool	NOUN	_	_	5	obl	_	_   In SUD, it would be analysed as follows:</description>
+ English
+   1	Last	last	ADJ	_	_	2	amod	_	_ 2	night	night	NOUN	_	_	5	obl:tmod	_	_ 3	,	,	PUNCT	_	_	5	punct	_	_ 4	I	I	PRON	_	_	5	nsubj	_	_ 5	swam	swim	VERB	_	_	0	root	_	_ 6	in	in	ADP	IN	_	8	case	_	_ 7	the	the	DET	DT	_	8	det	_	_ 8	pool	pool	NOUN	_	_	5	obl	_	_   In SUD, it would be analysed as follows:</description>
     </item>
     
     <item>
@@ -224,7 +229,9 @@ Consider the following sentence analysed in UD.
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_pred/</guid>
       <description>comp:pred The comp:pred relation is used for predicative arguments of verbs.
-  1	I	I	PRON	_	_	2	subj	_	_ 2	was	be	AUX	_	_	0	root	_	_ 3	thirteen	thirteen	NUM	_	_	2	comp:pred	_	_     1	Norton	Norton	PROPN	_	_	2	subj	_	_ 2	had	have	AUX	_	_	0	root	_	_ 3	become	become	VERB	_	_	2	comp:aux	_	_ 4	completely	completely	ADV	_	_	5	mod	_	_ 5	disgruntled	disgruntled	ADJ	_	_	3	comp:pred	_	_     1	Let	let	VERB	_	_	0	root	_	_ 2	them	them	PRON	_	_	1	comp:obj	_	_ 3	hear	hear	VERB	_	_	1	comp:pred	_	_ 4	you	you	PRON	_	_	3	comp:obj	_	_ 5	shout	shout	VERB	_	_	3	comp:pred	_	_     1	Prague	Prague	PROPN	_	_	2	subj	_	_ 2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_ 3	considered	consider	VERB	VBN	Tense=Past|VerbForm=Part	2	comp:aux@pass	_	_ 4	to	to	PART	TO	_	3	comp:pred	_	_ 5	be	be	AUX	VB	VerbForm=Inf	4	comp:obj	_	_ 6	one	one	NUM	CD	NumType=Card	5	comp:pred	_	_ 7	of	of	ADP	IN	_	6	udep	_	_ 8	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_ 9	most	most	ADV	RBS	_	10	mod	_	_ 10	beautiful	beautiful	ADJ	JJ	Degree=Pos	11	mod	_	_ 11	cities	city	NOUN	NNS	Number=Plur	7	comp:obj	_	_ 12	in	in	ADP	IN	_	11	udep	_	_ 13	the	the	DET	DT	Definite=Def|PronType=Art	14	det	_	Entity=(place-12 14	world	world	NOUN	NN	Number=Sing	12	comp:obj	_	Entity=place-1)place-11)place-12)|SpaceAfter=No 15	.</description>
+ English
+   1	I	I	PRON	_	_	2	subj	_	_ 2	was	be	AUX	_	_	0	root	_	_ 3	thirteen	thirteen	NUM	_	_	2	comp:pred	_	_    English
+   1	Norton	Norton	PROPN	_	_	2	subj	_	_ 2	had	have	AUX	_	_	0	root	_	_ 3	become	become	VERB	_	_	2	comp:aux	_	_ 4	completely	completely	ADV	_	_	5	mod	_	_ 5	disgruntled	disgruntled	ADJ	_	_	3	comp:pred	_	_    English</description>
     </item>
     
     <item>
@@ -234,7 +241,8 @@ Consider the following sentence analysed in UD.
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/mod/</guid>
       <description>mod The modrelation is used for modifiers of verbs, nouns, adjectives, adverbs, auxiliaries, adpositions and conjunctions.
-  1	a	a	DET	_	_	2	det	_	_ 2	country	country	NOUN	_	_	0	root	_	_ 3	with	with	ADP	_	_	2	mod	_	_ 4	so	so	ADV	_	_	5	mod	_	_ 5	many	many	ADJ	_	_	8	mod	_	_ 6	different	different	ADJ	_	_	8	mod	_	_ 7	language	language	NOUN	_	_	8	compound	_	_ 8	groups	group	NOUN	_	_	3	comp:obj	_	_     1	Even	even	ADV	_	_	2	mod	_	_ 2	when	when	SCONJ	_	_	8	mod	_	_ 3	he	he	PRON	_	_	4	subj	_	_ 4	robbed	rob	VERB	_	_	2	comp:obj	_	_ 5	Dostoevski	Dostoevski	PROPN	_	_	4	comp:obj	_	_ 6	,	,	PUNCT	_	_	2	punct	_	_ 7	he	he	PRON	_	_	8	subj	_	_ 8	pitied	pity	VERB	_	_	0	root	_	_ 9	him	he	PRON	_	_	8	comp:obj	_	_     # text = Cerebral concussions have become so commun in this sport that one can consider them the routine.</description>
+ English
+   1	a	a	DET	_	_	2	det	_	_ 2	country	country	NOUN	_	_	0	root	_	_ 3	with	with	ADP	_	_	2	mod	_	_ 4	so	so	ADV	_	_	5	mod	_	_ 5	many	many	ADJ	_	_	8	mod	_	_ 6	different	different	ADJ	_	_	8	mod	_	_ 7	language	language	NOUN	_	_	8	compound	_	_ 8	groups	group	NOUN	_	_	3	comp:obj	_	_    English</description>
     </item>
     
     <item>
@@ -244,7 +252,8 @@ Consider the following sentence analysed in UD.
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/subj/</guid>
       <description>subj The subj relation is used for all subjects, regardless of their form (nominal or verbal). This relationship encompasses both the nsubj and csubj relationships as defined by UD, as the following examples show.
-  1	A	a	DET	_	_	2	det	_	_ 2	man	man	NOUN	_	_	3	subj	_	_ 3	walks	walk	VERB	_	_	0	root	_	_     # sent_id = GUM_whow_joke-55 # text = Practicing your joke is crucial.</description>
+ English
+   1	A	a	DET	_	_	2	det	_	_ 2	man	man	NOUN	_	_	3	subj	_	_ 3	walks	walk	VERB	_	_	0	root	_	_    English</description>
     </item>
     
     <item>
