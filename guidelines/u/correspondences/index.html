@@ -10,7 +10,7 @@
   
   
   
-  <link rel="stylesheet" href="https://surfacesyntacticud.github.io/css/cayman.18bbf17ef3fb7992f6be19b80462c006f93364c1427abc0c8fcf1c33cedf6db7.css">
+  <link rel="stylesheet" href="https://surfacesyntacticud.github.io/css/cayman.aaf45d74a9bfd69ee2d203c9cd978f5c86cceea835ed70e58e4b116fc591548a.css">
   
   
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -100,8 +100,8 @@
 <table class="center">
     <thead>
         <tr>
-            <th>UD</th>
-            <th>SUD</th>
+            <th><img src="/images/ud.svg" alt="Universal Dependencies (UD)"></th>
+            <th><img src="/images/sud.svg" alt="Surface Syntactic Universal Dependencies (SUD)"></th>
         </tr>
     </thead>
     <tbody>
@@ -160,11 +160,13 @@
 
 
 <h3 id="example-of-a-sentence-annotated-in-sud-above-and-ud-below">Example of a sentence annotated in SUD (above) and UD (below).</h3>
+<p><img src="/images/sud.svg#floatleft" alt="Surface Syntactic Universal Dependencies (SUD)">
 <div>
 <conll>
 
 # sent_id = email-enronsent38_01-0114
 # text = I am out of the office today but will be back tomorrow.
+# shownfeatures = FORM, UPOS
 1	I	_	PRON	_	_	2	subj	_	_
 2	am	_	AUX	_	_	0	root	_	_
 3	out	_	ADP	_	_	2	comp:pred	_	_
@@ -181,12 +183,14 @@
 
 </conll>
 </div>
-
+</p>
+<p><img src="/images/ud.svg#floatleft" alt="Universal Dependencies (UD)">
 <div>
 <conll>
 
 # sent_id = email-enronsent38_01-0114
 # text = I am out of the office today but will be back tomorrow.
+# shownfeatures = FORM, UPOS
 1	I	_	PRON	_	_	6	nsubj	_	_
 2	am	_	AUX	_	_	6	cop	_	_
 3	out	_	ADP	_	_	6	case	_	_
@@ -203,7 +207,7 @@
 
 </conll>
 </div>
-
+</p>
 
 
   </section>
