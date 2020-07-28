@@ -138,6 +138,16 @@ The relation between the auxiliary and the verb is marked comp:aux@pass and the 
     
     <item>
       <title></title>
+      <link>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/compounds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/compounds/</guid>
+      <description>Compound SUD shares with with UD its compound relation, though the exact usage of this relationship is determined on a language-by-language basis. SUD annotations for some languages, such as French, do not use the compound relation at all.
+Naija in particular makes heavy use of this relation, which is used to link nouns to virtually any other nouns which play a modifying role. However, it is also used to annotate phrasal verbs as well as a more limited subset of relations between nouns and adjectives, such as dry cleaner, which are considered fixed expressions whose meaning cannot be directly understood from its constituent parts.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/coord/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
