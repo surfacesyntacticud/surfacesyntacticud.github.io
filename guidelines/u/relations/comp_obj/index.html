@@ -267,7 +267,7 @@ In the following examples we can see direct objects of the Spanish verb <em>ver<
 4	tu	tu	PRON	_	_	5	subj	_	Gloss=you
 5	deviennes	devenir	VERB	_	_	3	comp:obj	_	Gloss=become
 6	script	script	NOUN	_	_	7	compound	_	Gloss=script
-7	girl	girl	NOUN	_	_	5	comp:obj	_	Gloss=girl
+7	girl	girl	NOUN	_	_	5	comp:pred	_	Gloss=girl
 
 </conll>
 </div>
@@ -311,6 +311,28 @@ In the following examples we can see direct objects of the Spanish verb <em>ver<
 </conll>
 </div>
 </p>
+<h2 id="deep-subjects-of-impersonal-constructions">Deep subjects of impersonal constructions</h2>
+<blockquote>
+<p>French</p>
+</blockquote>
+<div>
+<conll>
+
+# text_en = There exist by the way many different types of cleats.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	subj@expl	_	Gloss=it
+2	existe	exister	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Gloss=exists
+3	d'	de	ADP	_	_	2	mod	_	Gloss=of
+4	ailleurs	ailleurs	ADV	_	_	3	comp:obj	_	Gloss=elsewhere
+5	beaucoup	beaucoup	ADV	_	_	2	comp:obj@agent	_	Gloss=many
+6	de	de	ADP	_	_	5	comp:obl	_	Gloss=of
+7	types	type	NOUN	_	Gender=Masc|Number=Plur	6	comp:obj	_	Gloss=types
+8	de	de	ADP	_	_	7	udep	_	Gloss=of
+9	crampons	crampon	NOUN	_	Gender=Masc|Number=Plur	8	comp:obj	_	Gloss=cleats
+10	différents	différent	ADJ	_	Gender=Masc|Number=Plur	9	mod	_	Gloss=different
+
+</conll>
+</div>
+
 <h2 id="deep-syntactic-features">Deep syntactic features</h2>
 <p>The relation <code>comp:obj</code> can have these features:</p>
 <ul>
