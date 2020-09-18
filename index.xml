@@ -70,7 +70,8 @@ When a MWE has no internal syntactic structure, all components are linked in a c
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/lvc/</guid>
       <description>@lvc The @lvc feature is used for arguments of light verbs.
-  1	take	take	VERB	_	_	0	root	_	_ 2	part	part	NOUN	_	_	1	comp:obj@lvc	_	_ 3	in	in	ADP	_	_	1	comp:obl	_	_ 4	the	the	DET	_	_	5	det	_	_ 5	discussion	discussion	NOUN	_	_	3	comp:obj	_	_     # text_en = He&#39;s afraid of the spider 1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	subj	_	Gloss=he 2	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Gloss=have 3	peur	peur	NOUN	_	Gender=Fem|Number=Sing	2	comp:obj@lvc	_	Gloss=fear 4	de	de	ADP	_	_	3	comp:obl	_	Gloss=of 5	l&#39;	le	DET	_	Definite=Def|Number=Sing|Person=3|PronType=Art	6	det	_	Gloss=the 6	araignée	araignée	PROPN	_	_	4	comp:obj	_	Gloss=spider   </description>
+ English
+   1	take	take	VERB	_	_	0	root	_	_ 2	part	part	NOUN	_	_	1	comp:obj@lvc	_	_ 3	in	in	ADP	_	_	1	comp:obl	_	_ 4	the	the	DET	_	_	5	det	_	_ 5	discussion	discussion	NOUN	_	_	3	comp:obj	_	_    French</description>
     </item>
     
     <item>
@@ -230,7 +231,7 @@ Direct object complements  English
       <description>comp:obl The comp:obl relation is used for oblique arguments of verbs, adjectives, adverbs, nouns or pronouns, regardless of their form. Unlike UD, SUD does not make a distinction between indirect objects and oblique arguments. SUD instead makes the distinction between arguments and modifiers.
 Consider the following sentence analyzed in UD.
  English
-   1	Last	last	ADJ	_	_	2	amod	_	_ 2	night	night	NOUN	_	_	5	obl:tmod	_	_ 3	,	,	PUNCT	_	_	5	punct	_	_ 4	I	I	PRON	_	_	5	nsubj	_	_ 5	swam	swim	VERB	_	_	0	root	_	_ 6	in	in	ADP	IN	_	8	case	_	_ 7	the	the	DET	DT	_	8	det	_	_ 8	pool	pool	NOUN	_	_	5	obl	_	_   In SUD, it would be analyzed as follows:</description>
+   1	it	it	PRON	_	_	2	nsubj	_	_ 2	belongs	belong	VERB	_	_	0	root	_	_ 3	to	to	ADP	_	_	5	case	_	_ 4	a	a	DET	_	_	5	det	_	_ 5	past	past	NOUN	_	_	2	obl	_	_   In SUD, it would be analyzed as follows:</description>
     </item>
     
     <item>
