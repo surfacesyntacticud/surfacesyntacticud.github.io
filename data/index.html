@@ -87,10 +87,10 @@
   <section class="main-content">
     
   <h1></h1>
-  <p>In version 2.7 of (S)UD data, released in November 2020:</p>
+  <p>In version 2.7 of SUD data, released in November 2020:</p>
 <ul>
-<li>3 corpora are maintained in the SUD format (called <strong>Native SUD</strong>)</li>
-<li>All 183 corpora of UD 2.7 are automatically converted to SUD from the corresponding UD data.</li>
+<li>3 corpora are built in the SUD format (called <strong>Native SUD</strong>)</li>
+<li>180 corpora of UD 2.7 are automatically converted to SUD from the corresponding UD data.</li>
 </ul>
 <h1 id="native-sud-corpora">Native SUD corpora</h1>
 <p>In the table below, the 3 native SUD corpora are given.
@@ -99,40 +99,42 @@ Note that each corresponding UD version is obtained by automatic conversion.</p>
 <thead>
 <tr>
 <th>Corpus</th>
-<th>Github</th>
+<th>Files</th>
 <th>Grew-match</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="https://github.com/surfacesyntacticud/SUD_French-GSD"><code>SUD_French-GSD</code></a></td>
-<td><a href="https://github.com/surfacesyntacticud/SUD_French-GSD/tree/r2.7"><code>2.7</code></a> <a href="https://github.com/surfacesyntacticud/SUD_French-GSD/tree/master"><code>latest</code></a></td>
-<td><a href="http://match.grew.fr/?corpus=SUD_French-GSD@latest"><code>latest</code></a></td>
+<td><a href="https://github.com/surfacesyntacticud/SUD_French-GSD/archive/r2.7.zip">2.7</a> &ndash; <a href="https://github.com/surfacesyntacticud/SUD_French-GSD/archive/master.zip">latest</a></td>
+<td><a href="http://match.grew.fr/?corpus=SUD_French-GSD@2.7">2.7</a> &ndash; <a href="http://match.grew.fr/?corpus=SUD_French-GSD@latest">latest</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/surfacesyntacticud/SUD_French-Spoken"><code>SUD_French-Spoken</code></a></td>
-<td><a href="https://github.com/surfacesyntacticud/SUD_French-Spoken/tree/r2.7"><code>2.7</code></a> <a href="https://github.com/surfacesyntacticud/SUD_French-Spoken/tree/master"><code>latest</code></a></td>
-<td><a href="http://match.grew.fr/?corpus=SUD_French-Spoken@latest"><code>latest</code></a></td>
+<td><a href="https://github.com/surfacesyntacticud/SUD_French-Spoken/archive/r2.7.zip">2.7</a> &ndash; <a href="https://github.com/surfacesyntacticud/SUD_French-Spoken/archive/master.zip">latest</a></td>
+<td><a href="http://match.grew.fr/?corpus=SUD_French-Spoken@2.7">2.7</a> &ndash; <a href="http://match.grew.fr/?corpus=SUD_French-Spoken@latest">latest</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/surfacesyntacticud/SUD_Naija-NSC"><code>SUD_Naija-NSC</code></a></td>
-<td><a href="https://github.com/surfacesyntacticud/SUD_Naija-NSC/tree/r2.7"><code>2.7</code></a> <a href="https://github.com/surfacesyntacticud/SUD_Naija-NSC/tree/master"><code>latest</code></a></td>
-<td><a href="http://match.grew.fr/?corpus=SUD_Naija-NSC@latest"><code>latest</code></a></td>
+<td><a href="https://github.com/surfacesyntacticud/SUD_Naija-NSC/archive/r2.7.zip">2.7</a> &ndash; <a href="https://github.com/surfacesyntacticud/SUD_Naija-NSC/archive/master.zip">latest</a></td>
+<td><a href="http://match.grew.fr/?corpus=SUD_Naija-NSC@2.7">2.7</a> &ndash; <a href="http://match.grew.fr/?corpus=SUD_Naija-NSC@latest">latest</a></td>
 </tr>
 </tbody>
 </table>
-<h1 id="universal-dependencies-corpora-converted-in-sud">Universal dependencies corpora converted in SUD</h1>
-<p><strong>NB</strong> In order to give a consistent set of corpora, the 3 native SUD corpora also appear in this list.
-But the data below for these 3 corpora is the result of the conversion from the UD version (hence a double conversion SUD → UD → SUD).
-The concerned corpora are marked with a &ldquo;⚠️&rdquo; symbol.</p>
-<p>The 183 UD (version 2.7) corpora are converted in SUD format with the <a href="https://github.com/surfacesyntacticud/tools/tree/master/converter">UD → SUD conversion system</a> (usable with the <a href="https://grew.fr">Grew</a> software).</p>
-<p>The data below are built with:</p>
+<h1 id="sud-data-for-version-27">SUD data for version 2.7</h1>
+<p>All UD (version 2.7), except the 3 ones coming from native SUD (<code>UD_French-GSD</code>, <code>UD_French-Spoken</code> and <code>UD_Naija-NSC</code>) are converted in SUD format with the <a href="https://github.com/surfacesyntacticud/tools/tree/master/converter">UD → SUD conversion system</a> (usable with the <a href="https://grew.fr">Grew</a> software).</p>
+<p>Hence, the data below are built with:</p>
 <ul>
-<li><a href="http://hdl.handle.net/11234/1-3424">version 2.7 of UD corpora</a></li>
-<li><a href="https://github.com/surfacesyntacticud/tools/tree/v2.7/converter">tag <code>v2.7</code> of the conversion system</a></li>
+<li>The 3 native SUD described above</li>
+<li>180 corpora converted:
+<ul>
+<li>from <a href="http://hdl.handle.net/11234/1-3424">version 2.7 of UD corpora</a></li>
+<li>with <a href="https://github.com/surfacesyntacticud/tools/tree/v2.7/converter">tag <code>v2.7</code> of the conversion system</a></li>
+</ul>
+</li>
 </ul>
 <h2 id="download-all-corpora">Download all corpora</h2>
-<p>Download the full set of 183 SUD corpora: <a href="https://www.grew.fr/download/sud-treebanks-v2.7.tgz">sud-treebanks-v2.7.tgz</a>.</p>
+<p>Download the full set of 183 SUD corpora: <a href="https://www.grew.fr/download/sud-treebanks-v2.7.tgz">sud-treebanks-v2.7.tgz</a> (⚠️ the file was changed on November 23th, consider reloading if needed).</p>
 <h2 id="access-to-each-corpus">Access to each corpus</h2>
 <p>In the table below, for each corpus you can access to the <a href="http://match.grew.fr">Grew-match</a> query system.</p>
 <table>
@@ -380,7 +382,7 @@ The concerned corpora are marked with a &ldquo;⚠️&rdquo; symbol.</p>
 <td>[<a href="http://match.grew.fr/?corpus=SUD_French-FTB@2.7">Query</a>] [<a href="http://match.grew.fr/_meta/SUD_French-FTB@2.7_table.html">Relations</a>]</td>
 </tr>
 <tr>
-<td><code>French-GSD</code> ⚠️: see <a href="./#native-sud-corpora">Native</a></td>
+<td><code>French-GSD</code> (Native)</td>
 <td>[<a href="http://match.grew.fr/?corpus=SUD_French-GSD@2.7">Query</a>] [<a href="http://match.grew.fr/_meta/SUD_French-GSD@2.7_table.html">Relations</a>]</td>
 </tr>
 <tr>
@@ -396,7 +398,7 @@ The concerned corpora are marked with a &ldquo;⚠️&rdquo; symbol.</p>
 <td>[<a href="http://match.grew.fr/?corpus=SUD_French-Sequoia@2.7">Query</a>] [<a href="http://match.grew.fr/_meta/SUD_French-Sequoia@2.7_table.html">Relations</a>]</td>
 </tr>
 <tr>
-<td><code>French-Spoken</code> ⚠️: see <a href="./#native-sud-corpora">Native</a></td>
+<td><code>French-Spoken</code> (Native)</td>
 <td>[<a href="http://match.grew.fr/?corpus=SUD_French-Spoken@2.7">Query</a>] [<a href="http://match.grew.fr/_meta/SUD_French-Spoken@2.7_table.html">Relations</a>]</td>
 </tr>
 <tr>
@@ -616,7 +618,7 @@ The concerned corpora are marked with a &ldquo;⚠️&rdquo; symbol.</p>
 <td>[<a href="http://match.grew.fr/?corpus=SUD_Munduruku-TuDeT@2.7">Query</a>] [<a href="http://match.grew.fr/_meta/SUD_Munduruku-TuDeT@2.7_table.html">Relations</a>]</td>
 </tr>
 <tr>
-<td><code>Naija-NSC</code> ⚠️: see <a href="./#native-sud-corpora">Native</a></td>
+<td><code>Naija-NSC</code> (Native)</td>
 <td>[<a href="http://match.grew.fr/?corpus=SUD_Naija-NSC@2.7">Query</a>] [<a href="http://match.grew.fr/_meta/SUD_Naija-NSC@2.7_table.html">Relations</a>]</td>
 </tr>
 <tr>
