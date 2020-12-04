@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Hugo 0.70.0" />
+  <link rel="stylesheet" href="https://surfacesyntacticud.github.io/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  
+  
+  
+  <link rel="stylesheet" href="https://surfacesyntacticud.github.io/css/cayman.aaf45d74a9bfd69ee2d203c9cd978f5c86cceea835ed70e58e4b116fc591548a.css">
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+  <title> | SUD</title>
+
+  
+  <link rel="stylesheet" href="/css/local.css">
+
+  
+  <script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.10.0/d3.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/arborator/arborator-draft.css">
+  <script language="JavaScript" type="text/javascript" src="/arborator/arborator-draft.js"></script>
+  <script>
+    window.onload = function() {
+      new ArboratorDraft(); 
+    }
+  </script>
+  
+
+</head>
+<body>
+  <section class="page-header">
+  <h1 class="project-name">
+    SUD
+  </h1>
+  <h2 class="project-tagline">
+    Surface Syntactic Universal Dependencies
+  </h2>
+  <nav>
+    
+    
+      
+      
+      
+      
+      <a href="/" class="btn">Home</a>
+    
+      
+      
+      
+      
+      <a href="/guidelines/u/" class="btn">Guidelines</a>
+    
+      
+      
+      
+      
+      <a href="/data/" class="btn">SUD Corpora</a>
+    
+      
+      
+      
+      
+      <a href="/guidelines/u/correspondences" class="btn">Comparison with UD</a>
+    
+      
+      
+      
+      
+      <a href="https://github.com/surfacesyntacticud" class="btn">GitHub project</a>
+    
+  </nav>
+</section>
+
+  <section class="main-content">
+    
+  <h1></h1>
+  <h1 id="the-extpos-feature">The ExtPos feature</h1>
+<p>The ExtPos feature was introduced to facilitate the annotation of idioms, titles, and other multi-word phrases which behave like a certain part of speech, even though none of their constituents necessarily carry that part of speech. This feature allows the annotator to preserve the internal syntactic relationships between the various components of these units.</p>
+<ul>
+<li>The <strong>head</strong> of the phrase contains carries the ExtPos feature, which denotes the phrases&rsquo;s function within the wider sentence. For example, the title of a novel, which functions as a proper noun, would carry the feature ExtPos=PROPN.</li>
+<li>The <strong>head</strong> also carries a PhraseType feature, PhraseType=Idiom or PhraseType=Title</li>
+<li>The <strong>remaining components</strong> of the element will contain the feature InIdiom=Yes or InTitle=Yes, depending on the value of the PhraseType feature of its governor.</li>
+</ul>
+<h2 id="titles">Titles</h2>
+<p>The ExtPos feature is notably used to annotate titles. For our purposes, &ldquo;title&rdquo; refers to any title given to a film, book, painting, or other work of art, such as <em>Planet of the Apes</em>, <em>Dark Side of the Moon</em>, <em>American Gothic</em>, or <em>Super Mario Bros</em>. However, this excludes other named entities like events, holidays or locations, such as The Gulf War, Good Friday, or The Eiffel Tower. The head of a title always carries the ExtPos value of PROPN.</p>
+<div>
+<conll>
+
+# shownfeatures = FORM, UPOS, LEMMA, MISC.Gloss, FEATS.ExtPos, FEATS.PhraseType, FEATS.InTitle
+1	Karen	Karen	PROPN	_	_	2	subj	_	_
+2	loved	love	VERB	_	_	0	root	_	_
+3	One	one	PRON	_	InTitle=Yes	4	subj	_	_
+4	Flew	fly	VERB	_	ExtPos=PROPN|PhraseType=Title	2	comp:obj	_	_
+5	Over	over	ADP	_	InTitle=Yes	4	comp:obl	_	_
+6	the	the	DET	_	InTitle=Yes	7	det	_	_
+7	Cuckoo	cuckoo	NOUN	_	InTitle=Yes	8	comp:obj	_	_
+8	's	's	PART	_	InTitle=Yes	9	mod@poss	_	_
+9	Nest	nest	VERB	_	InTitle=Yes	5	comp:obj	_	_
+
+</conll>
+</div>
+
+
+
+  </section>
+  
+  
+
+</body>
+</html>
