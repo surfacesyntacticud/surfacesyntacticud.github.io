@@ -139,6 +139,27 @@ The key differences between SUD and UD as well as a table summarizing the most f
 <a href="https://universaldependencies.org/u/dep/goeswith.html"><code>goeswith</code></a>,
 <a href="https://universaldependencies.org/u/dep/reparandum.html"><code>reparandum</code></a>,
 <a href="https://universaldependencies.org/u/dep/punct.html"><code>punct</code></a>.</p>
+<p>However, we must stress that there are some differences between the usage of some of these relations in UD and SUD. Namely, the relations <code>appos</code>, <code>conj</code> and <code>reparandum</code> are only used when analysing written texts. When analysing oral texts, we use instead the relations <code>conj:appos</code>, <code>conj:coord</code> and <code>conj:dicto</code> respectively. The same goes for <code>parataxis</code> which is used differently in SUD when analysing oral textes. We will explain the details in the section below.</p>
+<h2 id="relations-specific-to-sud-used-when-analysing-oral-texts">Relations specific to SUD used when analysing oral texts</h2>
+<ul>
+<li><a href="oral_language/conj">relations for paradigmatic lists</a>
+<ul>
+<li><a href="oral_language/conj_dicto"><code>conj:dicto</code></a></li>
+<li><a href="oral_language/conj_coord"><code>conj:coord</code></a></li>
+<li><a href="oral_language/conj_appos"><code>conj:appos</code></a></li>
+</ul>
+</li>
+<li><a href="oral_language/macrosyntax">relations analysing macrosyntax</a>
+<ul>
+<li><a href="oral_language/conj_dicto"><code>dislocated</code></a></li>
+<li><a href="oral_language/conj_dicto"><code>vocative</code></a></li>
+<li><a href="oral_language/conj_dicto"><code>discourse</code></a></li>
+<li><a href="oral_language/parataxis_parenth"><code>parataxis:parenth</code></a></li>
+<li><a href="oral_language/parataxis_insert"><code>parataxis:insert</code></a></li>
+<li><a href="oral_language/parataxis_obj"><code>parataxis:obj</code></a></li>
+</ul>
+</li>
+</ul>
 <h2 id="sud-deep-features">SUD deep features</h2>
 <p>In SUD, dependency relations are designed to describe syntactic surface relations.
 Information related to deep syntax or semantics is given on dependencies with <em>deep features</em> which are extensions to dependency label introduced by the <code>@</code> symbol.</p>
