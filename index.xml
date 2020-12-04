@@ -276,5 +276,17 @@ Consider the following sentence analyzed in UD.
 The governor and the dependent of a udep relation can have any POS. The udep relation is frequently given to the complements of nouns, since it is generally more difficult to distinguish between arguments and modifiers for nouns than it is for verbs.</description>
     </item>
     
+    <item>
+      <title>Disfluencies in oral language</title>
+      <link>https://surfacesyntacticud.github.io/guidelines/u/oral_language/disfulencies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/disfulencies/</guid>
+      <description>In oral language, speakers form sentences while speaking, which means that sometimes they might search for words while speaking. They may repeat a word until they find the right one, or they may try with one word and then decide to change.
+Repetitions and reformulations To analyse constructions of repetition or reformulation, we use the relation conj:dicto.
+ French
+   # text = Euh, et c&#39;était, bah c&#39;était super bien, euh super spacieux.</description>
+    </item>
+    
   </channel>
 </rss>
