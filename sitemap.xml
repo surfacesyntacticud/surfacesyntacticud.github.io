@@ -120,7 +120,27 @@
   </url>
   
   <url>
+    <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj_appos/</loc>
+  </url>
+  
+  <url>
+    <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj_coord/</loc>
+  </url>
+  
+  <url>
+    <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj_dicto/</loc>
+  </url>
+  
+  <url>
+    <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/discourse/</loc>
+  </url>
+  
+  <url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/disfulencies/</loc>
+  </url>
+  
+  <url>
+    <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/dislocated/</loc>
   </url>
   
   <url>
@@ -133,6 +153,18 @@
   
   <url>
     <loc>https://surfacesyntacticud.github.io/guidelines/pcm/</loc>
+  </url>
+  
+  <url>
+    <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_insert/</loc>
+  </url>
+  
+  <url>
+    <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_obj/</loc>
+  </url>
+  
+  <url>
+    <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_parenth/</loc>
   </url>
   
   <url>
@@ -152,39 +184,7 @@
   </url>
   
   <url>
-    <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj_appos/</loc>
-  </url>
-  
-  <url>
-    <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/discourse/</loc>
-  </url>
-  
-  <url>
-    <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/disclocated/</loc>
-  </url>
-  
-  <url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/vocative/</loc>
-  </url>
-  
-  <url>
-    <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj_coord/</loc>
-  </url>
-  
-  <url>
-    <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj_dicto/</loc>
-  </url>
-  
-  <url>
-    <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_insert/</loc>
-  </url>
-  
-  <url>
-    <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_obj/</loc>
-  </url>
-  
-  <url>
-    <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_parenth/</loc>
   </url>
   
 </urlset>

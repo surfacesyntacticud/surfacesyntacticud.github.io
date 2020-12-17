@@ -21,7 +21,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
 
-  <title>Use of the relation conj:dicto | SUD</title>
+  <title>conj:dicto | SUD</title>
 
   
   <link rel="stylesheet" href="/css/local.css">
@@ -86,8 +86,11 @@
 
   <section class="main-content">
     
-  <h1>Use of the relation conj:dicto</h1>
-  <p>This relation is used to indicate difluencies when a speaker corrects his speech.</p>
+  <h1>conj:dicto</h1>
+  <p>This relation is used to indicate difluencies when a speaker corrects his speech. It is parallel to the <a href="https://universaldependencies.org/u/dep/reparandum.html"><code>reparandum</code></a> relationship used in UD and for analysis of written texts in UD.</p>
+<blockquote>
+<p>French</p>
+</blockquote>
 <div>
 <conll>
 
@@ -109,6 +112,26 @@
 </div>
 
 <p>Note that <code>conj:dicto</code> goes from the first element to the second, while <code>reparandum</code> goes the opposite way.</p>
+<p>This may result in some incoherencies. Note the following example. In this sentence we have two options of annotation. We can annotate the <em>é~</em> with an unknown POS (<code>X</code>). In that case <code>X</code> is the head of a <code>subj</code> relation which is undesirable (only <code>VERB</code> and <code>AUX</code> should be head of a <code>subj</code> relation). The other option would be to guess the POS and lemma of the unfinished word with the risk of guessing it wrong. In our case the token <em>é~</em> would be annotated with the lemma <em>être</em> and POS <code>AUX</code>. In this scenario, <em>é~</em> becomes part of the paradigm of the conjugated verb <em>être</em> which is also undesirable.</p>
+<p>In SUD we decided to adopt the following analysis.</p>
+<blockquote>
+<p>French</p>
+</blockquote>
+<div>
+<conll>
+
+# text_fr = C' é~ c' était vraiment
+# text_en = It w~ it was really
+1	C'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	subj	_	_
+2	é~	é~	X	_	_	0	root	_	_
+3	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	subj	_	_
+4	était	être	AUX	conj:reform	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	conj:dicto	_	_
+5	vraiment	vraiment	ADV	_	_	4	mod	_	_
+
+</conll>
+</div>
+
+<p>For more examples on disfluencies, you can refer to <a href="../disfulencies">this page</a>.</p>
 
 
   </section>

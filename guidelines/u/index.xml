@@ -266,6 +266,46 @@ The governor and the dependent of a udep relation can have any POS. The udep rel
     </item>
     
     <item>
+      <title>conj:appos</title>
+      <link>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj_appos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj_appos/</guid>
+      <description>  1	Nietzsche	Nietzsche	PROPN	_	_	5	subj	_	_ 2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_ 3	philosophe	philosophe	NOUN	_	Gender=Masc|Number=Sing	1	conj:appos	_	_ 4	allemand	allemand	ADJ	_	Gender=Masc|Number=Sing	3	mod	_	_ 5	parle	parler	VERB	_	_	0	root	_	_ 6	de	de	ADP	_	_	5	comp:obl	_	_ 7	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj:dicto	_	_ 8	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_ 9	définition	définition	NOUN	_	Gender=Fem|Number=Sing	7	comp:obj	_	_ 10	de	de	ADP	_	_	9	udep	_	_ 11	l&#39;	le	DET	_	Definite=Def|Number=Sing|PronType=Art	12	det	_	_ 12	art	art	NOUN	_	Gender=Masc|Number=Sing	10	comp:obj	_	_   </description>
+    </item>
+    
+    <item>
+      <title>conj:coord</title>
+      <link>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj_coord/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj_coord/</guid>
+      <description>This relation is used to link elements connected with a coordinating conjunction such as and and or. The conjunction itself is linked to the second element with a cc relation.
+ French
+   # text = Elle a instoré dans ce pays la démocratie politique et sociale 1	Elle	il	PRON	_	_	2	subj	_	_ 2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_ 3	instauré	instaurer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	comp:aux	_	_ 4	dans	dans	ADP	_	_	3	mod	_	_ 5	ce	ce	DET	_	_	6	det	_	_ 6	pays	pays	NOUN	_	Gender=Masc	4	comp:obj	_	_ 7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_ 8	démocratie	démocratie	NOUN	_	Gender=Fem|Number=Sing	3	comp:obj	_	_ 9	politique	politique	ADJ	_	Number=Sing	8	mod	_	_ 10	et	et	CCONJ	_	_	11	cc	_	_ 11	sociale	sociale	NOUN	_	_	9	conj:coord	_	_   In case of multipe coordinating constructions, we analyse them in a chain in contrast to UD that analyses them in a bouquet.</description>
+    </item>
+    
+    <item>
+      <title>conj:dicto</title>
+      <link>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj_dicto/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj_dicto/</guid>
+      <description>This relation is used to indicate difluencies when a speaker corrects his speech. It is parallel to the reparandum relationship used in UD and for analysis of written texts in UD.
+ French
+   # sent_id = ParisStories_2019_stagePrimaire_15 # text_fr = j&#39;ai j&#39;ai vraiment adoré ce côté là . # text_en = I did I did really like that part 1	j&#39;	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	subj	_	SpaceAfter=No 2	ai	ai~	AUX	_	Number=Sing|Person=1	0	root	_	_ 3	j&#39;	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	subj	_	SpaceAfter=No 4	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	conj:dicto	_	_ 5	vraiment	vraiment	ADV	_	_	6	mod	_	_ 6	adoré	adorer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	comp:aux	_	_ 7	ce	ce	DET	_	_	8	det	_	_ 8	côté	côté	NOUN	_	Gender=Masc|Number=Sing	6	comp:obj	_	_ 9	là	là	ADV	_	_	8	mod	_	_ 10	.</description>
+    </item>
+    
+    <item>
+      <title>discourse</title>
+      <link>https://surfacesyntacticud.github.io/guidelines/u/oral_language/discourse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/discourse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Disfluencies in oral language</title>
       <link>https://surfacesyntacticud.github.io/guidelines/u/oral_language/disfulencies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -278,14 +318,50 @@ Repetitions and reformulations To analyse constructions of repetition or reformu
     </item>
     
     <item>
-      <title>Relations for conjunctional structures</title>
+      <title>dislocated</title>
+      <link>https://surfacesyntacticud.github.io/guidelines/u/oral_language/dislocated/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/dislocated/</guid>
+      <description>1	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	3	dislocated	_	_ 2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	subj	_	_ 3	pense	penser	VERB	_	Number=Sing|Person=1	0	root	_	_ 4	qu&#39;	que	SCONJ	_	_	3	comp:obj	_	_ 5	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	subj	_	_ 6	vient	vient	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	comp:obj	_	_ 7	pas	pas	ADV	_	Polarity=Neg	6	mod	_	_     1	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	subj	_	_ 2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_ 3	duré	durer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	comp:aux	_	_ 4	dix	dix	NUM	_	Number=Plur	5	det	_	_ 5	ans	an	NOUN	_	Gender=Masc|Number=Plur	3	comp:obj	_	_ 6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_ 7	silence	silence	NOUN	_	Gender=Masc|Number=Sing	2	dislocated	_	_ 8	autour	autour	ADV	_	_	7	mod	_	_ 9	de	de	ADP	_	_	8	comp:obl	_	_ 10	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	9	comp:obj	_	_     7	te	le	PRON	_	_	8	comp:obj	_	_ 8	déguiser	déguiser	VERB	_	_	12	dislocated	_	_ 9	en	en	ADP	_	_	8	mod	_	_ 10	pirate	pirate	NOUN	_	Gender=Masc|Number=Sing	9	comp:obj	_	_ 11	c&#39;	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	12	subj	_	SpaceAfter=No 12	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	comp:obj	_	_ 13	bien	bien	ADV	_	_	12	mod	_	_   good :</description>
+    </item>
+    
+    <item>
+      <title>parataxis:insert</title>
+      <link>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_insert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_insert/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>parataxis:obj</title>
+      <link>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_obj/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_obj/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>parataxis:parenth</title>
+      <link>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_parenth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_parenth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Relations for conjunctional structures in oral language</title>
       <link>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj/</guid>
-      <description>In UD there are three relations appos, conj, reparandum that SUD only uses for analysing written text.
+      <description>In UD there are three relations reparandum, conj, appos that SUD only uses for analysing written texts.
 These three relations work as paradigmatic lists. That&amp;rsquo;s why in SUD for oral speech, we decided to gather these three relations under the relation conj.
-We distinguish
+We distinguish:
  conj:dicto for disfluencies when the speaker corrects his speech (parallel to reparandum in written texts) conj:coord for elements connected by a coordinating conjunction (parallel to conj in written texts) conj:appos for appositional modifiers that serve to define better the previous noun (parallel to appos in written texts)  Note : for analysing oral speech we never use the conj relationship alone.</description>
     </item>
     
@@ -299,84 +375,11 @@ We distinguish
     </item>
     
     <item>
-      <title>Use of relation conj:appos</title>
-      <link>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj_appos/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj_appos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Use of relation discourse</title>
-      <link>https://surfacesyntacticud.github.io/guidelines/u/oral_language/discourse/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/discourse/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Use of relation dislocated</title>
-      <link>https://surfacesyntacticud.github.io/guidelines/u/oral_language/disclocated/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/disclocated/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Use of relation vocative</title>
+      <title>vocative</title>
       <link>https://surfacesyntacticud.github.io/guidelines/u/oral_language/vocative/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/vocative/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Use of the relation conj:coord</title>
-      <link>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj_coord/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj_coord/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Use of the relation conj:dicto</title>
-      <link>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj_dicto/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj_dicto/</guid>
-      <description>This relation is used to indicate difluencies when a speaker corrects his speech.
-  # sent_id = ParisStories_2019_stagePrimaire_15 # text_fr = j&#39;ai j&#39;ai vraiment adoré ce côté là . # text_en = I did I did really like that part 1	j&#39;	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	subj	_	SpaceAfter=No 2	ai	ai~	AUX	_	Number=Sing|Person=1	0	root	_	_ 3	j&#39;	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	subj	_	SpaceAfter=No 4	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	conj:dicto	_	_ 5	vraiment	vraiment	ADV	_	_	6	mod	_	_ 6	adoré	adorer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	comp:aux	_	_ 7	ce	ce	DET	_	_	8	det	_	_ 8	côté	côté	NOUN	_	Gender=Masc|Number=Sing	6	comp:obj	_	_ 9	là	là	ADV	_	_	8	mod	_	_ 10	.</description>
-    </item>
-    
-    <item>
-      <title>Use of the relation parataxis:insert</title>
-      <link>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_insert/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_insert/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Use of the relation parataxis:obj</title>
-      <link>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_obj/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_obj/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Use of the relation parataxis:parenth</title>
-      <link>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_parenth/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_parenth/</guid>
       <description></description>
     </item>
     

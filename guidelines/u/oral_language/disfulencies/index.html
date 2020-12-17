@@ -119,7 +119,7 @@ They may repeat a word until they find the right one, or they may try with one w
 </conll>
 </div>
 
-<p>The <code>conj:dicto</code> relation applies also when the linked word are not the same.</p>
+<p>The <code>conj:dicto</code> relation applies also when the linked words are not the same.</p>
 <blockquote>
 <p>French</p>
 </blockquote>
@@ -148,27 +148,6 @@ They may repeat a word until they find the right one, or they may try with one w
 
 <h2 id="unfinished-constructions">Unfinished constructions</h2>
 <p>Sometimes speakers utter a half-finished construction. In that case, it may happen that a word cannot be attached to its head, because the speaker decided not to utter it.</p>
-<p>In this example we can see the construction <em>Je lis son le portrait de notre de votre héros</em> (English: <em>I&rsquo;im reading his the portrayal of our of your hero</em>). This construction causes some issues because we can&rsquo;t attach the word <em>notre</em> to its semantic head <em>hero</em> because of the presence of the second <em>de</em>.</p>
-<p>If the sentence was <em>portrait de notre votre héros</em> (English: <em>portrayal of our your hero</em>) we could use the <code>conj:dicto</code> relation to attach <em>votre</em> to <em>notre</em>.</p>
-<blockquote>
-<p>French</p>
-</blockquote>
-<div>
-<conll>
-
-# text = portrait de notre votre héros
-# text_en = portrayal of our your hero
-1	portrait	portrait	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_
-2	de	de	ADP	_	_	1	udep	_	_
-3	notre	son	DET	_	Number=Sing|Person=3|PossNumber=Plur|PossPerson=1|PronType=Prs	5	det	_	_
-4	votre	son	DET	_	Number=Sing|Person=3|PossNumber=Plur|PossPerson=2|PronType=Prs	3	conj:dicto	_	_
-5	héros	héros	NOUN	_	Gender=Masc	2	comp:obj	_	_
-
-</conll>
-</div>
-
-<p>In these cases we prefer to attach the two words <em>de</em> with a <code>conj:dicto</code> relation and link the word <em>notre</em> to the first <em>de</em> as an incomplete object.</p>
-<p>Here is the complete analysis of the sentence.</p>
 <blockquote>
 <p>French</p>
 </blockquote>
@@ -191,6 +170,23 @@ They may repeat a word until they find the right one, or they may try with one w
 </conll>
 </div>
 
+<p>In this example we can see the construction <em>Je lis son le portrait de notre de votre héros</em> (English: <em>I&rsquo;im reading his the portrayal of our of your hero</em>). This construction causes some issues because we can&rsquo;t attach the word <em>notre</em> to its semantic head <em>héros</em> because of the presence of the second <em>de</em>.</p>
+<p>If the sentence was <em>portrait de notre votre héros</em> (English: <em>portrayal of our your hero</em>) we could use the <code>conj:dicto</code> relation to attach <em>votre</em> to <em>notre</em>.</p>
+<div>
+<conll>
+
+# text = portrait de notre votre héros
+# text_en = portrayal of our your hero
+1	portrait	portrait	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_
+2	de	de	ADP	_	_	1	udep	_	_
+3	notre	son	DET	_	Number=Sing|Person=3|PossNumber=Plur|PossPerson=1|PronType=Prs	5	det	_	_
+4	votre	son	DET	_	Number=Sing|Person=3|PossNumber=Plur|PossPerson=2|PronType=Prs	3	conj:dicto	_	_
+5	héros	héros	NOUN	_	Gender=Masc	2	comp:obj	_	_
+
+</conll>
+</div>
+
+<p>In these cases we prefer to attach the two words <em>de</em> with a <code>conj:dicto</code> relation and link the word <em>notre</em> to the first <em>de</em> as an incomplete object - <code>comp:obj@scrap</code>.</p>
 <p>Below we can see an example when a speaker starts with one word, then decides it doesn&rsquo;t fit and searches for a more fitting word.</p>
 <blockquote>
 <p>French</p>
@@ -213,8 +209,6 @@ They may repeat a word until they find the right one, or they may try with one w
 12	besogne	besogne	NOUN	_	Gender=Fem|Number=Sing	9	comp:obj	_	_
 13	de	de	ADP	_	_	9	mod	_	_
 14	lui-même	lui-même	PRON	_	_	13	comp:obj	_	_
-15	sur	sur	ADP	_	_	9	mod	_	_
-16	place	place	NOUN	_	Gender=Fem|Number=Sing	15	comp:obj	_	_
 
 </conll>
 </div>
