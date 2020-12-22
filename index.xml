@@ -326,7 +326,8 @@ Ex:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/discourse/</guid>
-      <description></description>
+      <description>The discourse relation is used to link discourse markers. These markers are not clearly linked to the structure of the sentence, except in an expressive way.
+In some cases the discourse marker can be another proposition. Ex: He comes on wednesday, I think. In this sentence I think is a discourse marker because it misses its object (the object of the verb think is the rest of the sentence) and because they are fixed (I think doesn&amp;rsquo;t commute with he thinks).</description>
     </item>
     
     <item>
@@ -347,7 +348,8 @@ Repetitions and reformulations To analyse constructions of repetition or reformu
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/dislocated/</guid>
-      <description>1	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	3	dislocated	_	_ 2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	subj	_	_ 3	pense	penser	VERB	_	Number=Sing|Person=1	0	root	_	_ 4	qu&#39;	que	SCONJ	_	_	3	comp:obj	_	_ 5	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	subj	_	_ 6	vient	vient	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	comp:obj	_	_ 7	pas	pas	ADV	_	Polarity=Neg	6	mod	_	_     1	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	subj	_	_ 2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_ 3	duré	durer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	comp:aux	_	_ 4	dix	dix	NUM	_	Number=Plur	5	det	_	_ 5	ans	an	NOUN	_	Gender=Masc|Number=Plur	3	comp:obj	_	_ 6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_ 7	silence	silence	NOUN	_	Gender=Masc|Number=Sing	2	dislocated	_	_ 8	autour	autour	ADV	_	_	7	mod	_	_ 9	de	de	ADP	_	_	8	comp:obl	_	_ 10	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	9	comp:obj	_	_     7	te	le	PRON	_	_	8	comp:obj	_	_ 8	déguiser	déguiser	VERB	_	_	12	dislocated	_	_ 9	en	en	ADP	_	_	8	mod	_	_ 10	pirate	pirate	NOUN	_	Gender=Masc|Number=Sing	9	comp:obj	_	_ 11	c&#39;	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	12	subj	_	SpaceAfter=No 12	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	comp:obj	_	_ 13	bien	bien	ADV	_	_	12	mod	_	_   good :</description>
+      <description>The dislocated relation is used to analyze detached elements that do not enter in the core grammatical relations of a sentence.
+ French   1	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	subj	_	_ 2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_ 3	duré	durer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	comp:aux	_	_ 4	dix	dix	NUM	_	Number=Plur	5	det	_	_ 5	ans	an	NOUN	_	Gender=Masc|Number=Plur	3	comp:obj	_	_ 6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_ 7	silence	silence	NOUN	_	Gender=Masc|Number=Sing	2	dislocated	_	_ 8	autour	autour	ADV	_	_	7	mod	_	_ 9	de	de	ADP	_	_	8	comp:obl	_	_ 10	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	9	comp:obj	_	_    Here is an example with French tonic pronouns.</description>
     </item>
     
     <item>
@@ -395,7 +397,7 @@ We distinguish:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/macrosyntax/</guid>
-      <description>In this part we will present relations that we use to link two elements that are placed side by side with no visible marker yet they are related. Ex: I told him don&amp;rsquo;t do it. in this sentence we miss the usual marker that. Or in the following sentence: My brother&amp;rsquo;s children, you know he has two daughters, will come to visit the part you know he has two daughters is inserted in the main sentence.</description>
+      <description>In this part we will present relations that we use to link two elements that are placed side by side with no explicit marker of coordination, subordination, or argument relation with the head word. Ex: I told him don&amp;rsquo;t do it. in this sentence we miss the usual marker that. Or in the following sentence: My brother&amp;rsquo;s children, you know he has two daughters, will come to visit the part you know he has two daughters is inserted in the main sentence.</description>
     </item>
     
     <item>
