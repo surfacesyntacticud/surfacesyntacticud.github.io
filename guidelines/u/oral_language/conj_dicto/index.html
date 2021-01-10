@@ -111,7 +111,8 @@
 </conll>
 </div>
 
-<p>Note that <code>conj:dicto</code> goes from the first element to the second, while <code>reparandum</code> goes the opposite way.</p>
+<p>Note that <code>conj:dicto</code> (SUD) considers the first element as the head of the next one, while <code>reparandum</code> (UD) considers these constructions as reparations and considers the last element as head.
+This is because UD relies more on the semantics - it is the last element that holds the meaning. SUD on the other hand relies on the syntactic aspect and considers that it is the first element that occupies the syntactic position.</p>
 <p>This may result in some incoherencies. Note the following example. In this sentence we have two options of annotation. We can annotate the <em>é~</em> with an unknown POS (<code>X</code>). In that case <code>X</code> is the head of a <code>subj</code> relation which is undesirable (only <code>VERB</code> and <code>AUX</code> should be head of a <code>subj</code> relation). The other option would be to guess the POS and lemma of the unfinished word with the risk of guessing it wrong. In our case the token <em>é~</em> would be annotated with the lemma <em>être</em> and POS <code>AUX</code>. In this scenario, <em>é~</em> becomes part of the paradigm of the conjugated verb <em>être</em> which is also undesirable.</p>
 <p>In SUD we decided to adopt the following analysis.</p>
 <blockquote>

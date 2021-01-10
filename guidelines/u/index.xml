@@ -332,6 +332,28 @@ Repetitions and reformulations To analyse constructions of repetition or reformu
     </item>
     
     <item>
+      <title>Macrosyntactic relations</title>
+      <link>https://surfacesyntacticud.github.io/guidelines/u/oral_language/macrosyntax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/macrosyntax/</guid>
+      <description>In this part we will present relations that we use to analyse relations beyond the microsyntactic analysis between a governor and its dependant. We call this type of analysis macrosyntax.
+This approach can be used to analyse two elements that are placed side by side with no explicit marker of coordination, subordination, or argument relation with the head word. Ex: I told him don&amp;rsquo;t do it. in this sentence we miss the usual marker that.</description>
+    </item>
+    
+    <item>
+      <title>Paradigmatical lists</title>
+      <link>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj/</guid>
+      <description>In UD there are three relations reparandum, conj, appos that SUD only uses for analysing written texts.
+These three relations work as paradigmatic lists. That&amp;rsquo;s why in SUD for oral speech, we decided to gather these three relations under the relation conj to underline the similarity between the three.
+We distinguish:
+ conj:dicto for disfluencies when the speaker corrects his speech (parallel to reparandum in written texts) conj:coord for elements connected by a coordinating conjunction (parallel to conj in written texts) conj:appos for appositional modifiers that serve to define better the previous noun (parallel to appos in written texts)  Note : for analysing oral speech we never use the conj relationship alone.</description>
+    </item>
+    
+    <item>
       <title>parataxis:insert</title>
       <link>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_insert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -359,27 +381,6 @@ Repetitions and reformulations To analyse constructions of repetition or reformu
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_parenth/</guid>
       <description>The relatoin parataxis:parenth is used for parenthetical clauses, in the sense that the clause is backgrounded (as it was inside parentheses). A parenthetical clause could form an independent sentence.
  French   # text = en mille neuf cent cinquante quand vous avez fait paraître ce ce chef -d&#39; oeuvre pour moi c&#39; est un chef -d&#39; oeuvre qui s&#39; appelle Un Barrage contre le Pacifique 1	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	2	subj@caus	_	_ 2	avez	avoir	AUX	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_ 3	fait	faire	AUX	DoubleAux	_	2	comp:aux	_	_ 4	paraître	paraître	VERB	CAUSATIVE	VerbForm=Inf	3	comp:aux@caus	_	_ 5	ce	ce	DET	_	_	7	det	_	_ 6	ce	ce	DET	_	_	5	conj:dicto	_	_ 7	chef	chef	NOUN	_	_	4	comp:obj	_	ExtPos=NOUN|PhraseType=Idiom 8	-d&#39;	d&#39;	ADP	_	_	7	unk	_	InIdiom=Yes 9	oeuvre	oeuvre	NOUN	_	_	8	unk	_	InIdiom=Yes 10	pour	pour	ADP	_	_	13	mod	_	_ 11	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	10	comp:obj	_	_ 12	c&#39;	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	13	subj	_	_ 13	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	parataxis:parenth	_	_ 14	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_ 15	chef	chef	NOUN	_	_	13	comp:pred	_	ExtPos=NOUN|PhraseType=Idiom 16	-d&#39;	de	ADP	_	_	15	unk	_	InIdiom=Yes 17	oeuvre	oeuvre	NOUN	_	_	16	unk	_	InIdiom=Yes 18	qui	qui	PRON	_	_	20	subj	_	_ 19	s&#39;	se	PRON	_	Person=3|PronType=Prs	20	comp	_	InIdiom=Yes 20	appelle	appeler	VERB	_	_	7	mod@relcl	_	ExtPos=VERB|PhraseType=Idiom 21	Un	Un	DET	_	_	22	det	_	_ 22	Barrage	Barrage	NOUN	_	_	20	comp:obj	_	ExtPOS=PROPN|Title=Yes 23	contre	contre	ADP	_	_	22	udep	_	_ 24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_ 25	Pacifique	Pacifique	PROPN	_	_	23	comp:obj	_	_    </description>
-    </item>
-    
-    <item>
-      <title>Relations for conjunctional structures in oral language</title>
-      <link>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj/</guid>
-      <description>In UD there are three relations reparandum, conj, appos that SUD only uses for analysing written texts.
-These three relations work as paradigmatic lists. That&amp;rsquo;s why in SUD for oral speech, we decided to gather these three relations under the relation conj.
-We distinguish:
- conj:dicto for disfluencies when the speaker corrects his speech (parallel to reparandum in written texts) conj:coord for elements connected by a coordinating conjunction (parallel to conj in written texts) conj:appos for appositional modifiers that serve to define better the previous noun (parallel to appos in written texts)  Note : for analysing oral speech we never use the conj relationship alone.</description>
-    </item>
-    
-    <item>
-      <title>Treating multiple propositions with no visible marker</title>
-      <link>https://surfacesyntacticud.github.io/guidelines/u/oral_language/macrosyntax/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/macrosyntax/</guid>
-      <description>In this part we will present relations that we use to link two elements that are placed side by side with no explicit marker of coordination, subordination, or argument relation with the head word. Ex: I told him don&amp;rsquo;t do it. in this sentence we miss the usual marker that. Or in the following sentence: My brother&amp;rsquo;s children, you know he has two daughters, will come to visit the part you know he has two daughters is inserted in the main sentence.</description>
     </item>
     
     <item>
