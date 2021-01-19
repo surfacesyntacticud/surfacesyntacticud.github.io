@@ -306,7 +306,7 @@ Ex:
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/discourse/</guid>
       <description>The discourse relation is used to link discourse markers. These markers are not clearly linked to the structure of the sentence, except in an expressive way.
-In some cases the discourse marker can be another proposition. Ex: He comes on wednesday, I think. In this sentence I think is a discourse marker because it misses its object (the object of the verb think is the rest of the sentence) and because they are fixed (I think doesn&amp;rsquo;t commute with he thinks).</description>
+In some cases the discourse marker can be another proposition. Ex: He comes on wednesday, I think. In this sentence I think is a discourse marker because it lacks an object (the object of the verb think is the rest of the sentence) and because they are fixed (I think doesn&amp;rsquo;t commute with he thinks).</description>
     </item>
     
     <item>
@@ -393,8 +393,8 @@ We distinguish:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/vocative/</guid>
-      <description>The vocative relation is used for dialogue participant addressed in a text.
- French   # text = Merci beaucoup monsieur 1	Merci	merci	NOUN	_	_	0	root	_	_ 2	beaucoup	beaucoup	ADV	_	_	1	mod	_	_ 3	monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	1	vocative	_	_    </description>
+      <description>The vocative relation is used when a speaker directly addresses a listener in an utterance.
+ French   # text = Merci beaucoup monsieur 1	Merci	merci	NOUN	_	_	0	root	_	_ 2	beaucoup	beaucoup	ADV	_	_	1	mod	_	_ 3	monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	1	vocative	_	_     Naija   # text = ehn auntie   </description>
     </item>
     
   </channel>
