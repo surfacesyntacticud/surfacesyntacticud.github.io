@@ -315,9 +315,8 @@ Ex:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj_dicto/</guid>
-      <description>This relation is used to indicate difluencies when a speaker corrects his speech. It is parallel to the reparandum relationship used in UD and for analysis of written texts in UD.
- French
-   # sent_id = ParisStories_2019_stagePrimaire_15 # text_fr = j&#39;ai j&#39;ai vraiment adoré ce côté là . # text_en = I did I did really like that part 1	j&#39;	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	subj	_	SpaceAfter=No|Gloss=I 2	ai	ai~	AUX	_	Number=Sing|Person=1	0	root	_	Gloss=have 3	j&#39;	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	subj	_	SpaceAfter=No|Gloss=I 4	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	conj:dicto	_	Gloss=have 5	vraiment	vraiment	ADV	_	_	6	mod	_	Gloss=really 6	adoré	adorer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	comp:aux	_	Gloss=loved 7	ce	ce	DET	_	_	8	det	_	Gloss=that 8	côté	côté	NOUN	_	Gender=Masc|Number=Sing	6	comp:obj	_	Gloss=part 9	là	là	ADV	_	_	8	mod	_	Gloss=that 10	.</description>
+      <description>This relation is used to indicate difluencies when a speaker corrects his speech and to analyse reformulations. The relation conj:coord is used to link two different objects, two referants (ex: Mary and John are two different referents). The relation conj:dicto on the other hand is used to link two denotations of the same referent (ex: the desert in Kenya, the Kenya desert is denoting the same referant).
+The ability of conj:dicto to anlyse both disfluencies and reformulations is the reason why we don&amp;rsquo;t use the the reparandum relationship as used in UD.</description>
     </item>
     
     <item>
