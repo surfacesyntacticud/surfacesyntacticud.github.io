@@ -1,190 +1,98 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://surfacesyntacticud.github.io/</loc>
     <lastmod>2020-04-26T17:45:38+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/data/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/correspondences/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/deep_features/agent/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/deep_features/caus/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/deep_features/expletive/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/deep_features/fixed/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/deep_features/lvc/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/deep_features/pass/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/deep_features/relcl/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/deep_features/tense/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/deep_features/x/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/extpos/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/extpos/general/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/extpos/idioms_titles/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/general_principles/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/comparative/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/compounds/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/coord/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/lvc/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/relations/comp/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_aux/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_cleft/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_obj/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_obl/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_pred/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/relations/mod/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/relations/subj/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/relations/udep/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj_appos/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj_coord/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj_dicto/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/discourse/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/disfulencies/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/dislocated/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/french/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/macrosyntax/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/pcm/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_insert/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_obj/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_parenth/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/tags/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/oral_language/vocative/</loc>
   </url>
-  
 </urlset>
