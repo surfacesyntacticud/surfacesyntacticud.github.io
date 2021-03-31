@@ -24,21 +24,15 @@
   <title> | SUD</title>
 
   
-  <link rel="stylesheet" href="/css/local.css">
+  <link rel="stylesheet" href="/css/style.css">
 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.10.0/d3.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
   
   <script src="https://unpkg.com/reactive-dep-tree@0.2.3/dist/reactive-dep-tree.umd.js" async deferred></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.10.0/d3.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="/arborator/arborator-draft.css">
-  <script src="/arborator/arborator-draft.js"></script>
-  <script>
-    window.onload = function() {
-      new ArboratorDraft(); 
-    }
-  </script>
-  
 
 </head>
 <body>
@@ -92,53 +86,68 @@
 <h2 id="chained-conjuncts">Chained conjuncts</h2>
 <p>In UD, all conjuncts of a coordination are attached to the head of the first conjunct in a bouquet. In SUD, each conjunct is attached to the head of the previous one in a chain.</p>
 <p>The first example below shows the annotation of a coordination in UD and the second one the corresponding annotation in SUD.</p>
-<div>
-<conll>
 
-1	John	John	PROPN	_	_	7	nsubj	_	_
-2	,	,	PUNCT	_	_	3	punct	_	_
-3	Mary	Mary	PROPN	_	_	1	conj	_	_
-4	and	and	CCONJ	_	_	5	cc	_	_
-5	Peter	Peter	PROPN	_	_	1	conj	_	_
-6	will	will	AUX	_	_	7	aux	_	_
-7	come	come	VERB	_	_	0	root	_	_
 
-</conll>
-</div>
+    <reactive-dep-tree
+      interactive="true"
+      shown-metas="text_en"
+      shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss"
+      hidden-features="XPOS"
+      conll="
+      1	John	John	PROPN	_	_	7	nsubj	_	_
+      2	,	,	PUNCT	_	_	3	punct	_	_
+      3	Mary	Mary	PROPN	_	_	1	conj	_	_
+      4	and	and	CCONJ	_	_	5	cc	_	_
+      5	Peter	Peter	PROPN	_	_	1	conj	_	_
+      6	will	will	AUX	_	_	7	aux	_	_
+      7	come	come	VERB	_	_	0	root	_	_
+      "
+    ></reactive-dep-tree>
 
-<div>
-<conll>
 
-1	John	John	PROPN	_	_	6	subj	_	_
-2	,	,	PUNCT	_	_	3	punct	_	_
-3	Mary	Mary	PROPN	_	_	1	conj	_	_
-4	and	and	CCONJ	_	_	5	cc	_	_
-5	Peter	Peter	PROPN	_	_	3	conj	_	_
-6	will	will	AUX	_	_	0	root	_	_
-7	come	come	VERB	_	_	6	comp:aux	_	_
 
-</conll>
-</div>
+
+    <reactive-dep-tree
+      interactive="true"
+      shown-metas="text_en"
+      shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss"
+      hidden-features="XPOS"
+      conll="
+      1	John	John	PROPN	_	_	6	subj	_	_
+      2	,	,	PUNCT	_	_	3	punct	_	_
+      3	Mary	Mary	PROPN	_	_	1	conj	_	_
+      4	and	and	CCONJ	_	_	5	cc	_	_
+      5	Peter	Peter	PROPN	_	_	3	conj	_	_
+      6	will	will	AUX	_	_	0	root	_	_
+      7	come	come	VERB	_	_	6	comp:aux	_	_
+      "
+    ></reactive-dep-tree>
+
 
 <h2 id="embedded-coordination">Embedded coordination</h2>
 <p>The conjunct of a coordination can itself be a coordination. Theoretically, this embedding can be nested indefinitely. In natural corpora, however, there is typically only one level of iteration.
 The <code>conj</code> label does not make a distinction between embedded relations and surface relations because they form a single chain. However, these relations can be distinguished with the use of the extension <code>emb</code> for embedded coordinations, as the following example shows.</p>
-<div>
-<conll>
 
-1	John	John	PROPN	_	_	9	subj	_	_
-2	,	,	PUNCT	_	_	3	punct	_	_
-3	Mary	Mary	PROPN	_	_	1	conj	_	_
-4	or	or	CCONJ	_	_	6	cc	_	_
-5	her	her	DET	_	_	6	det	_	_
-6	brother	brother	NOUN	_	_	3	conj:emb	_	_
-7	and	and	CCONJ	_	_	8	cc	_	_
-8	Peter	Peter	PROPN	_	_	6	conj	_	_
-9	will	will	AUX	_	_	0	root	_	_
-10	come	come	VERB	_	_	9	comp:aux	_	_
 
-</conll>
-</div>
+    <reactive-dep-tree
+      interactive="true"
+      shown-metas="text_en"
+      shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss"
+      hidden-features="XPOS"
+      conll="
+      1	John	John	PROPN	_	_	9	subj	_	_
+      2	,	,	PUNCT	_	_	3	punct	_	_
+      3	Mary	Mary	PROPN	_	_	1	conj	_	_
+      4	or	or	CCONJ	_	_	6	cc	_	_
+      5	her	her	DET	_	_	6	det	_	_
+      6	brother	brother	NOUN	_	_	3	conj:emb	_	_
+      7	and	and	CCONJ	_	_	8	cc	_	_
+      8	Peter	Peter	PROPN	_	_	6	conj	_	_
+      9	will	will	AUX	_	_	0	root	_	_
+      10	come	come	VERB	_	_	9	comp:aux	_	_
+      "
+    ></reactive-dep-tree>
+
 
 <h2 id="shared-dependents">Shared dependents</h2>
 <p>Left dependents on coordination are attached to the head of the coordination. Since the head of a coordination is the head of the leftmost conjunct, it is not possible to distinguish these dependents from the own dependents of the leftmost conjunct.</p>

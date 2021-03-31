@@ -24,21 +24,15 @@
   <title> | SUD</title>
 
   
-  <link rel="stylesheet" href="/css/local.css">
+  <link rel="stylesheet" href="/css/style.css">
 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.10.0/d3.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
   
   <script src="https://unpkg.com/reactive-dep-tree@0.2.3/dist/reactive-dep-tree.umd.js" async deferred></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.10.0/d3.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="/arborator/arborator-draft.css">
-  <script src="/arborator/arborator-draft.js"></script>
-  <script>
-    window.onload = function() {
-      new ArboratorDraft(); 
-    }
-  </script>
-  
 
 </head>
 <body>
@@ -91,37 +85,47 @@
   <h1 id="lvc"><strong>@lvc</strong></h1>
 <p>The <code>@lvc</code> feature is used for arguments of light verbs.</p>
 <blockquote>
-<p>English</p>
+<p>English
+
+
+    <reactive-dep-tree
+      interactive="true"
+      shown-metas="text_en"
+      shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss"
+      hidden-features="XPOS"
+      conll="
+      1	take	take	VERB	_	_	0	root	_	_
+      2	part	part	NOUN	_	_	1	comp:obj@lvc	_	_
+      3	in	in	ADP	_	_	1	comp:obl	_	_
+      4	the	the	DET	_	_	5	det	_	_
+      5	discussion	discussion	NOUN	_	_	3	comp:obj	_	_
+      "
+    ></reactive-dep-tree>
+
+</p>
 </blockquote>
-<div>
-<conll>
-
-1	take	take	VERB	_	_	0	root	_	_
-2	part	part	NOUN	_	_	1	comp:obj@lvc	_	_
-3	in	in	ADP	_	_	1	comp:obl	_	_
-4	the	the	DET	_	_	5	det	_	_
-5	discussion	discussion	NOUN	_	_	3	comp:obj	_	_
-
-</conll>
-</div>
-
 <blockquote>
-<p>French</p>
+<p>French
+
+
+    <reactive-dep-tree
+      interactive="true"
+      shown-metas="text_en"
+      shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss"
+      hidden-features="XPOS"
+      conll="
+      # text_en = He's afraid of the spider
+      1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	subj	_	Gloss=he
+      2	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Gloss=have
+      3	peur	peur	NOUN	_	Gender=Fem|Number=Sing	2	comp:obj@lvc	_	Gloss=fear
+      4	de	de	ADP	_	_	3	comp:obl	_	Gloss=of
+      5	l'	le	DET	_	Definite=Def|Number=Sing|Person=3|PronType=Art	6	det	_	Gloss=the
+      6	araignée	araignée	PROPN	_	_	4	comp:obj	_	Gloss=spider
+      "
+    ></reactive-dep-tree>
+
+</p>
 </blockquote>
-<div>
-<conll>
-
-# text_en = He's afraid of the spider
-1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	subj	_	Gloss=he
-2	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Gloss=have
-3	peur	peur	NOUN	_	Gender=Fem|Number=Sing	2	comp:obj@lvc	_	Gloss=fear
-4	de	de	ADP	_	_	3	comp:obl	_	Gloss=of
-5	l'	le	DET	_	Definite=Def|Number=Sing|Person=3|PronType=Art	6	det	_	Gloss=the
-6	araignée	araignée	PROPN	_	_	4	comp:obj	_	Gloss=spider
-
-</conll>
-</div>
-
 <p>See <a href="https://github.com/surfacesyntacticud/guidelines/issues/5">issue #5</a> for a discussion about light verb construction annotation in SUD.</p>
 
 

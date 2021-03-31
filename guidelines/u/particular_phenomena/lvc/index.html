@@ -24,21 +24,15 @@
   <title> | SUD</title>
 
   
-  <link rel="stylesheet" href="/css/local.css">
+  <link rel="stylesheet" href="/css/style.css">
 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.10.0/d3.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
   
   <script src="https://unpkg.com/reactive-dep-tree@0.2.3/dist/reactive-dep-tree.umd.js" async deferred></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.10.0/d3.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="/arborator/arborator-draft.css">
-  <script src="/arborator/arborator-draft.js"></script>
-  <script>
-    window.onload = function() {
-      new ArboratorDraft(); 
-    }
-  </script>
-  
 
 </head>
 <body>
@@ -90,20 +84,25 @@
   <h1></h1>
   <h1 id="light-verb-constructions">Light verb constructions</h1>
 <p>A light verb construction (LVC) is a type of verbal structure in which a verb is coupled with another element – typically a noun phrase – which provides the primary semantic value. Common examples of LVCs in English include <em>take a walk</em>, <em>give a kiss</em>, or <em>have a drink</em>. In SUD, LVCs are marked with the deep feature <code>@lvc</code>.</p>
-<div>
-<conll>
 
-# text_fr = faire face à la situation
-# text_en = He faces the situation
-1	Il	il	PRON	_	_	2	subj	_	Gloss=he
-2	fait	faire	VERB	_	_	0	root	_	Gloss=makes
-3	face	face	NOUN	_	_	2	comp:obj@lvc	_	Gloss=face
-4	à	à	ADP	_	_	3	comp:obl	_	Gloss=to
-5	la	le	DET	_	_	6	det	_	Gloss=the
-6	situation	situation	NOUN	_	_	4	comp:obj	_	Gloss=situation
 
-</conll>
-</div>
+    <reactive-dep-tree
+      interactive="true"
+      shown-metas="text_en"
+      shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss"
+      hidden-features="XPOS"
+      conll="
+      # text_fr = faire face à la situation
+      # text_en = He faces the situation
+      1	Il	il	PRON	_	_	2	subj	_	Gloss=he
+      2	fait	faire	VERB	_	_	0	root	_	Gloss=makes
+      3	face	face	NOUN	_	_	2	comp:obj@lvc	_	Gloss=face
+      4	à	à	ADP	_	_	3	comp:obl	_	Gloss=to
+      5	la	le	DET	_	_	6	det	_	Gloss=the
+      6	situation	situation	NOUN	_	_	4	comp:obj	_	Gloss=situation
+      "
+    ></reactive-dep-tree>
+
 
 <p>The complements of these constructions are sometimes attached to the noun rather than the verb because:</p>
 <ul>
@@ -111,60 +110,80 @@
 <li>it&rsquo;s the noun that is the predicate and controls the valency. In the previous example, HAVE is binary predicate, not a ternary predicate.</li>
 </ul>
 <p>This first criterion explains the differing interpretations of the following two sentences. &ldquo;A date with his girlfriend&rdquo; forms a perfectly coherent phrase which allows for reformulations such as &ldquo;the date with his girlfriend, it was pleasant&rdquo;. However, &ldquo;part in the discussion&rdquo; is less semantically transparent and therefore less prone to such reformulations. Because of this, the verb &ldquo;take&rdquo; is treated as the head of the complement.</p>
-<div>
-<conll>
 
-1	He	he	PRON	_	_	2	subj	_	_
-2	has	have	VERB	_	_	0	root	_	_
-3	a	a	DET	_	_	4	det	_	_
-4	date	date	NOUN	_	_	2	comp:obj@lvc	_	_
-5	with	with	ADJ	–	–	4	mod	_	_
-6	his	his	DET	_	_	7	det	_	_
-7	girlfriend	girlfriend	NOUN	_	_	5	comp:obj	_	_
 
-</conll>
-</div>
+    <reactive-dep-tree
+      interactive="true"
+      shown-metas="text_en"
+      shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss"
+      hidden-features="XPOS"
+      conll="
+      1	He	he	PRON	_	_	2	subj	_	_
+      2	has	have	VERB	_	_	0	root	_	_
+      3	a	a	DET	_	_	4	det	_	_
+      4	date	date	NOUN	_	_	2	comp:obj@lvc	_	_
+      5	with	with	ADJ	–	–	4	mod	_	_
+      6	his	his	DET	_	_	7	det	_	_
+      7	girlfriend	girlfriend	NOUN	_	_	5	comp:obj	_	_
+      "
+    ></reactive-dep-tree>
 
-<div>
-<conll>
 
-1	take	take	VERB	_	_	0	root	_	_
-2	part	part	NOUN	_	_	1	comp:obj@lvc	_	_
-3	in	in	ADP	_	_	1	comp:obl	_	_
-4	the	the	DET	_	_	5	det	_	_
-5	discussion	discussion	NOUN	_	_	3	comp:obj	_	_
 
-</conll>
-</div>
+
+    <reactive-dep-tree
+      interactive="true"
+      shown-metas="text_en"
+      shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss"
+      hidden-features="XPOS"
+      conll="
+      1	take	take	VERB	_	_	0	root	_	_
+      2	part	part	NOUN	_	_	1	comp:obj@lvc	_	_
+      3	in	in	ADP	_	_	1	comp:obl	_	_
+      4	the	the	DET	_	_	5	det	_	_
+      5	discussion	discussion	NOUN	_	_	3	comp:obj	_	_
+      "
+    ></reactive-dep-tree>
+
 
 <p>In cases of ambiguity, pronominalization can be a useful test for determining dependencies. Pronominalizing &ldquo;He has a date with his girlfriend&rdquo; as &ldquo;the date, he has it with his girlfriend&rdquo; would sound awkward to most native English speakers. However, pronominalizing &ldquo;He took a walk with his wife&rdquo; as &ldquo;the walk, he took it with his wife&rdquo; sounds much more natural. This explains the different syntactic interpretations of the following sentencs.</p>
-<div>
-<conll>
+<p>
 
-1	He	he	PRON	_	_	2	subj	_	_
-2	has	have	VERB	_	_	0	root	_	_
-3	a	a	DET	_	_	4	det	_	_
-4	date	date	NOUN	_	_	2	comp:obj@lvc	_	_
-5	with	with	ADJ	–	–	4	mod	_	_
-6	his	his	DET	_	_	7	det	_	_
-7	girlfriend	girlfriend	NOUN	_	_	5	comp:obj	_	_
+    <reactive-dep-tree
+      interactive="true"
+      shown-metas="text_en"
+      shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss"
+      hidden-features="XPOS"
+      conll="
+      2	has	have	VERB	_	_	0	root	_	_
+      3	a	a	DET	_	_	4	det	_	_
+      4	date	date	NOUN	_	_	2	comp:obj@lvc	_	_
+      5	with	with	ADJ	–	–	4	mod	_	_
+      6	his	his	DET	_	_	7	det	_	_
+      7	girlfriend	girlfriend	NOUN	_	_	5	comp:obj	_	_
+      "
+    ></reactive-dep-tree>
 
-</conll>
-</div>
 
-<div>
-<conll>
+1	He	he	PRON	_	_	2	subj	_	_</p>
 
-1	He	he	PRON	_	_	2	subj	_	_
-2	took	take	VERB	_	_	0	root	_	_
-3	a	a	DET	_	_	4	det	_	_
-4	walk	walk	NOUN	_	_	2	comp:obj@lvc	_	_
-5	with	with	ADJ	–	–	2	mod	_	_
-6	his	his	DET	_	_	7	det	_	_
-7	wife	wife	NOUN	_	_	5	comp:obj	_	_
 
-</conll>
-</div>
+    <reactive-dep-tree
+      interactive="true"
+      shown-metas="text_en"
+      shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss"
+      hidden-features="XPOS"
+      conll="
+      1	He	he	PRON	_	_	2	subj	_	_
+      2	took	take	VERB	_	_	0	root	_	_
+      3	a	a	DET	_	_	4	det	_	_
+      4	walk	walk	NOUN	_	_	2	comp:obj@lvc	_	_
+      5	with	with	ADJ	–	–	2	mod	_	_
+      6	his	his	DET	_	_	7	det	_	_
+      7	wife	wife	NOUN	_	_	5	comp:obj	_	_
+      "
+    ></reactive-dep-tree>
+
 
 
 

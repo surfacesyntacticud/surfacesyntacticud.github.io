@@ -23,8 +23,7 @@ SUD represents an alternative rather than a competitor to UD, and was designed i
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/agent/</guid>
-      <description>@agent The @agent feature is used for arguments that are agents of their governor at the semantic level in various constructions (e.g., causative, passive, impersonal, etc.).
-  1	it	it	PRON	_	_	2	subj	_	_ 2	occurred	occur	VERB	_	_	0	root	_	_ 3	to	to	ADP	_	_	2	comp:obl	_	_ 4	Quinn	Quinn	PROPN	_	_	3	comp:obj	_	_ 5	that	that	SCONJ	_	_	2	comp:obj@agent	_	_ 6	perhaps	perhaps	ADV	_	_	8	mod	_	_ 7	Stillmann	Stillmann	PROPN	_	_	8	subj	_	_ 8	was	be	PROPN	_	_	5	comp:obj	_	_ 9	blind	blind	ADJ	_	_	8	comp:pred	_	_     1	Food	food	NOUN	_	_	2	subj	_	_ 2	was	be	AUX	_	_	0	root	_	_ 3	cooked	cook	VERB	_	_	2	comp:aux@pass	_	_ 4	by	by	ADP	_	_	3	comp:obl@agent	_	_ 5	many	many	ADJ	_	_	6	mod	_	_ 6	hands	hand	NOUN	_	_	4	comp:obj	_	_     # text_en = He makes his troops go faster.</description>
+      <description>@agent The @agent feature is used for arguments that are agents of their governor at the semantic level in various constructions (e.g., causative, passive, impersonal, etc.).     </description>
     </item>
     
     <item>
@@ -33,8 +32,7 @@ SUD represents an alternative rather than a competitor to UD, and was designed i
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/caus/</guid>
-      <description>@caus The @caus feature is used for the argument of causative auxiliaries.
-  # text_en = He makes his troops go faster. 1	Il	il	PRON	_	_	2	subj@caus	_	Gloss=he 2	fait	faire	AUX	_	_	0	root	_	Gloss=make 3	accélérer	accélérer	VERB	_	_	2	comp:aux@caus	_	Gloss=accelerate 4	ses	son	DET	_	_	5	det	_	Gloss=his 5	troupes	troupe	NOUN	_	_	2	comp:obj@agent	_	Gloss=troops   </description>
+      <description>@caus The @caus feature is used for the argument of causative auxiliaries.  </description>
     </item>
     
     <item>
@@ -43,8 +41,7 @@ SUD represents an alternative rather than a competitor to UD, and was designed i
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/expletive/</guid>
-      <description>@expl The @expl feature is used for arguments of predicates without semantic contents (impersonal subjects for instance).
-  1	it	it	PRON	_	_	2	subj@expl	_	_ 2	is	be	AUX	_	_	0	root	_	_ 3	also	also	ADV	_	_	4	mod	_	_ 4	desirable	desirable	ADJ	_	_	2	comp:pred	_	_ 5	to	to	PART	_	_	2	comp:obj@agent	_	_ 6	retain	retain	VERB	_	_	5	comp:obj	_	_ 7	them	them	PRON	_	_	6	comp:obj	_	_     1	it	it	PRON	_	_	2	subj@expl	_	_ 2	rains	rain	VERB	_	_	0	root	_	_ 3	a	a	DET	_	_	4	det	_	_ 4	lot	lot	NOUN	_	_	2	mod	_	_ 5	in	in	PART	_	_	2	mod	_	_ 6	England	England	PROPN	_	_	5	comp:obj	_	_   This feature can also be used to annotate repeated subjects, such as those which are common in certain French interrogative constructions.</description>
+      <description>@expl The @expl feature is used for arguments of predicates without semantic contents (impersonal subjects for instance).   This feature can also be used to annotate repeated subjects, such as those which are common in certain French interrogative constructions.  </description>
     </item>
     
     <item>
@@ -63,8 +60,7 @@ SUD represents an alternative rather than a competitor to UD, and was designed i
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/lvc/</guid>
       <description>@lvc The @lvc feature is used for arguments of light verbs.
- English
-   1	take	take	VERB	_	_	0	root	_	_ 2	part	part	NOUN	_	_	1	comp:obj@lvc	_	_ 3	in	in	ADP	_	_	1	comp:obl	_	_ 4	the	the	DET	_	_	5	det	_	_ 5	discussion	discussion	NOUN	_	_	3	comp:obj	_	_    French</description>
+ English    French   See issue #5 for a discussion about light verb construction annotation in SUD.</description>
     </item>
     
     <item>
@@ -76,7 +72,8 @@ SUD represents an alternative rather than a competitor to UD, and was designed i
       <description>@pass The @pass feature is used for the arguments of passive auxiliaries.
 The relation between the auxiliary and the verb is marked comp:aux@pass and the subject of the auxiliary bears the subj@pass feature.
  English
-   1	They	they	PRON	_	_	2	subj@pass	_	_ 2	were	be	AUX	_	_	0	root	_	_ 3	killed	kill	VERB	_	_	2	comp:aux@pass	_	_    French</description>
+   French
+  In case of passive reflexive constructions, the subject is analysed with a regular subj relation and the pronoun with the comp@pass relation. For more information about the usage of comp, see the dedicated page.</description>
     </item>
     
     <item>
@@ -86,7 +83,7 @@ The relation between the auxiliary and the verb is marked comp:aux@pass and the 
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/relcl/</guid>
       <description>@relcl The @relcl feature is used for the relation between the head of a relative clause and its antecedent.
-  1	This	this	PRON	_	_	2	subj	_	_ 2	is	be	AUX	_	_	0	root	_	_ 3	money	money	NOUN	_	_	2	comp:aux@pass	_	_ 4	you	you	PRON	_	_	5	subj	_	_ 5	&#39;ve	have	AUX	_	_	3	mod@relcl	_	_ 6	earned	earn	VERB	_	_	5	comp:aux@tense	_	_   </description>
+ </description>
     </item>
     
     <item>
@@ -96,7 +93,7 @@ The relation between the auxiliary and the verb is marked comp:aux@pass and the 
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/tense/</guid>
       <description>@tense The @tense feature is used for the argument of tense auxiliaries.
-  1	This	this	PRON	_	_	2	subj	_	_ 2	is	be	AUX	_	_	0	root	_	_ 3	money	money	NOUN	_	_	2	comp:aux@pass	_	_ 4	you	you	PRON	_	_	5	subj	_	_ 5	&#39;ve	have	AUX	_	_	3	mod@relcl	_	_ 6	earned	earn	VERB	_	_	5	comp:aux@tense	_	_   </description>
+ </description>
     </item>
     
     <item>
@@ -106,7 +103,7 @@ The relation between the auxiliary and the verb is marked comp:aux@pass and the 
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/x/</guid>
       <description>@x The @x feature is used to annotate relationships with verbs that do not have an explicitly marked subject, but whose semantic subject can nevertheless be found in the sentence. This relationship therefore applies essentially to infinitive verbs which relate to a subject introduced earlier in the sentence. For example, in the sentence he wants to eat, he has a clear semantic relationship with to eat.
-  1	He	he	PRON	_	_	2	subj	_	_ 2	did	do	AUX	_	_	0	root	_	_ 3	not	not	PART	_	_	4	mod	_	_ 4	ask	ask	VERB	_	_	2	comp:aux	_	_ 5	me	I	PRON	_	_	4	comp:obl	_	_ 6	to	to	PART	_	_	4	comp:obj@x	_	_ 7	sit	sit	VERB	_	_	6	comp:obj	_	_ 8	down	down	PART	_	_	7	mod	_	_     # shownfeatures = FORM, UPOS, LEMMA, MISC.</description>
+  While this feature is most often used in relationships between finite verbs and the infinitives they govern, note that the governing element does not necessarily need to be a verb.</description>
     </item>
     
     <item>
@@ -127,7 +124,7 @@ The relation between the auxiliary and the verb is marked comp:aux@pass and the 
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/comparative/</guid>
       <description>Comparative, superlative and consecutive constructions In comparative constructions where each term is introduced with a grammatical pair like more&amp;hellip; than, the relation between the two grammatical words is labeled comp:obj, with the first word being the head of the second. Consider the example:
-  # text = vous êtes plus jeune que moi # text_en = You are younger than me 1	Vous	vous	PRON	_	_	2	subj	_	Gloss=you 2	êtes	être	AUX	_	_	0	root	_	Gloss=are 3	plus	plus	ADV	_	_	4	mod	_	Gloss=more 4	jeune	jeune	ADJ	_	_	2	comp:pred	_	Gloss=young 5	que	que	SCONJ	_	_	3	comp:obj	_	Gloss=than 6	moi	lui	PRON	_	_	5	comp:obj	_	Gloss=I   Note that the first grammatical word of the comparison (plus) is considered a modifier of the property being compared.</description>
+ Note that the first grammatical word of the comparison (plus) is considered a modifier of the property being compared. Examples in other languages: plus &amp;hellip; que (French), più &amp;hellip; di (Italian), bardziej &amp;hellip; niż (Polish).</description>
     </item>
     
     <item>
@@ -148,7 +145,7 @@ Naija in particular makes heavy use of this relation, which is used to link noun
       <guid>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/coord/</guid>
       <description>Coordination Chained conjuncts In UD, all conjuncts of a coordination are attached to the head of the first conjunct in a bouquet. In SUD, each conjunct is attached to the head of the previous one in a chain.
 The first example below shows the annotation of a coordination in UD and the second one the corresponding annotation in SUD.
-  1	John	John	PROPN	_	_	7	nsubj	_	_ 2	,	,	PUNCT	_	_	3	punct	_	_ 3	Mary	Mary	PROPN	_	_	1	conj	_	_ 4	and	and	CCONJ	_	_	5	cc	_	_ 5	Peter	Peter	PROPN	_	_	1	conj	_	_ 6	will	will	AUX	_	_	7	aux	_	_ 7	come	come	VERB	_	_	0	root	_	_     1	John	John	PROPN	_	_	6	subj	_	_ 2	,	,	PUNCT	_	_	3	punct	_	_ 3	Mary	Mary	PROPN	_	_	1	conj	_	_ 4	and	and	CCONJ	_	_	5	cc	_	_ 5	Peter	Peter	PROPN	_	_	3	conj	_	_ 6	will	will	AUX	_	_	0	root	_	_ 7	come	come	VERB	_	_	6	comp:aux	_	_   Embedded coordination The conjunct of a coordination can itself be a coordination.</description>
+  Embedded coordination The conjunct of a coordination can itself be a coordination.</description>
     </item>
     
     <item>
@@ -158,7 +155,7 @@ The first example below shows the annotation of a coordination in UD and the sec
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/lvc/</guid>
       <description>Light verb constructions A light verb construction (LVC) is a type of verbal structure in which a verb is coupled with another element – typically a noun phrase – which provides the primary semantic value. Common examples of LVCs in English include take a walk, give a kiss, or have a drink. In SUD, LVCs are marked with the deep feature @lvc.
-  # text_fr = faire face à la situation # text_en = He faces the situation 1	Il	il	PRON	_	_	2	subj	_	Gloss=he 2	fait	faire	VERB	_	_	0	root	_	Gloss=makes 3	face	face	NOUN	_	_	2	comp:obj@lvc	_	Gloss=face 4	à	à	ADP	_	_	3	comp:obl	_	Gloss=to 5	la	le	DET	_	_	6	det	_	Gloss=the 6	situation	situation	NOUN	_	_	4	comp:obj	_	Gloss=situation   The complements of these constructions are sometimes attached to the noun rather than the verb because:</description>
+ The complements of these constructions are sometimes attached to the noun rather than the verb because:</description>
     </item>
     
     <item>
@@ -180,7 +177,14 @@ In most cases, SUD native corpora are directly annotated with the sub-relations,
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_aux/</guid>
       <description>comp:aux The comp:aux relation is used for the argument of auxiliaries, and corresponds to the aux relationship as defined by UD.
  English
-   1	Do	do	AUX	_	_	0	root	_	_ 2	you	you	PRON	_	_	1	subj	_	_ 3	remember	remember	VERB	_	_	1	comp:aux	_	_ 4	?	?	PUNCT	_	_	1	punct	_	_    English</description>
+   English
+  Multiple auxiliaries, such as those permitted in English varieties spoken in the Southeastern United States, are annotated as so.
+ Southern American English
+   Naija
+   Slovak
+   Wolof
+   German
+  Deep syntactic features The relation comp:aux can have these features:</description>
     </item>
     
     <item>
@@ -191,7 +195,9 @@ In most cases, SUD native corpora are directly annotated with the sub-relations,
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_cleft/</guid>
       <description>comp:cleft The comp:cleft relation is used in cleft sentences for the dependency from the head of the sentence to the head of the complement clause.
  English
-   1	It	it	PRON	_	_	2	subj	_	_ 2	was	be	AUX	_	_	0	root	_	_ 3	from	from	ADP	_	_	2	comp:pred	_	_ 4	John	John	PROPN	_	_	3	comp:obj	_	_ 5	that	that	SCONJ	_	_	2	comp:cleft	_	_ 6	she	she	PRON	_	_	7	subj	_	_ 7	heard	hear	VERB	_	_	5	comp:obj	_	_ 8	the	the	DET	_	_	9	det	_	_ 9	news	news	NOUN	_	_	7	comp:obj	_	_    French</description>
+   French
+  Sometimes, there is an ambiguity between a relative clause and a cleft clause. Consider the sentence It is the electric car that I chose.
+If someone utters this sentence in a context where they must choose between a gasoline car and an electric car, the sentence is interpreted as a cleft sentence with the following annotation.</description>
     </item>
     
     <item>
@@ -202,7 +208,9 @@ In most cases, SUD native corpora are directly annotated with the sub-relations,
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_obj/</guid>
       <description>comp:obj The comp:obj relation is used for direct object complements, including direct complements of an adposition or a subordinating conjunction.
 Direct object complements  English
-   1	Norton	Norton	PROPN	_	_	2	subj	_	_ 2	spent	spend	VERB	_	_	0	root	_	_ 3	most	most	ADV	_	_	2	comp:obj	_	_ 4	of	of	ADP	_	_	3	comp:obl	_	_ 5	his	his	PRON	_	_	7	udep	_	_ 6	early	early	ADJ	_	_	7	mod	_	_ 7	life	life	NOUN	_	_	4	comp:obj	_	_    French</description>
+   French
+   Russian
+  Usually, in order to determine whether an object is direct or not, it suffices to know if it forms a construction with a preposition. If it doesn&amp;rsquo;t, the object is direct. According to different languages, this criterion may be insufficient.</description>
     </item>
     
     <item>
@@ -214,7 +222,9 @@ Direct object complements  English
       <description>comp:obl The comp:obl relation is used for oblique arguments of verbs, adjectives, adverbs, nouns or pronouns, regardless of their form. Unlike UD, SUD does not make a distinction between indirect objects and oblique arguments. SUD instead makes the distinction between arguments and modifiers.
 Consider the following sentence analyzed in UD.
  English
-   1	it	it	PRON	_	_	2	nsubj	_	_ 2	belongs	belong	VERB	_	_	0	root	_	_ 3	to	to	ADP	_	_	5	case	_	_ 4	a	a	DET	_	_	5	det	_	_ 5	past	past	NOUN	_	_	2	obl	_	_   In SUD, it would be analyzed as follows:</description>
+  In SUD, it would be analyzed as follows:
+ English
+  Oblique complement of a verb  English</description>
     </item>
     
     <item>
@@ -225,8 +235,14 @@ Consider the following sentence analyzed in UD.
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_pred/</guid>
       <description>comp:pred The comp:pred relation is used for predicative arguments of verbs.
  English
-   1	I	I	PRON	_	_	2	subj	_	_ 2	was	be	AUX	_	_	0	root	_	_ 3	thirteen	thirteen	NUM	_	_	2	comp:pred	_	_    English
-   1	Norton	Norton	PROPN	_	_	2	subj	_	_ 2	had	have	AUX	_	_	0	root	_	_ 3	become	become	VERB	_	_	2	comp:aux	_	_ 4	completely	completely	ADV	_	_	5	mod	_	_ 5	disgruntled	disgruntled	ADJ	_	_	3	comp:pred	_	_    English</description>
+   English
+   English
+   English
+   French
+   French
+  The comp:pred relation can also be used in certain subordinating constructions.
+ French
+  </description>
     </item>
     
     <item>
@@ -237,7 +253,10 @@ Consider the following sentence analyzed in UD.
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/mod/</guid>
       <description>mod The modrelation is used for modifiers of verbs, nouns, adjectives, adverbs, auxiliaries, adpositions and conjunctions.
  English
-   1	a	a	DET	_	_	2	det	_	_ 2	country	country	NOUN	_	_	0	root	_	_ 3	with	with	ADP	_	_	2	mod	_	_ 4	so	so	ADV	_	_	5	mod	_	_ 5	many	many	ADJ	_	_	8	mod	_	_ 6	different	different	ADJ	_	_	8	mod	_	_ 7	language	language	NOUN	_	_	8	compound	_	_ 8	groups	group	NOUN	_	_	3	comp:obj	_	_    English</description>
+   English
+   French
+  Deep syntactic features The relation mod can have these features:
+ @relcl @x  </description>
     </item>
     
     <item>
@@ -248,7 +267,8 @@ Consider the following sentence analyzed in UD.
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/subj/</guid>
       <description>subj The subj relation is used for all subjects, regardless of their form (nominal or verbal). This relationship encompasses both the nsubj and csubj relationships as defined by UD, as the following examples show.
  English
-   1	A	a	DET	_	_	2	det	_	_ 2	man	man	NOUN	_	_	3	subj	_	_ 3	walks	walk	VERB	_	_	0	root	_	_    English</description>
+   English
+  Deep syntactic features The subj relation has two deep syntactic sub-relations. The sub-relation subj@expl is used to indicate that the subject is present to fill in an obligatory syntactic position and has no semantic value.</description>
     </item>
     
     <item>
@@ -270,7 +290,8 @@ The governor and the dependent of a udep relation can have any POS. The udep rel
       <description>This relation is used for appositions. In an apposition, conjuncts have the same referent, but two clearly different denotations. The conjunct in apposition forms a predication in the background (in Mary, my best friend, the second conjunct my best friend is a predication on the first conjunct Mary, it is equivalent to Mary is my best friend).
 Ex:
  French
-   # text_fr = Nietzsche le philosophe allemand parle de a une définition de l&#39;art # text_en = Nietzsche the German philosopher speaks of has an art definition 1	Nietzsche	Nietzsche	PROPN	_	_	5	subj	_	Gloss=Niezsche 2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	Gloss=the 3	philosophe	philosophe	NOUN	_	Gender=Masc|Number=Sing	1	conj:appos	_	Gloss=philosopher 4	allemand	allemand	ADJ	_	Gender=Masc|Number=Sing	3	mod	_	Gloss=German 5	parle	parler	VERB	_	_	0	root	_	Gloss=talks 6	de	de	ADP	_	_	5	comp:obl	_	Gloss=about 7	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj:dicto	_	Gloss=has 8	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	Gloss=a 9	définition	définition	NOUN	_	Gender=Fem|Number=Sing	7	comp:obj	_	Gloss=definition 10	de	de	ADP	_	_	9	udep	_	Gloss=of 11	l&#39;	le	DET	_	Definite=Def|Number=Sing|PronType=Art	12	det	_	Gloss=the 12	art	art	NOUN	_	Gender=Masc|Number=Sing	10	comp:obj	_	Gloss=art    Naija</description>
+   Naija
+  </description>
     </item>
     
     <item>
@@ -281,7 +302,8 @@ Ex:
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj_coord/</guid>
       <description>This relation is used to link elements connected with a coordinating conjunction such as and and or. The conjunction itself is linked to the second element with a cc relation. It is analogous to conj relation in UD and SUD for written language.
  French
-   # text_fr = Elle a instoré dans ce pays la démocratie politique et sociale # text_en = She established in this country political and social democracy.</description>
+   Naija
+  In case of multiple coordinating constructions, we analyze them in a chain in contrast to UD, which analyzes them as a bouquet structure.</description>
     </item>
     
     <item>
@@ -313,7 +335,7 @@ In some cases the discourse marker can be another proposition. Ex: He comes on w
       <description>In oral language, speakers form sentences while speaking, which means that sometimes they might search for words while speaking. They may repeat a word until they find the right one, or they may try with one word and then decide to change.
 Repetitions and reformulations To analyse constructions of repetition or reformulation, we use the relation conj:dicto.
  French
-   # text = Euh, et c&#39;était, bah c&#39;était super bien, euh super spacieux.</description>
+  The conj:dicto relation applies also when the linked words are not the same.</description>
     </item>
     
     <item>
@@ -324,7 +346,9 @@ Repetitions and reformulations To analyse constructions of repetition or reformu
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/dislocated/</guid>
       <description>The dislocated relation is used to analyze detached elements that do not enter in the core grammatical relations of a sentence.
  French
-   # text_fr = ça a duré dix ans le silence autour de moi # text_en = çthe silence around me lasted for ten years 1	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	subj	_	Gloss=that 2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Gloss=has 3	duré	durer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	comp:aux	_	Gloss=lasted 4	dix	dix	NUM	_	Number=Plur	5	det	_	Gloss=ten 5	ans	an	NOUN	_	Gender=Masc|Number=Plur	3	comp:obj	_	Gloss=years 6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	Gloss=the 7	silence	silence	NOUN	_	Gender=Masc|Number=Sing	2	dislocated	_	Gloss=silence 8	autour	autour	ADV	_	_	7	mod	_	Gloss=around 9	de	de	ADP	_	_	8	comp:obl	_	Gloss=of 10	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	9	comp:obj	_	Gloss=me    Naija   # sent_id = JOS_21_Marriage-Talk-With-Oscar-1_DG__167 # sound_url = http://www.</description>
+   Naija   This relation can also be used for pronouns which are detached from the core syntactic structure of an utterance, such as French tonic pronouns.
+ French
+   Naija   In case of multiple propositions in one sentence, dislocated is used when the second proposition doesn&amp;rsquo;t hold any actual information value and it cannot be neither separated nor negated.</description>
     </item>
     
     <item>
@@ -357,7 +381,7 @@ We distinguish:
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_insert/</guid>
       <description>The parataxis:insert is used for inserted clause. Contrary to a parenthetical clause, an inserted clause could not form an independent sentence
  French
-   # text_fr = La France est rose constate La Voix du Nord # text_en = France is pink notes La Voix du Nord 1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	Gloss=the 2	France	France	PROPN	_	_	3	subj	_	Gloss=France 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Gloss=is 4	rose	rose	ADJ	_	Number=Sing	3	comp:pred	_	Gloss=pink 5	constate	constater	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis:insert	_	Gloss=notes 6	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	Gloss=the 7	Voix	Voix	PROPN	_	Gender=Fem|Number=Sing	5	subj	_	ExtPOS=PROPN|Gloss=voice 8-9	du	_	_	_	_	_	_	_	_ 8	de	de	ADP	_	_	7	mod	_	Gloss=of 9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	Gloss=the 10	Nord	Nord	PROPN	_	_	8	comp:obj	_	Gloss=north   </description>
+  </description>
     </item>
     
     <item>
@@ -368,7 +392,7 @@ We distinguish:
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_obj/</guid>
       <description>Direct discourse is attached its governor by the relation parataxis:obj.
  French
-   # text_fr = Ce qui est horrible c&#39; est de se dire je n&#39; en sortirai jamais # text_en = What is horrible is to think I will never get out 1	Ce	ce	PRON	_	_	6	dislocated	_	Gloss=this 2	qui	qui	PRON	_	_	3	subj	_	Gloss=that 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	mod@relcl	_	Gloss=is 4	horrible	horrible	ADJ	_	Gender=Masc|Number=Sing	3	comp:pred	_	Gloss=horrible 5	c&#39;	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	subj	_	Gloss=that 6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Gloss=is 7	de	de	ADP	_	_	6	comp:pred	_	Gloss=to 8	se	se	PRON	_	Person=3|PronType=Prs	9	comp	_	InIdiom=Yes|Gloss=yourself 9	dire	dire	VERB	_	VerbForm=Inf	7	comp:obj	_	ExtPos=VERB|PhraseType=Idiom|Gloss=say 10	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	13	subj	_	Gloss=I 11	n&#39;	ne	ADV	_	Polarity=Neg	13	mod	_	Gloss=not 12	en	en	PRON	_	Person=3|PronType=Prs	13	comp:obj	_	Gloss=of 13	sortirai	sortir	VERB	ETRE	Number=Sing|Person=1	9	parataxis:obj	_	Gloss=get_out 14	jamais	jamais	ADV	_	_	13	mod	_	Gloss=never    Naija   # sent_id = ABJ_GWA_02_Market-Food-Church_DG__58 # sound_url = http://www.</description>
+   Naija   </description>
     </item>
     
     <item>
@@ -379,7 +403,7 @@ We distinguish:
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_parenth/</guid>
       <description>The parataxis:parenth relation is used for parenthetical clauses, in the sense that the clause is backgrounded (as if it were inside parentheses). A parenthetical clause could form an independent sentence.
  French
-   # textfr = vous avez fait paraître ce ce chef -d&#39; oeuvre pour moi c&#39; est un chef -d&#39; oeuvre qui s&#39; appelle Un Barrage contre le Pacifique # text_en = you released this masterpiece for me it&#39;s a masterpiece called Un Barrage contre le Pacifique 1	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	2	subj@caus	_	Gloss=you 2	avez	avoir	AUX	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	Gloss=have 3	fait	faire	AUX	DoubleAux	_	2	comp:aux	_	Gloss=made 4	paraître	paraître	VERB	CAUSATIVE	VerbForm=Inf	3	comp:aux@caus	_	Gloss=released 5	ce	ce	DET	_	_	7	det	_	Gloss=this 6	ce	ce	DET	_	_	5	conj:dicto	_	_ 7	chef	chef	NOUN	_	_	4	comp:obj	_	ExtPos=NOUN|PhraseType=Idiom|Gloss=chief 8	-d&#39;	d&#39;	ADP	_	_	7	unk	_	InIdiom=Yes|Gloss=of 9	oeuvre	oeuvre	NOUN	_	_	8	unk	_	InIdiom=Yes|Gloss=art 10	pour	pour	ADP	_	_	13	mod	_	Gloss=for 11	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	10	comp:obj	_	Gloss=me 12	c&#39;	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	13	subj	_	Gloss=it 13	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	parataxis:parenth	_	Gloss=is 14	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	Gloss=s 15	chef	chef	NOUN	_	_	13	comp:pred	_	ExtPos=NOUN|PhraseType=Idiom|Gloss=chief 16	-d&#39;	de	ADP	_	_	15	unk	_	InIdiom=Yes|Gloss=of 17	oeuvre	oeuvre	NOUN	_	_	16	unk	_	InIdiom=Yes|Gloss=art 18	qui	qui	PRON	_	_	20	subj	_	Gloss=that 19	s&#39;	se	PRON	_	Person=3|PronType=Prs	20	comp	_	InIdiom=Yes|Gloss=itself 20	appelle	appeler	VERB	_	_	7	mod@relcl	_	ExtPos=VERB|PhraseType=Idiom|Gloss=calls 21	Un	Un	DET	_	_	22	det	_	Gloss=a 22	Barrage	Barrage	NOUN	_	_	20	comp:obj	_	ExtPOS=PROPN|Title=Yes|Gloss=dam 23	contre	contre	ADP	_	_	22	udep	_	Gloss=against 24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	Gloss=the 25	Pacifique	Pacifique	PROPN	_	_	23	comp:obj	_	Gloss=Pacific    Naija   # text = en mille neuf cent cinquante quand vous avez fait paraître ce ce chef -d&#39; oeuvre pour moi c&#39; est un chef -d&#39; oeuvre qui s&#39; appelle Un Barrage contre le Pacifique # sent_id = ABJ_INF_08_Impatience_DG__27 # sound_url = http://www.</description>
+   Naija   </description>
     </item>
     
     <item>
@@ -389,7 +413,7 @@ We distinguish:
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/vocative/</guid>
       <description>The vocative relation is used when a speaker directly addresses a listener in an utterance.
- French   # text_fr = Merci beaucoup monsieur # text_en = Thank you very much sir 1	Merci	merci	NOUN	_	_	0	root	_	Gloss=thanks 2	beaucoup	beaucoup	ADV	_	_	1	mod	_	Gloss=much 3	monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	1	vocative	_	Gloss=sir     Naija   # text = ehn auntie   </description>
+ French    Naija   text = ehn auntie &amp;lt; di ting no easy o // </description>
     </item>
     
   </channel>

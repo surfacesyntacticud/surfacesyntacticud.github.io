@@ -24,21 +24,15 @@
   <title> | SUD</title>
 
   
-  <link rel="stylesheet" href="/css/local.css">
+  <link rel="stylesheet" href="/css/style.css">
 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.10.0/d3.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
   
   <script src="https://unpkg.com/reactive-dep-tree@0.2.3/dist/reactive-dep-tree.umd.js" async deferred></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.10.0/d3.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="/arborator/arborator-draft.css">
-  <script src="/arborator/arborator-draft.js"></script>
-  <script>
-    window.onload = function() {
-      new ArboratorDraft(); 
-    }
-  </script>
-  
 
 </head>
 <body>
@@ -93,52 +87,67 @@
 <blockquote>
 <p>English</p>
 </blockquote>
-<div>
-<conll>
 
-1	A	a	DET	_	_	2	det	_	_
-2	man	man	NOUN	_	_	3	subj	_	_
-3	walks	walk	VERB	_	_	0	root	_	_
 
-</conll>
-</div>
+    <reactive-dep-tree
+      interactive="true"
+      shown-metas="text_en"
+      shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss"
+      hidden-features="XPOS"
+      conll="
+      1	A	a	DET	_	_	2	det	_	_
+      2	man	man	NOUN	_	_	3	subj	_	_
+      3	walks	walk	VERB	_	_	0	root	_	_
+      "
+    ></reactive-dep-tree>
+
 
 <blockquote>
 <p>English</p>
 </blockquote>
-<div>
-<conll>
 
-# sent_id = GUM_whow_joke-55
-# text = Practicing your joke is crucial.
-# s_type=decl
-1	Practicing	practice	VERB	VBG	VerbForm=Ger	4	subj	_	_
-2	your	your	PRON	PRP$	Person=2|Poss=Yes|PronType=Prs	3	mod@poss	_	_
-3	joke	joke	NOUN	NN	Number=Sing	1	comp:obj	_	_
-4	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	crucial	crucial	ADJ	JJ	Degree=Pos	4	comp:pred	_	SpaceAfter=No
 
-</conll>
-</div>
+    <reactive-dep-tree
+      interactive="true"
+      shown-metas="text_en"
+      shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss"
+      hidden-features="XPOS"
+      conll="
+      # sent_id = GUM_whow_joke-55
+      # text = Practicing your joke is crucial.
+      # s_type=decl
+      1	Practicing	practice	VERB	VBG	VerbForm=Ger	4	subj	_	_
+      2	your	your	PRON	PRP$	Person=2|Poss=Yes|PronType=Prs	3	mod@poss	_	_
+      3	joke	joke	NOUN	NN	Number=Sing	1	comp:obj	_	_
+      4	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+      5	crucial	crucial	ADJ	JJ	Degree=Pos	4	comp:pred	_	SpaceAfter=No
+      "
+    ></reactive-dep-tree>
+
 
 <h2 id="deep-syntactic-features">Deep syntactic features</h2>
 <p>The <code>subj</code> relation has two deep syntactic sub-relations. The sub-relation <code>subj@expl</code> is used to indicate that the subject is present to fill in an obligatory syntactic position and has no semantic value. You can find more information about the expletive constructions on this <a href="../../deep_features/expletive">page</a>.</p>
 <blockquote>
 <p>French</p>
 </blockquote>
-<div>
-<conll>
 
-# sent_fr = Il pleut dans ma maison
-# text_en = It's raining in my house
-1	Il	il	PRON	_	_	2	subj@expl	_	Gloss=it
-2	pleut	pleuvoir	VERB	_	_	0	root	_	Gloss=rains
-3	dans	dans	ADP	_	_	2	mod	_	Gloss=in
-4	ma	son	DET	_	_	5	det	_	Gloss=my
-5	maison	maison	NOUN	_	_	3	comp:obj	_	Gloss=house
 
-</conll>
-</div>
+    <reactive-dep-tree
+      interactive="true"
+      shown-metas="text_en"
+      shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss"
+      hidden-features="XPOS"
+      conll="
+      # sent_fr = Il pleut dans ma maison
+      # text_en = It's raining in my house
+      1	Il	il	PRON	_	_	2	subj@expl	_	Gloss=it
+      2	pleut	pleuvoir	VERB	_	_	0	root	_	Gloss=rains
+      3	dans	dans	ADP	_	_	2	mod	_	Gloss=in
+      4	ma	son	DET	_	_	5	det	_	Gloss=my
+      5	maison	maison	NOUN	_	_	3	comp:obj	_	Gloss=house
+      "
+    ></reactive-dep-tree>
+
 
 <p>Meanwhile, the sub-relation <code>subj@pass</code> is used to indicate a passive construction. This sub-relation can be used for both standard passive constructions, and for mediopassive constructions.
 You can find more information about passive constructions on this <a href="../../deep_features/pass">page</a>.</p>
@@ -146,83 +155,108 @@ You can find more information about passive constructions on this <a href="../..
 <blockquote>
 <p>English</p>
 </blockquote>
-<div>
-<conll>
 
-# text = This shall be applauded
-1	This	this	PRON	DT	Number=Sing|PronType=Dem	2	subj@pass	_	Entity=(event-70)
-2	shall	shall	AUX	MD	VerbForm=Fin	0	root	_	_
-3	be	be	AUX	VB	VerbForm=Inf	2	comp:aux	_	_
-4	applauded	applaud	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	3	comp:aux@pass	_	_
 
-</conll>
-</div>
+    <reactive-dep-tree
+      interactive="true"
+      shown-metas="text_en"
+      shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss"
+      hidden-features="XPOS"
+      conll="
+      # text = This shall be applauded
+      1	This	this	PRON	DT	Number=Sing|PronType=Dem	2	subj@pass	_	Entity=(event-70)
+      2	shall	shall	AUX	MD	VerbForm=Fin	0	root	_	_
+      3	be	be	AUX	VB	VerbForm=Inf	2	comp:aux	_	_
+      4	applauded	applaud	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	3	comp:aux@pass	_	_
+      "
+    ></reactive-dep-tree>
+
 
 <blockquote>
 <p>French</p>
 </blockquote>
-<div>
-<conll>
 
-# text = Il fut bâti en 1998.
-# text_en = It was build in 1998.
-1	Il	il	PRON	_	_	2	subj@pass	_	Gloss=It
-2	fut	être	AUX	_	_	0	root	_	Gloss=was
-3	bâti	bâtir	VERB	_	_	2	comp:aux@pass	_	Gloss=built
-4	en	en	ADP	_	_	2	mod	_	Gloss=in
-5	1998	1998	NUM	_	_	4	comp:obj	_	Gloss=1998
 
-</conll>
-</div>
+    <reactive-dep-tree
+      interactive="true"
+      shown-metas="text_en"
+      shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss"
+      hidden-features="XPOS"
+      conll="
+      # text = Il fut bâti en 1998.
+      # text_en = It was build in 1998.
+      1	Il	il	PRON	_	_	2	subj@pass	_	Gloss=It
+      2	fut	être	AUX	_	_	0	root	_	Gloss=was
+      3	bâti	bâtir	VERB	_	_	2	comp:aux@pass	_	Gloss=built
+      4	en	en	ADP	_	_	2	mod	_	Gloss=in
+      5	1998	1998	NUM	_	_	4	comp:obj	_	Gloss=1998
+      "
+    ></reactive-dep-tree>
+
 
 <h3 id="mediopassive-constructions">Mediopassive constructions</h3>
 <blockquote>
 <p>Czech</p>
 </blockquote>
-<div>
-<conll>
 
-# text_en = the number of employees decreased
-# text_cs = počet zaměstnanců se snížil
-1	počet	počet	NOUN	_	_	4	subj@pass	_	Gloss=number
-2	zaměstnanců	zaměstnanec	NOUN	_	_	1	mod	_	Gloss=employees.PL.GEN
-3	se	se	PRON	_	_	4	comp@pass	_	Gloss=itself
-4	snížil	snížit	VERB	_	_	0	root	_	Gloss=decrease
 
-</conll>
-</div>
+    <reactive-dep-tree
+      interactive="true"
+      shown-metas="text_en"
+      shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss"
+      hidden-features="XPOS"
+      conll="
+      # text_en = the number of employees decreased
+      # text_cs = počet zaměstnanců se snížil
+      1	počet	počet	NOUN	_	_	4	subj@pass	_	Gloss=number
+      2	zaměstnanců	zaměstnanec	NOUN	_	_	1	mod	_	Gloss=employees.PL.GEN
+      3	se	se	PRON	_	_	4	comp@pass	_	Gloss=itself
+      4	snížil	snížit	VERB	_	_	0	root	_	Gloss=decrease
+      "
+    ></reactive-dep-tree>
+
 
 <blockquote>
 <p>French</p>
 </blockquote>
-<div>
-<conll>
 
-# text_en = the book is selling well
-# text_cs = le livre se vend bien
-1	le	le	DET	_	_	2	det	_	Gloss=the
-2	livre	livre	NOUN	_	_	4	subj@pass	_	Gloss=book
-3	se	se	PRON	_	_	4	comp@pass	_	Gloss=itself
-4	vend	vendre	VERB	_	_	0	root	_	Gloss=sell
-5	bien	bien	ADV	_	_	4	mod	_	Gloss=well
 
-</conll>
-</div>
+    <reactive-dep-tree
+      interactive="true"
+      shown-metas="text_en"
+      shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss"
+      hidden-features="XPOS"
+      conll="
+      # text_en = the book is selling well
+      # text_cs = le livre se vend bien
+      1	le	le	DET	_	_	2	det	_	Gloss=the
+      2	livre	livre	NOUN	_	_	4	subj@pass	_	Gloss=book
+      3	se	se	PRON	_	_	4	comp@pass	_	Gloss=itself
+      4	vend	vendre	VERB	_	_	0	root	_	Gloss=sell
+      5	bien	bien	ADV	_	_	4	mod	_	Gloss=well
+      "
+    ></reactive-dep-tree>
+
 
 <blockquote>
 <p>Russian</p>
 </blockquote>
-<div>
-<conll>
 
-# text_en = the book is selling well
-# text_ru = книга хорошо продаётся
-1	книга	книга	NOUN	_	_	3	subj@pass	_	Gloss=book
-2	хорошо	хорошо	ADV	_	_	3	mod	_	Gloss=well
-3	продаётся	продаваться	VERB	_	_	0	root	_	Gloss=is selling
 
-</conll>
-</div>
+    <reactive-dep-tree
+      interactive="true"
+      shown-metas="text_en"
+      shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss"
+      hidden-features="XPOS"
+      conll="
+      # text_en = the book is selling well
+      # text_ru = книга хорошо продаётся
+      1	книга	книга	NOUN	_	_	3	subj@pass	_	Gloss=book
+      2	хорошо	хорошо	ADV	_	_	3	mod	_	Gloss=well
+      3	продаётся	продаваться	VERB	_	_	0	root	_	Gloss=is selling
+      "
+    ></reactive-dep-tree>
+
 
 
 

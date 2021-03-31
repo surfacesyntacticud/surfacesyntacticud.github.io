@@ -24,21 +24,15 @@
   <title> | SUD</title>
 
   
-  <link rel="stylesheet" href="/css/local.css">
+  <link rel="stylesheet" href="/css/style.css">
 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.10.0/d3.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
   
   <script src="https://unpkg.com/reactive-dep-tree@0.2.3/dist/reactive-dep-tree.umd.js" async deferred></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.10.0/d3.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="/arborator/arborator-draft.css">
-  <script src="/arborator/arborator-draft.js"></script>
-  <script>
-    window.onload = function() {
-      new ArboratorDraft(); 
-    }
-  </script>
-  
 
 </head>
 <body>
@@ -89,20 +83,25 @@
     
   <h1></h1>
   <h1 id="caus"><strong>@caus</strong></h1>
-<p>The <code>@caus</code> feature is used for the argument of causative auxiliaries.</p>
-<div>
-<conll>
+<p>The <code>@caus</code> feature is used for the argument of causative auxiliaries.
 
-# text_en = He makes his troops go faster.
-1	Il	il	PRON	_	_	2	subj@caus	_	Gloss=he
-2	fait	faire	AUX	_	_	0	root	_	Gloss=make
-3	accélérer	accélérer	VERB	_	_	2	comp:aux@caus	_	Gloss=accelerate
-4	ses	son	DET	_	_	5	det	_	Gloss=his
-5	troupes	troupe	NOUN	_	_	2	comp:obj@agent	_	Gloss=troops
 
-</conll>
-</div>
+    <reactive-dep-tree
+      interactive="true"
+      shown-metas="text_en"
+      shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss"
+      hidden-features="XPOS"
+      conll="
+      # text_en = He makes his troops go faster.
+      1	Il	il	PRON	_	_	2	subj@caus	_	Gloss=he
+      2	fait	faire	AUX	_	_	0	root	_	Gloss=make
+      3	accélérer	accélérer	VERB	_	_	2	comp:aux@caus	_	Gloss=accelerate
+      4	ses	son	DET	_	_	5	det	_	Gloss=his
+      5	troupes	troupe	NOUN	_	_	2	comp:obj@agent	_	Gloss=troops
+      "
+    ></reactive-dep-tree>
 
+</p>
 
 
   </section>

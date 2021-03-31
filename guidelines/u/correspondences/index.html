@@ -24,21 +24,15 @@
   <title> | SUD</title>
 
   
-  <link rel="stylesheet" href="/css/local.css">
+  <link rel="stylesheet" href="/css/style.css">
 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.10.0/d3.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
   
   <script src="https://unpkg.com/reactive-dep-tree@0.2.3/dist/reactive-dep-tree.umd.js" async deferred></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.10.0/d3.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="/arborator/arborator-draft.css">
-  <script src="/arborator/arborator-draft.js"></script>
-  <script>
-    window.onload = function() {
-      new ArboratorDraft(); 
-    }
-  </script>
-  
 
 </head>
 <body>
@@ -166,52 +160,62 @@
 
 <h3 id="example-of-a-sentence-annotated-in-sud-above-and-ud-below">Example of a sentence annotated in SUD (above) and UD (below).</h3>
 <p><img src="/images/sud.svg#floatleft" alt="Surface Syntactic Universal Dependencies (SUD)">
-<div>
-<conll>
 
-# sent_id = email-enronsent38_01-0114
-# text = I am out of the office today but will be back tomorrow.
-# shownfeatures = FORM, UPOS
-1	I	_	PRON	_	_	2	subj	_	_
-2	am	_	AUX	_	_	0	root	_	_
-3	out	_	ADP	_	_	2	comp:pred	_	_
-4	of	_	ADP	_	_	3	comp:obj	_	_
-5	the	_	DET	_	_	6	det	_	_
-6	office	_	NOUN	_	_	4	comp:obj	_	_
-7	today	_	NOUN	_	_	2	mod	_	_
-8	but	_	CCONJ	_	_	9	cc	_	_
-9	will	_	AUX	_	_	2	conj	_	_
-10	be	_	AUX	_	_	9	comp:aux	_	_
-11	back	_	ADV	_	_	10	comp:pred	_	_
-12	tomorrow	_	NOUN	_	_	9	mod	_	_
-13	.	_	PUNCT	.	_	2	punct	_	_
 
-</conll>
-</div>
+    <reactive-dep-tree
+      interactive="true"
+      shown-metas="text_en"
+      shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss"
+      hidden-features="XPOS"
+      conll="
+      # sent_id = email-enronsent38_01-0114
+      # text = I am out of the office today but will be back tomorrow.
+      # shownfeatures = FORM, UPOS
+      1	I	_	PRON	_	_	2	subj	_	_
+      2	am	_	AUX	_	_	0	root	_	_
+      3	out	_	ADP	_	_	2	comp:pred	_	_
+      4	of	_	ADP	_	_	3	comp:obj	_	_
+      5	the	_	DET	_	_	6	det	_	_
+      6	office	_	NOUN	_	_	4	comp:obj	_	_
+      7	today	_	NOUN	_	_	2	mod	_	_
+      8	but	_	CCONJ	_	_	9	cc	_	_
+      9	will	_	AUX	_	_	2	conj	_	_
+      10	be	_	AUX	_	_	9	comp:aux	_	_
+      11	back	_	ADV	_	_	10	comp:pred	_	_
+      12	tomorrow	_	NOUN	_	_	9	mod	_	_
+      13	.	_	PUNCT	.	_	2	punct	_	_
+      "
+    ></reactive-dep-tree>
+
 </p>
 <p><img src="/images/ud.svg#floatleft" alt="Universal Dependencies (UD)">
-<div>
-<conll>
 
-# sent_id = email-enronsent38_01-0114
-# text = I am out of the office today but will be back tomorrow.
-# shownfeatures = FORM, UPOS
-1	I	_	PRON	_	_	6	nsubj	_	_
-2	am	_	AUX	_	_	6	cop	_	_
-3	out	_	ADP	_	_	6	case	_	_
-4	of	_	ADP	_	_	6	case	_	_
-5	the	_	DET	_	_	6	det	_	_
-6	office	_	NOUN	_	_	0	root	_	_
-7	today	_	NOUN	_	_	6	obl:tmod	_	_
-8	but	_	CCONJ	_	_	11	cc	_	_
-9	will	_	AUX	_	_	11	aux	_	_
-10	be	_	AUX	_	_	11	cop	_	_
-11	back	_	ADV	_	_	6	conj	_	_
-12	tomorrow	_	NOUN	_		11	obl:tmod	_	_
-13	.	_	PUNCT	.	_	6	punct	_	_
 
-</conll>
-</div>
+    <reactive-dep-tree
+      interactive="true"
+      shown-metas="text_en"
+      shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss"
+      hidden-features="XPOS"
+      conll="
+      # sent_id = email-enronsent38_01-0114
+      # text = I am out of the office today but will be back tomorrow.
+      # shownfeatures = FORM, UPOS
+      1	I	_	PRON	_	_	6	nsubj	_	_
+      2	am	_	AUX	_	_	6	cop	_	_
+      3	out	_	ADP	_	_	6	case	_	_
+      4	of	_	ADP	_	_	6	case	_	_
+      5	the	_	DET	_	_	6	det	_	_
+      6	office	_	NOUN	_	_	0	root	_	_
+      7	today	_	NOUN	_	_	6	obl:tmod	_	_
+      8	but	_	CCONJ	_	_	11	cc	_	_
+      9	will	_	AUX	_	_	11	aux	_	_
+      10	be	_	AUX	_	_	11	cop	_	_
+      11	back	_	ADV	_	_	6	conj	_	_
+      12	tomorrow	_	NOUN	_		11	obl:tmod	_	_
+      13	.	_	PUNCT	.	_	6	punct	_	_
+      "
+    ></reactive-dep-tree>
+
 </p>
 
 
