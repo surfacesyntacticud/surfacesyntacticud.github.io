@@ -83,6 +83,9 @@
 <p>This relation is refined into several sub-relations:  <a href="../comp_aux"><code>comp:aux</code></a> (auxiliary argument), <a href="../comp_cleft"><code>comp:cleft</code></a> (cleft clauses), <a href="../comp_obj"><code>comp:obj</code></a> (direct object),<a href="../comp_obl"><code>comp:obl</code></a> (oblique argument), <a href="../comp_pred"><code>comp:pred</code></a> (predicative argument).</p>
 <p>In most cases, SUD native corpora are directly annotated with the sub-relations, rather than with the <code>comp</code> relation. However, <code>comp</code> may sometimes be used when one has difficulty deciding between <code>comp:obj</code> and <code>comp:obl</code>.</p>
 <p>In <strong>French</strong>, the <code>comp</code> label is frequently used to annotate reflexive pronouns and other pronominal clitics which contribute to the formation of pronominal verbs when it is difficult to determine the role of a pronoun. In constructions such as <em>Il s&rsquo;en sort</em> the pronoun <em>se</em> no longer provides the semantic value of an argument of the verb. However, it fits so well into the typical argument structure that it is hard to recognize that it cannot be de-pronominalized. For this reason, we annotate the relation with a <code>comp</code> label.</p>
+<blockquote>
+<p>French</p>
+</blockquote>
 
 
     <reactive-dep-tree
@@ -102,6 +105,9 @@
     ></reactive-dep-tree>
 
 
+<blockquote>
+<p>French</p>
+</blockquote>
 
 
     <reactive-dep-tree
@@ -110,7 +116,7 @@
       shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss"
       hidden-features="XPOS"
       conll="
-      # text_fr = Christine s'en veut à son amie
+      # text_fr = Christine en veut à son amie
       # text_en = Christine is angry at her friend
       1	Christine	Christine	PROPN	_	_	3	subj	_	Gloss=Christine
       2	en	en	PRON	_	_	3	comp	_	Gloss=of
@@ -122,6 +128,9 @@
     ></reactive-dep-tree>
 
 
+<blockquote>
+<p>French</p>
+</blockquote>
 
 
     <reactive-dep-tree
@@ -140,6 +149,9 @@
 
 
 <p>In the case of <strong>passive reflexive constructions</strong>, the pronoun is labelled <code>comp</code> with the deep syntactic feature <code>@pass</code>.</p>
+<blockquote>
+<p>French</p>
+</blockquote>
 
 
     <reactive-dep-tree
@@ -150,7 +162,7 @@
       conll="
       # text_fr = Il se situe à environ 13 kilomètres
       # text_en = It is situated about 13 kilometers to the north-east
-      1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	subj	_	wordform=il|Gloss=it
+      1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	subj@pass	_	wordform=il|Gloss=it
       2	se	se	PRON	_	Person=3|PronType=Prs	3	comp@pass	_	Gloss=is
       3	situe	situer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Gloss=situated
       4	à	à	ADP	_	_	3	comp:obl	_	Gloss=at

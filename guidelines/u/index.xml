@@ -155,7 +155,8 @@ The first example below shows the annotation of a coordination in UD and the sec
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/lvc/</guid>
       <description>Light verb constructions A light verb construction (LVC) is a type of verbal structure in which a verb is coupled with another element – typically a noun phrase – which provides the primary semantic value. Common examples of LVCs in English include take a walk, give a kiss, or have a drink. In SUD, LVCs are marked with the deep feature @lvc.
- The complements of these constructions are sometimes attached to the noun rather than the verb because:</description>
+ French
+  The complements of these constructions are sometimes attached to the noun rather than the verb because:</description>
     </item>
     
     <item>
