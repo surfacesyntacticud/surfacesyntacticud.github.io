@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Hugo 0.83.1" />
+  <link rel="stylesheet" href="https://surfacesyntacticud.github.io/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  
+  
+  
+  <link rel="stylesheet" href="https://surfacesyntacticud.github.io/css/cayman.aaf45d74a9bfd69ee2d203c9cd978f5c86cceea835ed70e58e4b116fc591548a.css">
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+  <title> | SUD</title>
+
+  
+  <link rel="stylesheet" href="/css/style.css">
+
+
+  
+  <script src="https://unpkg.com/reactive-dep-tree@0.2.5/dist/reactive-dep-tree.umd.js" async deferred></script>
+
+</head>
+<body>
+  <section class="page-header">
+  <h1 class="project-name">
+    SUD
+  </h1>
+  <h2 class="project-tagline">
+    Surface Syntactic Universal Dependencies
+  </h2>
+  <nav>
+    
+    
+      
+      
+      
+      
+      <a href="/" class="btn">Home</a>
+    
+      
+      
+      
+      
+      <a href="/guidelines/u/" class="btn">Guidelines</a>
+    
+      
+      
+      
+      
+      <a href="/data/" class="btn">SUD Corpora</a>
+    
+      
+      
+      
+      
+      <a href="/conversions" class="btn">Comparison with UD</a>
+    
+      
+      
+      
+      
+      <a href="https://github.com/surfacesyntacticud" class="btn">GitHub project</a>
+    
+  </nav>
+</section>
+
+  <section class="main-content">
+    
+  <h1></h1>
+  <h1 id="conversion-from-ud-to-sud">Conversion from UD to SUD</h1>
+<p>This page describes the process used in the conversion from UD to SUD.
+It also explains how this can be adapted to languages specificities.</p>
+<h2 id="the-main-sequence">The main sequence</h2>
+<ul>
+<li>
+<p><code>Onf (eud_to_ud)</code>: Remove all enhanced annotation; the conversion supposes that the input is in basic UD format. Note that it can be safely applied to basic UD, the annotations are left unchanged.</p>
+</li>
+<li>
+<p><code>Onf (idioms)</code>: Add the features encoding of idioms in SUD; namely, features <code>ExtPos</code>, <code>PhraseType</code>, <code>InTitle</code> and <code>InIdiom</code> ( see <a href="../../guidelines/u/extpos/idioms_titles">Idioms and titles</a>). Note that relations are not changed here.</p>
+</li>
+<li>
+<p><code>specific_expr_init</code>: Add an explicit node for each <code>ExtPos</code>. TODO: give detail and an example.</p>
+</li>
+<li>
+<p><code>Onf (sub_relations)</code>: Transform UD relations with subtypes into the SUD equivalent.</p>
+</li>
+<li>
+<p><code>Onf (rel_extensions)</code>: Transform remaining UD subtypes (not handled in <code>sub_relations</code>) into <code>deep</code> SUD feature. For instance, the Polish <code>cop:locat</code> is transformed into <code>cop@locat</code>.</p>
+</li>
+<li>
+<p><code>Onf (relations)</code>: Transform main UD relation into the SUD equivalent (except <code>case</code>, <code>aux</code>, <code>mark</code> and <code>cop</code>, see next step).</p>
+</li>
+<li>
+<p><code>reverse_relations.main</code>: Reverse relations <code>case</code>, <code>aux</code>, <code>mark</code> and <code>cop</code>. See below for detail about reversing relations.</p>
+</li>
+<li>
+<p><code>Onf (minimize_conj_dep)</code>: Move the dependents of a conjunction from the left conjunct to the right conjunct. Dependencies <code>conj</code>, <code>discourse</code>, <code>parataxis</code> and <code>punct</code> are not moved.</p>
+</li>
+<li>
+<p><code>Onf (add_conj_emb)</code>: Mark embedded <code>conj</code> relations with the extension <code>emb</code>.</p>
+</li>
+<li>
+<p><code>Onf (chained_relations)</code>: Dependencies of type <code>conj</code>,  and <code>flat:*</code> grouped into a bouquet are reorganized into a chain.</p>
+</li>
+<li>
+<p><code>specific_expr_close</code>: Remove specific nodes and edges introduced by the dual package <code>specific_expr_init</code>.</p>
+</li>
+<li>
+<p><code>Onf (unk_rel)</code>: Rename all non-SUD relations to <code>unk</code> (backoff package).</p>
+</li>
+</ul>
+<h2 id="reversing-relations">Reversing relations</h2>
+<p>Defining rules for reversing relations is tricky mainly for two reasons:</p>
+<ul>
+<li>When more than one relations to be reversed have the same head, the order of the reverse operation produced different output. Some mechanism to described the wanted order is necessary.</li>
+<li>When reversing a relation from <code>N</code> to <code>M</code> into a relation from <code>M</code> to <code>N</code>, we have to decide for each dependent of <code>N</code> if it should be lifted up to <code>M</code> or if it should stay on <code>M</code>.</li>
+</ul>
+<h3 id="choosing-the-order">Choosing the order</h3>
+<p>To constraint the order, a numeric level is given to each edge to be reversed and then:</p>
+<ul>
+<li>edge with the smallest level have higher priority</li>
+<li>if two edges have the same level and are on the same side of the head, the closest one have higher priority</li>
+<li>if two edges have the same level and are on both sides of the head, the one before the head has higher priority.</li>
+</ul>
+<p>The default levels are:</p>
+<ul>
+<li><code>case</code> or <code>case:*</code> → 10</li>
+<li><code>cop</code> or <code>cop:*</code> → 20</li>
+<li><code>aux:caus</code> or <code>aux:pass</code> → 30</li>
+<li><code>aux</code> or <code>aux:*</code> (≠ <code>aux:caus</code> or <code>aux:pass</code>) → 40</li>
+<li><code>mark</code> or <code>mark:*</code> → 50</li>
+</ul>
+<p>The order can be changed by adding different levels to specific relation before calling the package <code>specific_expr_init</code> (see examples below for Wolof or German).</p>
+<h3 id="lifting-dependencies">Lifting dependencies</h3>
+<p>TODO</p>
+<h2 id="adapt-to-a-specific-language">Adapt to a specific language</h2>
+<h3 id="wolof">Wolof</h3>
+<p>In Wolof, the lemma <em>na</em> must always be the head of the whole structure, so it must be the last relation to be reversed. This can be specified with a rule:</p>
+<pre><code class="language-grew" data-lang="grew">rule na {
+  pattern { e: V -[aux]-&gt; A; A[lemma=&quot;na&quot;] }
+  commands { e.level = 100 }
+}
+</code></pre><p>From the UD annotation:</p>
+<p><img src="/conversions/ud_to_sud/wo_na.svg" alt="sequoia"></p>
+<p>The universal conversion produces:</p>
+<p><img src="/conversions/ud_to_sud/wo_na__sud_u.svg" alt="sequoia"></p>
+<p>And the conversion with the new <code>na</code> rule produces (see <a href="https://github.com/surfacesyntacticud/tools/blob/master/converter/grs/wo_UD_to_SUD.grs">GitHub</a>):</p>
+<p><img src="/conversions/ud_to_sud/wo_na__sud_wo.svg" alt="sequoia"></p>
+<h3 id="german">German</h3>
+<p>TODO</p>
+
+
+  </section>
+  
+  
+
+</body>
+</html>

@@ -5,9 +5,13 @@
     <loc>https://surfacesyntacticud.github.io/</loc>
     <lastmod>2020-04-26T17:45:38+02:00</lastmod>
   </url><url>
-    <loc>https://surfacesyntacticud.github.io/data/</loc>
+    <loc>https://surfacesyntacticud.github.io/conversions/</loc>
+    <priority>0</priority>
   </url><url>
-    <loc>https://surfacesyntacticud.github.io/guidelines/u/correspondences/</loc>
+    <loc>https://surfacesyntacticud.github.io/conversions/ud_to_sud/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://surfacesyntacticud.github.io/data/</loc>
   </url><url>
     <loc>https://surfacesyntacticud.github.io/guidelines/u/deep_features/agent/</loc>
   </url><url>
