@@ -120,20 +120,56 @@ It also explains how this can be adapted to languages specificities.</p>
 <p><code>Onf (unk_rel)</code>: Rename all non-SUD relations to <code>unk</code> (backoff package).</p>
 </li>
 </ul>
-<h2 id="reversing-relations">Reversing relations</h2>
 <p>Defining rules for reversing relations is tricky mainly for two reasons:</p>
 <ul>
-<li>When more than one relations to be reversed have the same head, the order of the reverse operation produced different output. Some mechanism to described the wanted order is necessary.</li>
-<li>When reversing a relation from <code>N</code> to <code>M</code> into a relation from <code>M</code> to <code>N</code>, we have to decide for each dependent of <code>N</code> if it should be lifted up to <code>M</code> or if it should stay on <code>M</code>.</li>
+<li>When more than one relations to be reversed have the same head, the order of the reverse operations produced different output. Some mechanism to describe the wanted order is necessary.</li>
+<li>When reversing a relation from <code>N</code> to <code>M</code> into a relation from <code>M</code> to <code>N</code>, we have to decide for each dependent of <code>N</code> if it should be lifted up to <code>M</code> or if it should stay on <code>N</code>.</li>
 </ul>
-<h3 id="choosing-the-order">Choosing the order</h3>
+<h2 id="choosing-the-order-when-reversing-relations">Choosing the order when reversing relations</h2>
 <p>To constraint the order, a numeric level is given to each edge to be reversed and then:</p>
-<ul>
+<ol>
 <li>edge with the smallest level have higher priority</li>
-<li>if two edges have the same level and are on the same side of the head, the closest one have higher priority</li>
-<li>if two edges have the same level and are on both sides of the head, the one before the head has higher priority.</li>
-</ul>
-<p>The default levels are:</p>
+<li>if two edges have the same level and are on the same side of the head, the closest one has higher priority</li>
+<li>if two edges have the same level and are on both sides of the head, the one after the head has higher priority.</li>
+</ol>
+<p>By default, the 4 relations <code>case</code>, <code>cop</code>, <code>aux</code> and <code>mark</code> (and their subtypes) are given the level 10.</p>
+<p>We give below examples of conversions with multiple reversing of relations.
+In Japanese or in German, the default rules are applied.
+The order can be changed by adding different levels to specific relations before calling the package <code>specific_expr_init</code> (see examples below for French and Wolof).</p>
+<h3 id="japanese">Japanese</h3>
+<p>In Japanese all UD relation <code>case</code>, <code>cop</code>, <code>aux</code> and <code>mark</code> are left-headed. The constraint 2 applies.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/ud.svg" alt="ud_logo"></th>
+<th style="text-align:center"><img src="/images/sud.svg" alt="sud_logo"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><img src="/conversions/ud_to_sud/ja/3_rel.svg" alt="japanese_ud_ex"></td>
+<td style="text-align:center"><img src="/conversions/ud_to_sud/ja/3_rel__sud_u.svg" alt="japanese_ud_ex"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="german">German</h3>
+<p>In German, there are many cases with edges on both sides. Contraint 3 applies here:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/ud.svg" alt="ud_logo"></th>
+<th style="text-align:center"><img src="/images/sud.svg" alt="sud_logo"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><img src="/conversions/ud_to_sud/de/bilat.svg" alt="german_ud_ex"></td>
+<td style="text-align:center"><img src="/conversions/ud_to_sud/de/bilat__sud_u.svg" alt="german_sud_ex"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="french">French</h3>
+<p>In French, levels are set to:</p>
 <ul>
 <li><code>case</code> or <code>case:*</code> → 10</li>
 <li><code>cop</code> or <code>cop:*</code> → 20</li>
@@ -141,10 +177,12 @@ It also explains how this can be adapted to languages specificities.</p>
 <li><code>aux</code> or <code>aux:*</code> (≠ <code>aux:caus</code> or <code>aux:pass</code>) → 40</li>
 <li><code>mark</code> or <code>mark:*</code> → 50</li>
 </ul>
-<p>The order can be changed by adding different levels to specific relation before calling the package <code>specific_expr_init</code> (see examples below for Wolof or German).</p>
-<h3 id="lifting-dependencies">Lifting dependencies</h3>
-<p>TODO</p>
-<h2 id="adapt-to-a-specific-language">Adapt to a specific language</h2>
+<p>From the UD annotation:</p>
+<p><img src="/conversions/ud_to_sud/fr/post.svg" alt="french_example_ud"></p>
+<p>The universal conversion produces:</p>
+<p><img src="/conversions/ud_to_sud/fr/post__sud_u.svg" alt="french_example_ud_default"></p>
+<p>And the conversion with the French specific levels (see <a href="https://github.com/surfacesyntacticud/tools/blob/master/converter/grs/fr_UD_to_SUD.grs">GitHub</a>):</p>
+<p><img src="/conversions/ud_to_sud/fr/post__sud_fr.svg" alt="french_example_ud_specif"></p>
 <h3 id="wolof">Wolof</h3>
 <p>In Wolof, the lemma <em>na</em> must always be the head of the whole structure, so it must be the last relation to be reversed. This can be specified with a rule:</p>
 <pre><code class="language-grew" data-lang="grew">rule na {
@@ -152,12 +190,12 @@ It also explains how this can be adapted to languages specificities.</p>
   commands { e.level = 100 }
 }
 </code></pre><p>From the UD annotation:</p>
-<p><img src="/conversions/ud_to_sud/wo_na.svg" alt="sequoia"></p>
+<p><img src="/conversions/ud_to_sud/wo/na.svg" alt="wolof_example_ud"></p>
 <p>The universal conversion produces:</p>
-<p><img src="/conversions/ud_to_sud/wo_na__sud_u.svg" alt="sequoia"></p>
+<p><img src="/conversions/ud_to_sud/wo/na__sud_u.svg" alt="wolof_example_ud_default"></p>
 <p>And the conversion with the new <code>na</code> rule produces (see <a href="https://github.com/surfacesyntacticud/tools/blob/master/converter/grs/wo_UD_to_SUD.grs">GitHub</a>):</p>
-<p><img src="/conversions/ud_to_sud/wo_na__sud_wo.svg" alt="sequoia"></p>
-<h3 id="german">German</h3>
+<p><img src="/conversions/ud_to_sud/wo/na__sud_wo.svg" alt="wolof_example_ud_specif"></p>
+<h2 id="lifting-dependencies">Lifting dependencies</h2>
 <p>TODO</p>
 
 
