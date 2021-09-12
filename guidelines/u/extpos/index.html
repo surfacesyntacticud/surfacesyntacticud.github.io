@@ -79,7 +79,38 @@
     
   <h1></h1>
   <h1 id="the-extpos-feature">The ExtPos feature</h1>
-<p>The ExtPos feature was introduced to facilitate the annotation of idioms, titles, and other multi-word units which behave like a certain part of speech, even though none of their constituents necessarily carry that part of speech. This feature allows the annotator to preserve the internal syntactic relationships between the various components of these units.</p>
+<p>The <code>ExtPos</code> feature was introduced to facilitate the annotation of idioms, titles, and other multi-word units which behave like a certain part of speech, even though none of their constituents necessarily carry that part of speech. This feature allows the annotator to preserve the internal syntactic relationships between the various components of these units.</p>
+<p>See <a href="./extpos/idioms_titles">Idioms and titles</a> page for examples of idioms and titles annotations.</p>
+<p>The usage of <code>ExtPos</code> was also generalized to cases of single token which are given a <code>upos</code>  but they are used in the syntactic structure with another role.</p>
+<h2 id="examples-of-single-tokens-with-an-extpos">Examples of single tokens with an ExtPos</h2>
+<p>In Naija, it is mostly used for adjective used as verbs.</p>
+<blockquote>
+<p>Naija</p>
+</blockquote>
+
+
+    <reactive-dep-tree
+      interactive="true"
+      shown-metas="text_en"
+      shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,MISC.Gloss,FEATS.ExtPos,FEATS.Idiom,FEATS.Title,FEATS.InIdiom,FEATS.InTitle"
+      hidden-features="XPOS"
+      conll="
+# text_en = It'll get better.
+1	e	im	PRON	_	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	subj	_	AlignBegin=307749|AlignEnd=308144|Gloss=NOM.SG.3
+2	go	go	AUX	_	Aspect=Prosp	0	root	_	AlignBegin=308144|AlignEnd=308540|Gloss=PROSP
+3	better	beta	ADJ	_	Degree=Cmp|ExtPos=VERB	2	comp:aux	_	AlignBegin=308540|AlignEnd=308935|Gloss=good.CMPR
+4	//	//	PUNCT	_	_	2	punct	_	AlignBegin=308935|AlignEnd=308935|Gloss=PUNCT
+      "
+    ></reactive-dep-tree>
+
+
+<p>See <a href="http://match.grew.fr/?corpus=SUD_Naija-NSC@latest&amp;custom=613dff2609468">More examples on Grew-match</a>.</p>
+<p>In French, it is mainly used for:</p>
+<ul>
+<li>tokens with <code>upos=SYM</code> <a href="http://match.grew.fr/?corpus=SUD_French-GSD@latest&amp;custom=613e03ce49731">Grew-match on SUD_French-GSD</a></li>
+<li>tokens with <code>upos=ADV</code> and <code>ExtPos=PRON</code> for phrases like <em>beaucoup de NOUN</em>, <em>plus de NOUN</em> <a href="http://match.grew.fr/?corpus=SUD_French-GSD@latest&amp;custom=613e040411ae4&amp;clustering=N.lemma">Grew-match on SUD_French-GSD</a></li>
+<li>tokens with <code>upos=NOUN</code> and <code>ExtPos=ADV</code> for phrases like <em>grâce à NOUN</em>, <em>face à NOUN</em> <a href="http://match.grew.fr/?corpus=SUD_French-GSD@latest&amp;custom=613e0370bf8ee&amp;clustering=N.lemma">Grew-match on SUD_French-GSD</a></li>
+</ul>
 
 
   </section>

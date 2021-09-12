@@ -8,16 +8,6 @@
     <language>en-us</language><atom:link href="https://surfacesyntacticud.github.io/guidelines/u/extpos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://surfacesyntacticud.github.io/guidelines/u/extpos/general/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://surfacesyntacticud.github.io/guidelines/u/extpos/general/</guid>
-      <description>The ExtPos feature The ExtPos feature was introduced to facilitate the annotation of idioms, titles, and other multi-word phrases which behave like a certain part of speech, even though none of their constituents necessarily carry that part of speech. This feature allows the annotator to preserve the internal syntactic relationships between the various components of these units.
- The head of the phrase contains carries the ExtPos feature, which denotes the phrases&amp;rsquo;s function within the wider sentence.</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://surfacesyntacticud.github.io/guidelines/u/extpos/idioms_titles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
