@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Hugo 0.83.1" />
+  <link rel="stylesheet" href="https://surfacesyntacticud.github.io/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  
+  
+  
+  <link rel="stylesheet" href="https://surfacesyntacticud.github.io/css/cayman.aaf45d74a9bfd69ee2d203c9cd978f5c86cceea835ed70e58e4b116fc591548a.css">
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+  <title>Beja SUD Guidelines | SUD</title>
+
+  
+  <link rel="stylesheet" href="/css/style.css">
+
+
+  
+  <script src="https://unpkg.com/reactive-dep-tree@0.2.5/dist/reactive-dep-tree.umd.js" async deferred></script>
+
+</head>
+<body>
+  <section class="page-header">
+  <h1 class="project-name">
+    SUD
+  </h1>
+  <h2 class="project-tagline">
+    Surface Syntactic Universal Dependencies
+  </h2>
+  <nav>
+    
+    
+      
+      
+      
+      
+      <a href="/" class="btn">Home</a>
+    
+      
+      
+      
+      
+      <a href="/guidelines/u/" class="btn">Guidelines</a>
+    
+      
+      
+      
+      
+      <a href="/data/" class="btn">SUD Corpora</a>
+    
+      
+      
+      
+      
+      <a href="/conversions" class="btn">Comparison with UD</a>
+    
+      
+      
+      
+      
+      <a href="https://github.com/surfacesyntacticud" class="btn">GitHub project</a>
+    
+  </nav>
+</section>
+
+  <section class="main-content">
+    
+  <h1>Beja SUD Guidelines</h1>
+  <p><strong>NB:</strong> This page is under construction. A overview of the SUD annotation of the Beja corpus is available in the paper: <a href="https://aclanthology.org/2021.tlt-1.5.pdf">A morph-based and a word-based treebank for Beja</a>.</p>
+<h2 id="annotation-at-the-morph-level">Annotation at the morph level</h2>
+<p>The SUD corpus of Beja is firstly annotated at the morph level (<code>SUD_Beja-NSC</code>).
+In the UD repository, the word-based corpus is released as <code>UD_Beja-NSC</code>.</p>
+<p>The two other combinations are also available:</p>
+<ul>
+<li><code>SUD_Beja-NSC_WB</code> the data following SUD guidelines but at the word level</li>
+<li><code>UD_Beja-NSC_MB</code> the data following UD guidelines but at the morph level</li>
+</ul>
+<p>The table below shows how the conversions are made in order to produce all the corpora described above.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"> SUD</th>
+<th style="text-align:center"></th>
+<th style="text-align:center">UD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>morph-based</strong></td>
+<td style="text-align:center"><strong><code>SUD_Beja-NSC</code></strong> <a href="https://github.com/surfacesyntacticud/SUD_Beja-NSC"><img src="/images/Octocat.png" alt="gh"></a> <a href="http://universal.grew.fr/?corpus=SUD_Beja-NSC@latest"><img src="/images/square_g.svg" alt="gm"></a></td>
+<td style="text-align:center"><a href="https://github.com/surfacesyntacticud/tools/tree/master/converter">⇨</a></td>
+<td style="text-align:center"><code>UD_Beja-NSC_MB</code> <a href="https://github.com/UniversalDependencies/UD_Beja-NSC/tree/dev/not-to-release"><img src="/images/Octocat.png" alt="gh"></a> <a href="http://universal.grew.fr/?corpus=UD_Beja-NSC_MB@conv"><img src="/images/square_g.svg" alt="gm"></a></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a href="https://github.com/surfacesyntacticud/tools/tree/master/morph2word">⇩</a></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>word-based</strong></td>
+<td style="text-align:center"><code>SUD_Beja-NSC_WB</code> <a href="https://github.com/surfacesyntacticud/SUD_Beja-NSC/tree/master/word_based"><img src="/images/Octocat.png" alt="gh"></a> <a href="http://universal.grew.fr/?corpus=SUD_Beja-NSC_WB@latest"><img src="/images/square_g.svg" alt="gm"></a></td>
+<td style="text-align:center"><a href="https://github.com/surfacesyntacticud/tools/tree/master/converter">⇨</a></td>
+<td style="text-align:center"><strong><code>UD_Beja-NSC</code></strong> <a href="https://github.com/UniversalDependencies/UD_Beja-NSC/tree/dev"><img src="/images/Octocat.png" alt="gh"></a> <a href="http://universal.grew.fr/?corpus=UD_Beja-NSC@conv"><img src="/images/square_g.svg" alt="gm"></a></td>
+</tr>
+</tbody>
+</table>
+
+
+  </section>
+  
+  
+
+</body>
+</html>
