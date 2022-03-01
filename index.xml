@@ -8,72 +8,61 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 26 Apr 2020 17:45:38 +0200</lastBuildDate><atom:link href="https://surfacesyntacticud.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>https://surfacesyntacticud.github.io/conversions/ud_to_sud/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://surfacesyntacticud.github.io/conversions/ud_to_sud/</guid>
-      <description>Conversion from UD to SUD This page describes the process used in the conversion from UD to SUD. It also explains how this can be adapted to languages specificities.
-The main sequence   Onf (eud_to_ud): Remove all enhanced annotation; the conversion supposes that the input is in basic UD format. Note that it can be safely applied to basic UD, the annotations are left unchanged.
-  Onf (idioms): Add the features encoding of idioms in SUD; namely, features ExtPos, PhraseType, InTitle and InIdiom ( see Idioms and titles).</description>
-    </item>
-    
-    <item>
-      <title></title>
+      <title>@agent</title>
       <link>https://surfacesyntacticud.github.io/guidelines/u/deep_features/agent/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/agent/</guid>
-      <description>@agent The @agent feature is used for arguments that are agents of their governor at the semantic level in various constructions (e.g., causative, passive, impersonal, etc.).
+      <description>The @agent feature is used for arguments that are agents of their governor at the semantic level in various constructions (e.g., causative, passive, impersonal, etc.).
     </description>
     </item>
     
     <item>
-      <title></title>
+      <title>@caus</title>
       <link>https://surfacesyntacticud.github.io/guidelines/u/deep_features/caus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/caus/</guid>
-      <description>@caus The @caus feature is used for the argument of causative auxiliaries.  </description>
+      <description>The @caus feature is used for the argument of causative auxiliaries.  </description>
     </item>
     
     <item>
-      <title></title>
+      <title>@expl</title>
       <link>https://surfacesyntacticud.github.io/guidelines/u/deep_features/expletive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/expletive/</guid>
-      <description>@expl The @expl feature is used for arguments of predicates without semantic contents (impersonal subjects for instance).   This feature can also be used to annotate repeated subjects, such as those which are common in certain French interrogative constructions.  </description>
+      <description>The @expl feature is used for arguments of predicates without semantic contents (impersonal subjects for instance).   This feature can also be used to annotate repeated subjects, such as those which are common in certain French interrogative constructions.  </description>
     </item>
     
     <item>
-      <title></title>
+      <title>@fixed (DEPRECATED)</title>
       <link>https://surfacesyntacticud.github.io/guidelines/u/deep_features/fixed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/fixed/</guid>
-      <description>@fixed (DEPRECATED) The @fixed feature was previously used for multi-word expression. It has been replaced by nodes features: see here</description>
+      <description>The @fixed feature was previously used for multi-word expression. It has been replaced by nodes features: see here</description>
     </item>
     
     <item>
-      <title></title>
+      <title>@lvc</title>
       <link>https://surfacesyntacticud.github.io/guidelines/u/deep_features/lvc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/lvc/</guid>
-      <description>@lvc The @lvc feature is used for arguments of light verbs.
+      <description>The @lvc feature is used for arguments of light verbs.
  English
    French
   See issue #5 for a discussion about light verb construction annotation in SUD.</description>
     </item>
     
     <item>
-      <title></title>
+      <title>@pass</title>
       <link>https://surfacesyntacticud.github.io/guidelines/u/deep_features/pass/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/pass/</guid>
-      <description>@pass The @pass feature is used for the arguments of passive auxiliaries.
+      <description>The @pass feature is used for the arguments of passive auxiliaries.
 The relation between the auxiliary and the verb is marked comp:aux@pass and the subject of the auxiliary bears the subj@pass feature.
  English
    French
@@ -81,119 +70,53 @@ The relation between the auxiliary and the verb is marked comp:aux@pass and the 
     </item>
     
     <item>
-      <title></title>
+      <title>@relcl</title>
       <link>https://surfacesyntacticud.github.io/guidelines/u/deep_features/relcl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/relcl/</guid>
-      <description>@relcl The @relcl feature is used for the relation between the head of a relative clause and its antecedent.
+      <description>The @relcl feature is used for the relation between the head of a relative clause and its antecedent.
  </description>
     </item>
     
     <item>
-      <title></title>
+      <title>@tense</title>
       <link>https://surfacesyntacticud.github.io/guidelines/u/deep_features/tense/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/tense/</guid>
-      <description>@tense The @tense feature is used for the argument of tense auxiliaries.
+      <description>The @tense feature is used for the argument of tense auxiliaries.
  </description>
     </item>
     
     <item>
-      <title></title>
+      <title>@x</title>
       <link>https://surfacesyntacticud.github.io/guidelines/u/deep_features/x/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/x/</guid>
-      <description>@x The @x feature is used to annotate relationships with verbs that do not have an explicitly marked subject, but whose semantic subject can nevertheless be found in the sentence. This relationship therefore applies essentially to infinitive verbs which relate to a subject introduced earlier in the sentence. For example, in the sentence he wants to eat, he has a clear semantic relationship with to eat.
+      <description>The @x feature is used to annotate relationships with verbs that do not have an explicitly marked subject, but whose semantic subject can nevertheless be found in the sentence. This relationship therefore applies essentially to infinitive verbs which relate to a subject introduced earlier in the sentence. For example, in the sentence he wants to eat, he has a clear semantic relationship with to eat.
   While this feature is most often used in relationships between finite verbs and the infinitives they govern, note that the governing element does not necessarily need to be a verb.</description>
     </item>
     
     <item>
-      <title></title>
-      <link>https://surfacesyntacticud.github.io/guidelines/u/extpos/idioms_titles/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://surfacesyntacticud.github.io/guidelines/u/extpos/idioms_titles/</guid>
-      <description>Idioms and titles SUD offers several traits which allow annotators to mark idiomatic expressions and titles while still preserving the internal syntactic relationships between their various components. We have decided to distinguish these two categories from Multi-Word Expressions (MWEs), which represent a broader category which also includes named entities.
-For our purposes, &amp;ldquo;titles&amp;rdquo; refer to any title given to a film, book, painting, or other work of art, such as Planet of the Apes, Dark Side of the Moon, American Gothic, or Super Mario Bros.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://surfacesyntacticud.github.io/guidelines/u/general_principles/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://surfacesyntacticud.github.io/guidelines/u/general_principles/</guid>
-      <description>General principles The main differences with respect to UD are the following:
-  The definition of relations is based on the syntactic position and not on semantic relations or the category of the dependents. In other words, two units that commute and exclude each other occupy the same position and must have the same function.
-  Functional heads (instead of lexical heads): The head of a unit is the distributional head, that is, the element that control the distribution of the unit.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/comparative/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/comparative/</guid>
-      <description>Comparative, superlative and consecutive constructions In comparative constructions where each term is introduced with a grammatical pair like more&amp;hellip; than, the relation between the two grammatical words is labeled comp:obj, with the first word being the head of the second. Consider the example:
- French
-  Note that the first grammatical word of the comparison (plus) is considered a modifier of the property being compared. Examples in other languages: plus &amp;hellip; que (French), più &amp;hellip; di (Italian), bardziej &amp;hellip; niż (Polish).</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/compounds/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/compounds/</guid>
-      <description>Compound SUD shares with with UD its compound relation, though the exact usage of this relationship is determined on a language-by-language basis. SUD annotations for some languages, such as French, do not use the compound relation at all.
-Naija in particular makes heavy use of this relation, which is used to link nouns to virtually any other nouns which play a modifying role. However, it is also used to annotate phrasal verbs as well as a more limited subset of relations between nouns and adjectives, such as dry cleaner, which are considered fixed expressions whose meaning cannot be directly understood from its constituent parts.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/coord/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/coord/</guid>
-      <description>Coordination Chained conjuncts In UD, all conjuncts of a coordination are attached to the head of the first conjunct in a bouquet. In SUD, each conjunct is attached to the head of the previous one in a chain.
-The first example below shows the annotation of a coordination in UD and the second one the corresponding annotation in SUD.
- English
-   English
-  Embedded coordination The conjunct of a coordination can itself be a coordination.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/lvc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/lvc/</guid>
-      <description>Light verb constructions A light verb construction (LVC) is a type of verbal structure in which a verb is coupled with another element – typically a noun phrase – which provides the primary semantic value. Common examples of LVCs in English include take a walk, give a kiss, or have a drink. In SUD, LVCs are marked with the deep feature @lvc.
- French
-  The complements of these constructions are sometimes attached to the noun rather than the verb because:</description>
-    </item>
-    
-    <item>
-      <title></title>
+      <title>comp</title>
       <link>https://surfacesyntacticud.github.io/guidelines/u/relations/comp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp/</guid>
-      <description>comp The comp relation is used for arguments of verbs, nouns, adjectives, adverbs, auxiliaries, adpositions and conjunctions.
+      <description>The comp relation is used for arguments of verbs, nouns, adjectives, adverbs, auxiliaries, adpositions and conjunctions.
 This relation is refined into several sub-relations: comp:aux (auxiliary argument), comp:cleft (cleft clauses), comp:obj (direct object),comp:obl (oblique argument), comp:pred (predicative argument).
 In most cases, SUD native corpora are directly annotated with the sub-relations, rather than with the comp relation. However, comp may sometimes be used when one has difficulty deciding between comp:obj and comp:obl.</description>
     </item>
     
     <item>
-      <title></title>
+      <title>comp:aux</title>
       <link>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_aux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_aux/</guid>
-      <description>comp:aux The comp:aux relation is used for the argument of auxiliaries, and corresponds to the aux relationship as defined by UD.
+      <description>The comp:aux relation is used for the argument of auxiliaries, and corresponds to the aux relationship as defined by UD.
  English
    English
   Multiple auxiliaries, such as those permitted in English varieties spoken in the Southeastern United States, are annotated as so.
@@ -206,12 +129,12 @@ In most cases, SUD native corpora are directly annotated with the sub-relations,
     </item>
     
     <item>
-      <title></title>
+      <title>comp:cleft</title>
       <link>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_cleft/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_cleft/</guid>
-      <description>comp:cleft The comp:cleft relation is used in cleft sentences for the dependency from the head of the sentence to the head of the complement clause.
+      <description>The comp:cleft relation is used in cleft sentences for the dependency from the head of the sentence to the head of the complement clause.
  English
    French
   Sometimes, there is an ambiguity between a relative clause and a cleft clause. Consider the sentence It is the electric car that I chose.
@@ -219,12 +142,12 @@ If someone utters this sentence in a context where they must choose between a ga
     </item>
     
     <item>
-      <title></title>
+      <title>comp:obj</title>
       <link>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_obj/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_obj/</guid>
-      <description>comp:obj The comp:obj relation is used for direct object complements, including direct complements of an adposition or a subordinating conjunction.
+      <description>The comp:obj relation is used for direct object complements, including direct complements of an adposition or a subordinating conjunction.
 Direct object complements  English
    French
    Russian
@@ -232,12 +155,12 @@ Direct object complements  English
     </item>
     
     <item>
-      <title></title>
+      <title>comp:obl</title>
       <link>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_obl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_obl/</guid>
-      <description>comp:obl The comp:obl relation is used for oblique arguments of verbs, adjectives, adverbs, nouns or pronouns, regardless of their form. Unlike UD, SUD does not make a distinction between indirect objects and oblique arguments. SUD instead makes the distinction between arguments and modifiers.
+      <description>The comp:obl relation is used for oblique arguments of verbs, adjectives, adverbs, nouns or pronouns, regardless of their form. Unlike UD, SUD does not make a distinction between indirect objects and oblique arguments. SUD instead makes the distinction between arguments and modifiers.
 Consider the following sentence analyzed in UD.
  English
   In SUD, it would be analyzed as follows:
@@ -246,12 +169,12 @@ Consider the following sentence analyzed in UD.
     </item>
     
     <item>
-      <title></title>
+      <title>comp:pred</title>
       <link>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_pred/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_pred/</guid>
-      <description>comp:pred The comp:pred relation is used for predicative arguments of verbs.
+      <description>The comp:pred relation is used for predicative arguments of verbs.
  English
    English
    English
@@ -264,39 +187,24 @@ Consider the following sentence analyzed in UD.
     </item>
     
     <item>
-      <title></title>
-      <link>https://surfacesyntacticud.github.io/guidelines/u/relations/mod/</link>
+      <title>Comparative, superlative and consecutive constructions</title>
+      <link>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/comparative/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/mod/</guid>
-      <description>mod The modrelation is used for modifiers of verbs, nouns, adjectives, adverbs, auxiliaries, adpositions and conjunctions.
- English
-   English
-   French
-  Deep syntactic features The relation mod can have these features:
- @relcl @x  </description>
+      <guid>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/comparative/</guid>
+      <description>In comparative constructions where each term is introduced with a grammatical pair like more&amp;hellip; than, the relation between the two grammatical words is labeled comp:obj, with the first word being the head of the second. Consider the example:
+ French
+  Note that the first grammatical word of the comparison (plus) is considered a modifier of the property being compared. Examples in other languages: plus &amp;hellip; que (French), più &amp;hellip; di (Italian), bardziej &amp;hellip; niż (Polish).</description>
     </item>
     
     <item>
-      <title></title>
-      <link>https://surfacesyntacticud.github.io/guidelines/u/relations/subj/</link>
+      <title>Compound</title>
+      <link>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/compounds/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/subj/</guid>
-      <description>subj The subj relation is used for all subjects, regardless of their form (nominal or verbal). This relationship encompasses both the nsubj and csubj relationships as defined by UD, as the following examples show.
- English
-   English
-  Deep syntactic features The subj relation has two deep syntactic sub-relations. The sub-relation subj@expl is used to indicate that the subject is present to fill in an obligatory syntactic position and has no semantic value.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://surfacesyntacticud.github.io/guidelines/u/relations/udep/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/udep/</guid>
-      <description>udep The udep relation is used for complements when one does not wish to or is unable to distinguish between arguments and modifiers. This relationship can notably be used in cases where the complement&amp;rsquo;s relationship with its governor is ambiguous. When there is little debate about the nature of the relationship, the more specific label is preferred.
-The governor and the dependent of a udep relation can have any POS. The udep relation is frequently given to the complements of nouns, since it is generally more difficult to distinguish between arguments and modifiers for nouns than it is for verbs.</description>
+      <guid>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/compounds/</guid>
+      <description>SUD shares with with UD its compound relation, though the exact usage of this relationship is determined on a language-by-language basis. SUD annotations for some languages, such as French, do not use the compound relation at all.
+Naija in particular makes heavy use of this relation, which is used to link nouns to virtually any other nouns which play a modifying role. However, it is also used to annotate phrasal verbs as well as a more limited subset of relations between nouns and adjectives, such as dry cleaner, which are considered fixed expressions whose meaning cannot be directly understood from its constituent parts.</description>
     </item>
     
     <item>
@@ -332,6 +240,30 @@ Ex:
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj_dicto/</guid>
       <description>This relation is used to indicate difluencies when a speaker corrects his speech and to analyse reformulations. The relation conj:coord is used to link two different objects, two referants (ex: Mary and John are two different referents). The relation conj:dicto on the other hand is used to link two denotations of the same referent (ex: the desert in Kenya, the Kenya desert is denoting the same referant).
 The ability of conj:dicto to anlyse both disfluencies and reformulations is the reason why we don&amp;rsquo;t use the the reparandum relationship as used in UD.</description>
+    </item>
+    
+    <item>
+      <title>Conversion from UD to SUD</title>
+      <link>https://surfacesyntacticud.github.io/conversions/ud_to_sud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://surfacesyntacticud.github.io/conversions/ud_to_sud/</guid>
+      <description>This page describes the process used in the conversion from UD to SUD. It also explains how this can be adapted to languages specificities.
+The main sequence   Onf (eud_to_ud): Remove all enhanced annotation; the conversion supposes that the input is in basic UD format. Note that it can be safely applied to basic UD, the annotations are left unchanged.
+  Onf (idioms): Add the features encoding of idioms in SUD; namely, features ExtPos, PhraseType, InTitle and InIdiom ( see Idioms and titles).</description>
+    </item>
+    
+    <item>
+      <title>Coordination</title>
+      <link>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/coord/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/coord/</guid>
+      <description>Chained conjuncts In UD, all conjuncts of a coordination are attached to the head of the first conjunct in a bouquet. In SUD, each conjunct is attached to the head of the previous one in a chain.
+The first example below shows the annotation of a coordination in UD and the second one the corresponding annotation in SUD.
+ English
+   English
+  Embedded coordination The conjunct of a coordination can itself be a coordination.</description>
     </item>
     
     <item>
@@ -372,6 +304,38 @@ Repetitions and reformulations To analyse constructions of repetition or reformu
     </item>
     
     <item>
+      <title>General principles</title>
+      <link>https://surfacesyntacticud.github.io/guidelines/u/general_principles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://surfacesyntacticud.github.io/guidelines/u/general_principles/</guid>
+      <description>The main differences with respect to UD are the following:
+  The definition of relations is based on the syntactic position and not on semantic relations or the category of the dependents. In other words, two units that commute and exclude each other occupy the same position and must have the same function.
+  Functional heads (instead of lexical heads): The head of a unit is the distributional head, that is, the element that control the distribution of the unit.</description>
+    </item>
+    
+    <item>
+      <title>Idioms and titles</title>
+      <link>https://surfacesyntacticud.github.io/guidelines/u/extpos/idioms_titles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://surfacesyntacticud.github.io/guidelines/u/extpos/idioms_titles/</guid>
+      <description>SUD offers several traits which allow annotators to mark idiomatic expressions and titles while still preserving the internal syntactic relationships between their various components. We have decided to distinguish these two categories from Multi-Word Expressions (MWEs), which represent a broader category which also includes named entities.
+For our purposes, &amp;ldquo;titles&amp;rdquo; refer to any title given to a film, book, painting, or other work of art, such as Planet of the Apes, Dark Side of the Moon, American Gothic, or Super Mario Bros.</description>
+    </item>
+    
+    <item>
+      <title>Light verb constructions</title>
+      <link>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/lvc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/lvc/</guid>
+      <description>A light verb construction (LVC) is a type of verbal structure in which a verb is coupled with another element – typically a noun phrase – which provides the primary semantic value. Common examples of LVCs in English include take a walk, give a kiss, or have a drink. In SUD, LVCs are marked with the deep feature @lvc.
+ French
+  The complements of these constructions are sometimes attached to the noun rather than the verb because:</description>
+    </item>
+    
+    <item>
       <title>Macrosyntactic relations</title>
       <link>https://surfacesyntacticud.github.io/guidelines/u/oral_language/macrosyntax/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -379,6 +343,20 @@ Repetitions and reformulations To analyse constructions of repetition or reformu
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/macrosyntax/</guid>
       <description>In this part we will present relations that we use to analyse relations beyond the microsyntactic analysis between a governor and its dependant. We call this type of analysis macrosyntax.
 This approach can be used to analyse two elements that are placed side by side with no explicit marker of coordination, subordination, or argument relation with the head word. Ex: I told him don&amp;rsquo;t do it. in this sentence we miss the usual marker that.</description>
+    </item>
+    
+    <item>
+      <title>mod</title>
+      <link>https://surfacesyntacticud.github.io/guidelines/u/relations/mod/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/mod/</guid>
+      <description>The modrelation is used for modifiers of verbs, nouns, adjectives, adverbs, auxiliaries, adpositions and conjunctions.
+ English
+   English
+   French
+  Deep syntactic features The relation mod can have these features:
+ @relcl @x  </description>
     </item>
     
     <item>
@@ -426,6 +404,28 @@ We distinguish:
  French
    Naija
   </description>
+    </item>
+    
+    <item>
+      <title>subj</title>
+      <link>https://surfacesyntacticud.github.io/guidelines/u/relations/subj/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/subj/</guid>
+      <description>The subj relation is used for all subjects, regardless of their form (nominal or verbal). This relationship encompasses both the nsubj and csubj relationships as defined by UD, as the following examples show.
+ English
+   English
+  Deep syntactic features The subj relation has two deep syntactic sub-relations. The sub-relation subj@expl is used to indicate that the subject is present to fill in an obligatory syntactic position and has no semantic value.</description>
+    </item>
+    
+    <item>
+      <title>udep</title>
+      <link>https://surfacesyntacticud.github.io/guidelines/u/relations/udep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/udep/</guid>
+      <description>The udep relation is used for complements when one does not wish to or is unable to distinguish between arguments and modifiers. This relationship can notably be used in cases where the complement&amp;rsquo;s relationship with its governor is ambiguous. When there is little debate about the nature of the relationship, the more specific label is preferred.
+The governor and the dependent of a udep relation can have any POS. The udep relation is frequently given to the complements of nouns, since it is generally more difficult to distinguish between arguments and modifiers for nouns than it is for verbs.</description>
     </item>
     
     <item>

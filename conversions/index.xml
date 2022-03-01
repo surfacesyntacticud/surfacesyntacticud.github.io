@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>SUD</title>
+    <title>Correspondences between SUD and UD on SUD</title>
     <link>https://surfacesyntacticud.github.io/conversions/</link>
-    <description>Recent content on SUD</description>
+    <description>Recent content in Correspondences between SUD and UD on SUD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://surfacesyntacticud.github.io/conversions/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
+      <title>Conversion from UD to SUD</title>
       <link>https://surfacesyntacticud.github.io/conversions/ud_to_sud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/conversions/ud_to_sud/</guid>
-      <description>Conversion from UD to SUD This page describes the process used in the conversion from UD to SUD. It also explains how this can be adapted to languages specificities.
+      <description>This page describes the process used in the conversion from UD to SUD. It also explains how this can be adapted to languages specificities.
 The main sequence   Onf (eud_to_ud): Remove all enhanced annotation; the conversion supposes that the input is in basic UD format. Note that it can be safely applied to basic UD, the annotations are left unchanged.
   Onf (idioms): Add the features encoding of idioms in SUD; namely, features ExtPos, PhraseType, InTitle and InIdiom ( see Idioms and titles).</description>
     </item>

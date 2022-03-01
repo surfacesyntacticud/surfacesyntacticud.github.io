@@ -21,7 +21,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
 
-  <title> | SUD</title>
+  <title>comp | SUD</title>
 
   
   <link rel="stylesheet" href="/css/style.css">
@@ -31,6 +31,7 @@
   <script src="https://unpkg.com/reactive-dep-tree@0.2.5/dist/reactive-dep-tree.umd.js" async deferred></script>
 
 </head>
+
 <body>
   <section class="page-header">
   <h1 class="project-name">
@@ -76,10 +77,19 @@
 </section>
 
   <section class="main-content">
+    <h1>
+      comp
+        
+          
+          <span style="float: right; font-size:50%">
+            <a href= https://github.com/surfacesyntacticud/guidelines/edit/master/content/guidelines/u/relations/comp.md target="_blank">
+              <button>Edit the page</button>
+            </a>
+          </span>
+        
+    </h1>
     
-  <h1></h1>
-  <h1 id="comp"><strong>comp</strong></h1>
-<p>The <code>comp</code> relation is used for arguments of verbs, nouns, adjectives, adverbs, auxiliaries, adpositions and conjunctions.</p>
+  <p>The <code>comp</code> relation is used for arguments of verbs, nouns, adjectives, adverbs, auxiliaries, adpositions and conjunctions.</p>
 <p>This relation is refined into several sub-relations:  <a href="../comp_aux"><code>comp:aux</code></a> (auxiliary argument), <a href="../comp_cleft"><code>comp:cleft</code></a> (cleft clauses), <a href="../comp_obj"><code>comp:obj</code></a> (direct object),<a href="../comp_obl"><code>comp:obl</code></a> (oblique argument), <a href="../comp_pred"><code>comp:pred</code></a> (predicative argument).</p>
 <p>In most cases, SUD native corpora are directly annotated with the sub-relations, rather than with the <code>comp</code> relation. However, <code>comp</code> may sometimes be used when one has difficulty deciding between <code>comp:obj</code> and <code>comp:obl</code>.</p>
 <p>In <strong>French</strong>, the <code>comp</code> label is frequently used to annotate reflexive pronouns and other pronominal clitics which contribute to the formation of pronominal verbs when it is difficult to determine the role of a pronoun. In constructions such as <em>Il s&rsquo;en sort</em> the pronoun <em>se</em> no longer provides the semantic value of an argument of the verb. However, it fits so well into the typical argument structure that it is hard to recognize that it cannot be de-pronominalized. For this reason, we annotate the relation with a <code>comp</code> label.</p>
@@ -180,4 +190,5 @@
   
 
 </body>
+
 </html>

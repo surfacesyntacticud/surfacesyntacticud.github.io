@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>SUD</title>
+    <title>The ExtPos feature on SUD</title>
     <link>https://surfacesyntacticud.github.io/guidelines/u/extpos/</link>
-    <description>Recent content on SUD</description>
+    <description>Recent content in The ExtPos feature on SUD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://surfacesyntacticud.github.io/guidelines/u/extpos/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
+      <title>Idioms and titles</title>
       <link>https://surfacesyntacticud.github.io/guidelines/u/extpos/idioms_titles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/extpos/idioms_titles/</guid>
-      <description>Idioms and titles SUD offers several traits which allow annotators to mark idiomatic expressions and titles while still preserving the internal syntactic relationships between their various components. We have decided to distinguish these two categories from Multi-Word Expressions (MWEs), which represent a broader category which also includes named entities.
+      <description>SUD offers several traits which allow annotators to mark idiomatic expressions and titles while still preserving the internal syntactic relationships between their various components. We have decided to distinguish these two categories from Multi-Word Expressions (MWEs), which represent a broader category which also includes named entities.
 For our purposes, &amp;ldquo;titles&amp;rdquo; refer to any title given to a film, book, painting, or other work of art, such as Planet of the Apes, Dark Side of the Moon, American Gothic, or Super Mario Bros.</description>
     </item>
     

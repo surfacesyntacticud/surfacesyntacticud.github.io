@@ -21,7 +21,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
 
-  <title> | SUD</title>
+  <title>Correspondences between SUD and UD | SUD</title>
 
   
   <link rel="stylesheet" href="/css/style.css">
@@ -31,6 +31,7 @@
   <script src="https://unpkg.com/reactive-dep-tree@0.2.5/dist/reactive-dep-tree.umd.js" async deferred></script>
 
 </head>
+
 <body>
   <section class="page-header">
   <h1 class="project-name">
@@ -76,10 +77,19 @@
 </section>
 
   <section class="main-content">
+    <h1>
+      Correspondences between SUD and UD
+        
+          
+          <span style="float: right; font-size:50%">
+            <a href= https://github.com/surfacesyntacticud/guidelines/edit/master/content/conversions/_index.md target="_blank">
+              <button>Edit the page</button>
+            </a>
+          </span>
+        
+    </h1>
     
-  <h1></h1>
-  <h2 id="correspondences-between-sud-and-ud">Correspondences between SUD and UD</h2>
-<p>This page is dedicated to exploring several key differences between SUD and UD labels, and the correspondences between the two schemes (For information about the conversion process, see <a href="../../../data">SUD corpora</a>).</p>
+  <p>This page is dedicated to exploring several key differences between SUD and UD labels, and the correspondences between the two schemes (For information about the conversion process, see <a href="../../../data">SUD corpora</a>).</p>
 <p>SUD is a dependency-based annotation scheme. Annotation choices rely on surface-syntactic distributional criteria, while at the same time attempting to maintain convertibility with the UD annotation scheme as much as possible.</p>
 <p>SUD represents an alternative rather than a competitor to UD, and was designed in such a way that the two can convey the same informational content. The two schemes enjoy a nearly perfect degree of two-way convertibility, meaning that conversions between the two schemes can take place without informational loss in most cases. Because of this, correspondences between the two are most often regular and predictable.</p>
 <p>Correspondences between SUD and UD relationships are impacted by several key properties. Firstly, SUD annotations are less redundant and more economical than UD annotations. For example, we can see in the table below that SUD uses a single <code>subj</code> relation which comprises both the <code>nsubj</code> (nominal subject) and <code>csubj</code> (clausal subject) relationships in UD. However, the information provided by UD&rsquo;s distinction between nominal and clausal subjects is not lost in under the simpler SUD scheme: the differentiation can be recovered automatically from the POS of the subject and its context, though how this context is taken into account depends on the language. In total, a subset of 17 UD relations (<code>nsubj</code>, <code>csubj</code>, <code>obj</code>, <code>iobj</code>, <code>obl</code>, <code>xcomp</code>, <code>ccomp</code>, <code>amod</code>, <code>nmod</code>, <code>nummod</code>, <code>advmod</code>, <code>acl</code>, <code>advcl</code>, <code>aux</code>, <code>cop</code>, <code>case</code>, <code>mark</code>) is replaced by three major relations in SUD: <code>subj</code>, <code>comp</code>, <code>mod</code>, as well as <code>udep</code> to a marginal extent.</p>
@@ -156,8 +166,12 @@
 
 <h3 id="example-of-a-sentence-annotated-in-sud-above-and-ud-below">Example of a sentence annotated in SUD (above) and UD (below).</h3>
 <p><img src="/images/sud.svg#floatleft" alt="Surface Syntactic Universal Dependencies (SUD)">
-
-
+<reactive-dep-tree
+  shown-metas="text_en"
+  shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss,FEATS.ExtPos,FEATS.Idiom,FEATS.Title,FEATS.InIdiom,FEATS.InTitle"
+  hidden-features="XPOS"
+  conll="
+    
 # sent_id = email-enronsent38_01-0114
 # text = I am out of the office today but will be back tomorrow.
 # shownfeatures = FORM, UPOS
@@ -175,10 +189,17 @@
 12	tomorrow	_	NOUN	_	_	9	mod	_	_
 13	.	_	PUNCT	.	_	2	punct	_	_
 
+  "
+>
+</reactive-dep-tree>
 </p>
 <p><img src="/images/ud.svg#floatleft" alt="Universal Dependencies (UD)">
-
-
+<reactive-dep-tree
+  shown-metas="text_en"
+  shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss,FEATS.ExtPos,FEATS.Idiom,FEATS.Title,FEATS.InIdiom,FEATS.InTitle"
+  hidden-features="XPOS"
+  conll="
+    
 # sent_id = email-enronsent38_01-0114
 # text = I am out of the office today but will be back tomorrow.
 # shownfeatures = FORM, UPOS
@@ -196,6 +217,9 @@
 12	tomorrow	_	NOUN	_		11	obl:tmod	_	_
 13	.	_	PUNCT	.	_	6	punct	_	_
 
+  "
+>
+</reactive-dep-tree>
 </p>
 
 
@@ -204,4 +228,5 @@
   
 
 </body>
+
 </html>
