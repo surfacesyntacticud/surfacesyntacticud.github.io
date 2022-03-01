@@ -12,7 +12,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/agent/</guid>
-      <description>@agent The @agent feature is used for arguments that are agents of their governor at the semantic level in various constructions (e.g., causative, passive, impersonal, etc.).     </description>
+      <description>@agent The @agent feature is used for arguments that are agents of their governor at the semantic level in various constructions (e.g., causative, passive, impersonal, etc.).
+    </description>
     </item>
     
     <item>
@@ -49,7 +50,9 @@
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/lvc/</guid>
       <description>@lvc The @lvc feature is used for arguments of light verbs.
- English    French   See issue #5 for a discussion about light verb construction annotation in SUD.</description>
+ English
+   French
+  See issue #5 for a discussion about light verb construction annotation in SUD.</description>
     </item>
     
     <item>
@@ -113,7 +116,8 @@ The relation between the auxiliary and the verb is marked comp:aux@pass and the 
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/comparative/</guid>
       <description>Comparative, superlative and consecutive constructions In comparative constructions where each term is introduced with a grammatical pair like more&amp;hellip; than, the relation between the two grammatical words is labeled comp:obj, with the first word being the head of the second. Consider the example:
- Note that the first grammatical word of the comparison (plus) is considered a modifier of the property being compared. Examples in other languages: plus &amp;hellip; que (French), più &amp;hellip; di (Italian), bardziej &amp;hellip; niż (Polish).</description>
+ French
+  Note that the first grammatical word of the comparison (plus) is considered a modifier of the property being compared. Examples in other languages: plus &amp;hellip; que (French), più &amp;hellip; di (Italian), bardziej &amp;hellip; niż (Polish).</description>
     </item>
     
     <item>
@@ -134,6 +138,8 @@ Naija in particular makes heavy use of this relation, which is used to link noun
       <guid>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/coord/</guid>
       <description>Coordination Chained conjuncts In UD, all conjuncts of a coordination are attached to the head of the first conjunct in a bouquet. In SUD, each conjunct is attached to the head of the previous one in a chain.
 The first example below shows the annotation of a coordination in UD and the second one the corresponding annotation in SUD.
+ English
+   English
   Embedded coordination The conjunct of a coordination can itself be a coordination.</description>
     </item>
     
@@ -336,9 +342,11 @@ Repetitions and reformulations To analyse constructions of repetition or reformu
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/dislocated/</guid>
       <description>The dislocated relation is used to analyze detached elements that do not enter in the core grammatical relations of a sentence.
  French
-   Naija   This relation can also be used for pronouns which are detached from the core syntactic structure of an utterance, such as French tonic pronouns.
+   Naija
+  This relation can also be used for pronouns which are detached from the core syntactic structure of an utterance, such as French tonic pronouns.
  French
-   Naija   In case of multiple propositions in one sentence, dislocated is used when the second proposition doesn&amp;rsquo;t hold any actual information value and it cannot be neither separated nor negated.</description>
+   Naija
+  In case of multiple propositions in one sentence, dislocated is used when the second proposition doesn&amp;rsquo;t hold any actual information value and it cannot be neither separated nor negated.</description>
     </item>
     
     <item>
@@ -382,7 +390,8 @@ We distinguish:
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_obj/</guid>
       <description>Direct discourse is attached its governor by the relation parataxis:obj.
  French
-   Naija   </description>
+   Naija
+  </description>
     </item>
     
     <item>
@@ -393,7 +402,8 @@ We distinguish:
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_parenth/</guid>
       <description>The parataxis:parenth relation is used for parenthetical clauses, in the sense that the clause is backgrounded (as if it were inside parentheses). A parenthetical clause could form an independent sentence.
  French
-   Naija   </description>
+   Naija
+  </description>
     </item>
     
     <item>
@@ -403,7 +413,9 @@ We distinguish:
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/vocative/</guid>
       <description>The vocative relation is used when a speaker directly addresses a listener in an utterance.
- French    Naija   text = ehn auntie &amp;lt; di ting no easy o // </description>
+ French
+   Naija
+  </description>
     </item>
     
   </channel>
