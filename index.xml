@@ -388,7 +388,8 @@ We distinguish:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_obj/</guid>
-      <description>Direct discourse is attached its governor by the relation parataxis:obj.
+      <description>The depency relation parataxis:obj has been deleted.
+Direct discourse is attached its governor by the relation comp:obj with the features Reported = &amp;ldquo;Yes&amp;rdquo;.
  French
    Naija
   </description>
