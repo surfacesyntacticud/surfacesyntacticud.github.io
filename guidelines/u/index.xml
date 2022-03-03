@@ -292,17 +292,6 @@ Repetitions and reformulations To analyse constructions of repetition or reformu
     </item>
     
     <item>
-      <title>General principles</title>
-      <link>https://surfacesyntacticud.github.io/guidelines/u/general_principles/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://surfacesyntacticud.github.io/guidelines/u/general_principles/</guid>
-      <description>The main differences with respect to UD are the following:
-  The definition of relations is based on the syntactic position and not on semantic relations or the category of the dependents. In other words, two units that commute and exclude each other occupy the same position and must have the same function.
-  Functional heads (instead of lexical heads): The head of a unit is the distributional head, that is, the element that control the distribution of the unit.</description>
-    </item>
-    
-    <item>
       <title>Light verb constructions</title>
       <link>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/lvc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
