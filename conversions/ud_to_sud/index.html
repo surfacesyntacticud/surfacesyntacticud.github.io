@@ -97,7 +97,7 @@ It also explains how this can be adapted to languages specificities.</p>
 <p><code>Onf (eud_to_ud)</code>: Remove all enhanced annotation; the conversion supposes that the input is in basic UD format. Note that it can be safely applied to basic UD, the annotations are left unchanged.</p>
 </li>
 <li>
-<p><code>Onf (idioms)</code>: Add the features encoding of idioms in SUD; namely, features <code>ExtPos</code>, <code>PhraseType</code>, <code>InTitle</code> and <code>InIdiom</code> ( see <a href="../../guidelines/u/extpos/idioms_titles">Idioms and titles</a>). Note that relations are not changed here.</p>
+<p><code>Onf (idioms)</code>: Add the features encoding of idioms in SUD; namely, features <code>ExtPos</code>, <code>PhraseType</code>, <code>InTitle</code> and <code>InIdiom</code> (see <a href="../../guidelines/u/extpos/idioms_titles">Idioms and titles</a>). Note that relations are not changed here.</p>
 </li>
 <li>
 <p><code>specific_expr_init</code>: Add an explicit node for each <code>ExtPos</code>. TODO: give detail and an example.</p>
@@ -115,13 +115,18 @@ It also explains how this can be adapted to languages specificities.</p>
 <p><code>reverse_relations.main</code>: Reverse relations <code>case</code>, <code>aux</code>, <code>mark</code> and <code>cop</code>. See below for detail about reversing relations.</p>
 </li>
 <li>
-<p><code>Onf (minimize_conj_dep)</code>: Move the dependents of a conjunction from the left conjunct to the right conjunct. Dependencies <code>conj</code>, <code>discourse</code>, <code>parataxis</code> and <code>punct</code> are not moved.</p>
+<p>Move the dependents of a conjunction from the left conjunct to the right conjunct. Dependencies <code>conj</code>, <code>discourse</code>, <code>parataxis</code> and <code>punct</code> are not moved.</p>
+<ul>
+<li><code>Onf (shared_left_conj-dep)</code></li>
+<li><code>Onf (unshared_left_conj-dep)</code></li>
+<li><code>Onf (minimize_right_conj-dep)</code></li>
+</ul>
 </li>
 <li>
 <p><code>Onf (add_conj_emb)</code>: Mark embedded <code>conj</code> relations with the extension <code>emb</code>.</p>
 </li>
 <li>
-<p><code>Onf (chained_relations)</code>: Dependencies of type <code>conj</code>,  and <code>flat:*</code> grouped into a bouquet are reorganized into a chain.</p>
+<p><code>Onf (chained_relations)</code>: Dependencies of type <code>conj</code>,  and <code>flat:*</code> grouped into a bouquet are reorganised into a chain.</p>
 </li>
 <li>
 <p><code>specific_expr_close</code>: Remove specific nodes and edges introduced by the dual package <code>specific_expr_init</code>.</p>
@@ -145,9 +150,9 @@ It also explains how this can be adapted to languages specificities.</p>
 <p>By default, the 4 relations <code>case</code>, <code>cop</code>, <code>aux</code> and <code>mark</code> (and their subtypes) are given the level 10.</p>
 <p>We give below examples of conversions with multiple reversing of relations.
 In Japanese or in German, the default rules are applied.
-The order can be changed by adding different levels to specific relations before calling the package <code>specific_expr_init</code> (see examples below for French and Wolof).</p>
+The order can be changed by adding different levels to specific relations before calling the strategy <code>reverse_relations.main</code> (see examples below for French and Wolof).</p>
 <h3 id="japanese">Japanese</h3>
-<p>In Japanese all UD relation <code>case</code>, <code>cop</code>, <code>aux</code> and <code>mark</code> are left-headed. The constraint 2 applies.</p>
+<p>In Japanese all UD relations <code>case</code>, <code>cop</code>, <code>aux</code> and <code>mark</code> are left-headed. The constraint 2 applies.</p>
 <table>
 <thead>
 <tr>
@@ -205,6 +210,7 @@ The order can be changed by adding different levels to specific relations before
 <p><img src="/conversions/ud_to_sud/wo/na__sud_u.svg" alt="wolof_example_ud_default"></p>
 <p>And the conversion with the new <code>na</code> rule produces (see <a href="https://github.com/surfacesyntacticud/tools/blob/master/converter/grs/wo_UD_to_SUD.grs">GitHub</a>):</p>
 <p><img src="/conversions/ud_to_sud/wo/na__sud_wo.svg" alt="wolof_example_ud_specif"></p>
+<p>More examples of <em>na</em> as the head of a double <code>aux</code> construction: <a href="http://universal.grew.fr/?corpus=SUD_Wolof-WTB@conv&amp;custom=6226075687afb">Grew-match</a>.</p>
 <h2 id="lifting-dependencies">Lifting dependencies</h2>
 <p>TODO</p>
 
