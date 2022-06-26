@@ -91,7 +91,7 @@
     
   <p>This page outlines various features specific to French.</p>
 <h2 id="compaux">comp:aux</h2>
-<p>In French, only three verbs are considered auxiliaries <strong>être</strong>, <strong>avoir</strong> and <strong>faire</strong>.</p>
+<p>In French, only three verbs are considered auxiliaries: <strong>être</strong>, <strong>avoir</strong> and <strong>faire</strong>.</p>
 <p>The <code>comp:aux</code> relation can be used with one of the three sub-relations <code>@tense</code>, <code>@pass</code> or <code>@caus</code>, depending on whether the auxiliary is expressing a tense, a passive or a causative construction. In French, the relation <code>comp:aux@tense</code> is used with both verbs <strong>être</strong> and <strong>avoir</strong> and is the most common sub-relation. The relation <code>comp:aux@pass</code> is only used with the verb <strong>être</strong>, while <code>comp:aux@caus</code> is only used with the verb <strong>faire</strong>.</p>
 <h4 id="example-of-an-auxiliary-expressing-a-tense">Example of an auxiliary expressing a tense</h4>
 <reactive-dep-tree
@@ -148,40 +148,7 @@
 <p>As shown in the page about the <a href=".././u/relations/comp_cleft"><code>comp:cleft</code></a> relation,  the cleft constructions are analysed with a <code>comp:cleft</code> relation going from the head of the main sentence to the head of the complement.</p>
 <ul>
 <li>
-<p><strong>que</strong>
-<reactive-dep-tree
-  shown-metas="text_en"
-  shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss,FEATS.ExtPos,FEATS.Idiom,FEATS.Title,FEATS.InIdiom,FEATS.InTitle,MISC.Reported"
-  hidden-features="XPOS"
-  conll="
-    
-# text_en = Most of the furniture is actually associated with this style.
-# text = C&#39;est d&#39;ailleurs à ce style que se rattache la majorité du mobilier.
-1	C&#39;	ce	PRON	_	_	2	subj@expl	_	Gloss=it
-2	est	être	AUX	_	_	0	root	_	Gloss=is
-3	d&#39;	de	ADP	_	_	2	mod	_	Gloss=of
-4	ailleurs	ailleurs	ADV	_	_	3	comp:obj	_	InIdiom=Yes|Gloss=actually
-5	à	à	ADP	_	_	2	comp:pred	_	Gloss=to
-6	ce	ce	DET	_	_	7	det	_	Gloss=this
-7	style	style	NOUN	_	_	5	comp:obj	_	Gloss=style
-8	que	que	SCONJ	_	_	2	comp:cleft	_	Gloss=that
-9	se	se	PRON	_	_	10	comp@pass	_	Gloss=itself
-10	rattache	rattacher	VERB	_	_	8	comp:obj	_	Gloss=associated
-11	la	le	DET	_	_	12	det	_	Gloss=the
-12	majorité	majorité	NOUN	_	G_	10	subj@pass	_	Gloss=majority
-13-14	du	_	_	_	_	_	_	_	_
-13	de	de	ADP	_	_	12	udep	_	Gloss=of
-14	le	le	DET	_	_	15	det	_	Gloss=the
-15	mobilier	mobilier	NOUN	_	_	13	comp:obj	_	Gloss=furniture
-16	.	.	PUNCT	_	_	2	punct	_	_
-
-  "
->
-</reactive-dep-tree>
-</p>
-</li>
-<li>
-<p><strong>qui</strong>
+<p>With <strong>qui</strong> and <strong>que</strong> direct object, the cleft clause is analysed as a relative clause. in particular, <strong>qui</strong> and <strong>que</strong> are analysed as relative pronouns (PRON).
 <reactive-dep-tree
   shown-metas="text_en"
   shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss,FEATS.ExtPos,FEATS.Idiom,FEATS.Title,FEATS.InIdiom,FEATS.InTitle,MISC.Reported"
@@ -211,6 +178,39 @@
 >
 </reactive-dep-tree>
 </p>
+<ul>
+<li>In the other cases, the cleft clause is analysed as a complement clause, with <strong>que</strong> as a SCONJ.
+<reactive-dep-tree
+  shown-metas="text_en"
+  shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss,FEATS.ExtPos,FEATS.Idiom,FEATS.Title,FEATS.InIdiom,FEATS.InTitle,MISC.Reported"
+  hidden-features="XPOS"
+  conll="
+    
+  # text_en = Most of the furniture is actually associated with this style.
+  # text = C&#39;est d&#39;ailleurs à ce style que se rattache la majorité du mobilier.
+  1	C&#39;	ce	PRON	_	_	2	subj@expl	_	Gloss=it
+  2	est	être	AUX	_	_	0	root	_	Gloss=is
+  3	d&#39;	de	ADP	_	_	2	mod	_	Gloss=of
+  4	ailleurs	ailleurs	ADV	_	_	3	comp:obj	_	InIdiom=Yes|Gloss=actually
+  5	à	à	ADP	_	_	2	comp:pred	_	Gloss=to
+  6	ce	ce	DET	_	_	7	det	_	Gloss=this
+  7	style	style	NOUN	_	_	5	comp:obj	_	Gloss=style
+  8	que	que	SCONJ	_	_	2	comp:cleft	_	Gloss=that
+  9	se	se	PRON	_	_	10	comp@pass	_	Gloss=itself
+  10	rattache	rattacher	VERB	_	_	8	comp:obj	_	Gloss=associated
+  11	la	le	DET	_	_	12	det	_	Gloss=the
+  12	majorité	majorité	NOUN	_	G_	10	subj@pass	_	Gloss=majority
+  13-14	du	_	_	_	_	_	_	_	_
+  13	de	de	ADP	_	_	12	udep	_	Gloss=of
+  14	le	le	DET	_	_	15	det	_	Gloss=the
+  15	mobilier	mobilier	NOUN	_	_	13	comp:obj	_	Gloss=furniture
+  16	.	.	PUNCT	_	_	2	punct	_	_
+  
+  "
+>
+</reactive-dep-tree>
+</li>
+</ul>
 </li>
 </ul>
 <h2 id="interrogatives">Interrogatives</h2>
@@ -239,7 +239,7 @@
 </p>
 </li>
 <li>
-<p><strong>Qu&rsquo;est-ce que</strong>
+<p><strong>Qu&rsquo;est-ce que</strong>: Interrogatives with <strong>PRON est-ce qui/que</strong> are analysed as particular cases of cleft clauses.
 <reactive-dep-tree
   shown-metas="text_en"
   shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss,FEATS.ExtPos,FEATS.Idiom,FEATS.Title,FEATS.InIdiom,FEATS.InTitle,MISC.Reported"
@@ -262,8 +262,8 @@
 </p>
 </li>
 </ul>
-<h2 id="les-interjections">Les interjections</h2>
-<p>We chose to keep the original upos for the token used as interjection and we add the <code>ExtPos = INTJ</code></p>
+<h2 id="interjections-and-other-discourse-markers">Interjections and other discourse markers</h2>
+<p>Pure interjections (such as <em>ah</em>, <em>hein</em>, <em>ouais</em>, <em>euh</em>, etc.) are analysed as INTJs. Discourse markers coming from other POS (such as <em>enfin</em>, <em>chouette</em>, <em>disons</em>, etc.), as well as idioms (such as <em>en fait</em>, <em>tu sais</em>, etc.), keep their original POS but have an additional <code>ExtPos = INTJ</code> feature. Except 4 of them which are frequent and are analysed as pure INTJs:  <em>bon</em>, <em>ben</em>, <em>quoi</em>, and <em>tiens</em>.</p>
 <p>Example :
 <reactive-dep-tree
   shown-metas="text_en"
@@ -298,7 +298,6 @@
 >
 </reactive-dep-tree>
 </p>
-<p>However, there are a few token which are <code>upos=INTJ</code>. In french there is : &ldquo;tiens&rdquo;, &ldquo;ben&rdquo; , &ldquo;quoi&rdquo;, and &ldquo;bon&rdquo;.</p>
 <reactive-dep-tree
   shown-metas="text_en"
   shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss,FEATS.ExtPos,FEATS.Idiom,FEATS.Title,FEATS.InIdiom,FEATS.InTitle,MISC.Reported"
@@ -318,16 +317,15 @@
 9	après	après	ADV	_	_	8	mod	_	SpaceAfter=No
 10	.	.	PUNCT	_	_	8	punct	_	_
 
-
   "
 >
 </reactive-dep-tree>
 
-<h2 id="discours-rapportés">Discours Rapportés</h2>
+<h2 id="reported-speech">Reported speech</h2>
+<p>Reported speech as a feature <code>Reported=Yes</code> on its head. It is generally the <code>comp:obj</code>of a speech verb, such as <em>dire</em> &lsquo;to say&rsquo;.</p>
 <ul>
-<li>le cas de &ldquo;en mode&rdquo; / &ldquo;être là&rdquo;</li>
-</ul>
-<p>In french, the idioms <code>en mode</code> and <code>être là</code> introduce reported speech. We have the edge label <code>comp:obj</code> between the syntactic head of the idiom <code>en mode</code> and the head of the reported speech, and the feature <code>Reported=Yes</code> on the syntactic head of the reported speech.</p>
+<li>
+<p><strong>en mode</strong>: Reported speech can also be introduced by the idomatic preposition <em>en mode</em>.
 <reactive-dep-tree
   shown-metas="text_en"
   shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss,FEATS.ExtPos,FEATS.Idiom,FEATS.Title,FEATS.InIdiom,FEATS.InTitle,MISC.Reported"
@@ -350,12 +348,16 @@
 12	euh	euh	INTJ	_	_	8	discourse	_	SpaceAfter=No
 13	.	.	PUNCT	_	_	2	punct	_	_
 
-
   "
 >
 </reactive-dep-tree>
-
-<p>Sometimes, there is no <code>en mode</code>, so there is the relation <code>comp:obj</code> between the idiom <code>être là</code> and the head of the reported speech.</p>
+</p>
+</li>
+<li>
+<p><strong>être là</strong>
+Sometimes, <em>en mode</em> is absent and there is a direct relation between the idiom <em>être là</em> and the reported speech, which we decide to label <code>comp:obj</code>.</p>
+</li>
+</ul>
 <reactive-dep-tree
   shown-metas="text_en"
   shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss,FEATS.ExtPos,FEATS.Idiom,FEATS.Title,FEATS.InIdiom,FEATS.InTitle,MISC.Reported"
@@ -391,57 +393,13 @@
 </reactive-dep-tree>
 
 <h2 id="pronominal-verbs">Pronominal verbs</h2>
-<p>First we gathered that the feature <code>Reflex=Yes</code> needs to be applied to pronouns having the same reference as the subject
-and that are placed between the tensed verb and the subject itself.</p>
-<p>Here&rsquo;s a recap of every relation <code>comp</code> :</p>
-<h3 id="compexpl-"><code>comp@expl</code> :</h3>
-<p>For pronominal verbs i.e. verbs that can only be used with a relexive pronoun :
-s&rsquo;évaporer</p>
-<p>This also applies to verbs that change meaning if used with a reflexive pronoun :
-s&rsquo;entendre</p>
-<reactive-dep-tree
-  shown-metas="text_en"
-  shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss,FEATS.ExtPos,FEATS.Idiom,FEATS.Title,FEATS.InIdiom,FEATS.InTitle,MISC.Reported"
-  hidden-features="XPOS"
-  conll="
-    
-
-# text = tu te souviens ?
-# text_en = do you remember ?
-
-1	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	3	subj	_	_
-2	te	se	PRON	_	Number=Sing|Person=2|PronType=Prs	3	comp@expl	_	InIdiom=Yes|Reflex=Yes
-3	souviens	souvenir	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	ExtPos=VERB|Idiom=Yes
-4	?	?	PUNCT	_	_	3	punct	_	_
-
-  "
->
-</reactive-dep-tree>
-
-<h3 id="comppass-"><code>comp@pass</code> :</h3>
-<p>For passive reflexive constructions :
-<reactive-dep-tree
-  shown-metas="text_en"
-  shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss,FEATS.ExtPos,FEATS.Idiom,FEATS.Title,FEATS.InIdiom,FEATS.InTitle,MISC.Reported"
-  hidden-features="XPOS"
-  conll="
-    
-# text = donc ça s&#39;est fait.
-# text_en = and then it was done 
-
-1	donc	donc	ADV	_	_	4	discourse	_	_
-2	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	subj	_	_
-3	s&#39;	se	PRON	_	Person=3|PronType=Prs	5	comp@pass	_	Reflex=Yes|SpaceAfter=No
-4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	comp:aux	_	SpaceAfter=No
-6	.	.	PUNCT	_	_	4	punct	_	_
-
-  "
->
-</reactive-dep-tree>
-</p>
-<h3 id="compobj-"><code>comp:obj</code> :</h3>
-<p>For reflexive pronouns replacing direct object :</p>
+<p>Four relations are considered for the reflexive marker <em>se</em>: <code>comp:obj</code>, <code>comp:obl</code>, <code>comp@expl</code>, and <code>comp@pass</code>.</p>
+<p>The 3rd person reflexive marker <em>se</em> is always analysed as a reflexive pronoun: <code>PRON</code> and <code>Reflex=Yes</code>.</p>
+<p>For the 1st and 2nd person reflexive pronoun (<em>me</em>, <em>te</em>, <em>nous</em>, <em>vous</em>), they are analysed as <code>lemma=se</code>and <code>Reflex=Yes</code>, only when <code>comp@expl</code>. In other cases, they are analysed as ordinary object or oblique pronouns.</p>
+<p>The semantic dstinction between reflexive meaning (<em>je me rase</em>) and reciprocal meaning (<em>ils s&rsquo;aiment</em>) is not marked.</p>
+<ul>
+<li>
+<p><code>comp:obj</code>: Reflexive pronouns replacing a direct object.
 <reactive-dep-tree
   shown-metas="text_en"
   shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss,FEATS.ExtPos,FEATS.Idiom,FEATS.Title,FEATS.InIdiom,FEATS.InTitle,MISC.Reported"
@@ -460,9 +418,10 @@ s&rsquo;entendre</p>
   "
 >
 </reactive-dep-tree>
-
-<h3 id="compobl-"><code>comp:obl</code> :</h3>
-<p>For reflexive pronouns replacing oblique arguments :
+</p>
+</li>
+<li>
+<p><code>comp:obl</code>: Reflexive pronouns replacing an oblique complement.
 <reactive-dep-tree
   shown-metas="text_en"
   shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss,FEATS.ExtPos,FEATS.Idiom,FEATS.Title,FEATS.InIdiom,FEATS.InTitle,MISC.Reported"
@@ -483,6 +442,52 @@ s&rsquo;entendre</p>
 >
 </reactive-dep-tree>
 </p>
+</li>
+<li>
+<p><code>comp@expl</code> : For pronominal verbs i.e. verbs that can only be used with a relexive pronoun (such as <em>se souvenir</em>, <em>s&rsquo;évaporer</em>, etc.), or lexicalised verb senses (such as <em>s&rsquo;entendre</em>).
+<reactive-dep-tree
+  shown-metas="text_en"
+  shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss,FEATS.ExtPos,FEATS.Idiom,FEATS.Title,FEATS.InIdiom,FEATS.InTitle,MISC.Reported"
+  hidden-features="XPOS"
+  conll="
+    
+# text = tu te souviens ?
+# text_en = do you remember ?
+
+1	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	3	subj	_	_
+2	te	se	PRON	_	Number=Sing|Person=2|PronType=Prs	3	comp@expl	_	InIdiom=Yes|Reflex=Yes
+3	souviens	souvenir	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	ExtPos=VERB|Idiom=Yes
+4	?	?	PUNCT	_	_	3	punct	_	_
+
+  "
+>
+</reactive-dep-tree>
+</p>
+</li>
+<li>
+<p><code>comp@pass</code>: For passive reflexive constructions, where the the object has been promoted in the subject position: <em>je vend des livres</em> =&gt; <em>les livres se vendent bien</em>. The marker <em>se</em> is still analysed as a reflexive pronoun, even if it has no pronominal vlue.
+<reactive-dep-tree
+  shown-metas="text_en"
+  shown-features="UPOS,LEMMA,FEATS.Tense,FEATS.VerbForm,FEATS.Number,FEATS.Person,MISC.Gloss,FEATS.ExtPos,FEATS.Idiom,FEATS.Title,FEATS.InIdiom,FEATS.InTitle,MISC.Reported"
+  hidden-features="XPOS"
+  conll="
+    
+# text = donc ça s&#39;est fait.
+# text_en = and then it was done 
+
+1	donc	donc	ADV	_	_	4	discourse	_	_
+2	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	subj	_	_
+3	s&#39;	se	PRON	_	Person=3|PronType=Prs	5	comp@pass	_	Reflex=Yes|SpaceAfter=No
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	comp:aux	_	SpaceAfter=No
+6	.	.	PUNCT	_	_	4	punct	_	_
+
+  "
+>
+</reactive-dep-tree>
+</p>
+</li>
+</ul>
 
 
   </section>
