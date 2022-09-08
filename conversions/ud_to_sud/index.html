@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.93.2" />
   <link rel="stylesheet" href="https://surfacesyntacticud.github.io/css/normalize.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   
@@ -200,8 +200,8 @@ The order can be changed by adding different levels to specific relations before
 <p><img src="/conversions/ud_to_sud/fr/post__sud_fr.svg" alt="french_example_ud_specif"></p>
 <h3 id="wolof">Wolof</h3>
 <p>In Wolof, the lemma <em>na</em> must always be the head of the whole structure, so it must be the last relation to be reversed. This can be specified with a rule:</p>
-<pre><code class="language-grew" data-lang="grew">rule na {
-  pattern { e: V -[aux]-&gt; A; A[lemma=&quot;na&quot;] }
+<pre tabindex="0"><code class="language-grew" data-lang="grew">rule na {
+  pattern { e: V -[aux]-&gt; A; A[lemma=&#34;na&#34;] }
   commands { e.level = 100 }
 }
 </code></pre><p>From the UD annotation:</p>
