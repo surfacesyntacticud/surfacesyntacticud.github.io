@@ -12,8 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/agent/</guid>
-      <description>The @agent feature is used for arguments that are agents of their governor at the semantic level in various constructions (e.g., causative, passive, impersonal, etc.).
-    </description>
+      <description>The @agent feature is used for arguments that are agents of their governor at the semantic level in various constructions (e.g., causative, passive, impersonal, etc.).</description>
     </item>
     
     <item>
@@ -22,7 +21,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/caus/</guid>
-      <description>The @caus feature is used for the argument of causative auxiliaries.  </description>
+      <description>The @caus feature is used for the argument of causative auxiliaries. </description>
     </item>
     
     <item>
@@ -31,7 +30,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/expletive/</guid>
-      <description>The @expl feature is used for arguments of predicates without semantic contents (impersonal subjects for instance).   This feature can also be used to annotate repeated subjects, such as those which are common in certain French interrogative constructions.  </description>
+      <description>The @expl feature is used for arguments of predicates without semantic contents (impersonal subjects for instance). This feature can also be used to annotate repeated subjects, such as those which are common in certain French interrogative constructions. </description>
     </item>
     
     <item>
@@ -50,9 +49,9 @@
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/lvc/</guid>
       <description>The @lvc feature is used for arguments of light verbs.
- English
-   French
-  See issue #5 for a discussion about light verb construction annotation in SUD.</description>
+English
+French
+See issue #5 for a discussion about light verb construction annotation in SUD.</description>
     </item>
     
     <item>
@@ -63,9 +62,11 @@
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/pass/</guid>
       <description>The @pass feature is used for the arguments of passive auxiliaries.
 The relation between the auxiliary and the verb is marked comp:aux@pass and the subject of the auxiliary bears the subj@pass feature.
- English
-   French
-  In case of passive reflexive constructions, the subject is analysed with a regular subj relation and the pronoun with the comp@pass relation. For more information about the usage of comp, see the dedicated page.</description>
+English
+French
+In case of passive reflexive constructions, the subject is analysed with a regular subj relation and the pronoun with the comp@pass relation. For more information about the usage of comp, see the dedicated page.
+French
+Complements of the verbs in a passive construction are marked comp:obj@pass</description>
     </item>
     
     <item>
@@ -74,8 +75,7 @@ The relation between the auxiliary and the verb is marked comp:aux@pass and the 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/relcl/</guid>
-      <description>The @relcl feature is used for the relation between the head of a relative clause and its antecedent.
- </description>
+      <description>The @relcl feature is used for the relation between the head of a relative clause and its antecedent.</description>
     </item>
     
     <item>
@@ -84,8 +84,7 @@ The relation between the auxiliary and the verb is marked comp:aux@pass and the 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/tense/</guid>
-      <description>The @tense feature is used for the argument of tense auxiliaries.
- </description>
+      <description>The @tense feature is used for the argument of tense auxiliaries.</description>
     </item>
     
     <item>
@@ -95,7 +94,7 @@ The relation between the auxiliary and the verb is marked comp:aux@pass and the 
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/deep_features/x/</guid>
       <description>The @x feature is used to annotate relationships with verbs that do not have an explicitly marked subject, but whose semantic subject can nevertheless be found in the sentence. This relationship therefore applies essentially to infinitive verbs which relate to a subject introduced earlier in the sentence. For example, in the sentence he wants to eat, he has a clear semantic relationship with to eat.
-  While this feature is most often used in relationships between finite verbs and the infinitives they govern, note that the governing element does not necessarily need to be a verb.</description>
+While this feature is most often used in relationships between finite verbs and the infinitives they govern, note that the governing element does not necessarily need to be a verb.</description>
     </item>
     
     <item>
@@ -116,15 +115,16 @@ In most cases, SUD native corpora are directly annotated with the sub-relations,
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_aux/</guid>
       <description>The comp:aux relation is used for the argument of auxiliaries, and corresponds to the aux relationship as defined by UD.
- English
-   English
-  Multiple auxiliaries, such as those permitted in English varieties spoken in the Southeastern United States, are annotated as so.
- Southern American English
-   Naija
-   Slovak
-   Wolof
-   German
-  Deep syntactic features The relation comp:aux can have these features:</description>
+English
+English
+Multiple auxiliaries, such as those permitted in English varieties spoken in the Southeastern United States, are annotated as so.
+Southern American English
+Naija
+Slovak
+Wolof
+German
+Deep syntactic features The relation comp:aux can have these features:
+@tense @pass @caus </description>
     </item>
     
     <item>
@@ -134,9 +134,9 @@ In most cases, SUD native corpora are directly annotated with the sub-relations,
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_cleft/</guid>
       <description>The comp:cleft relation is used in cleft sentences for the dependency from the head of the sentence to the head of the complement clause.
- English
-   French
-  Sometimes, there is an ambiguity between a relative clause and a cleft clause. Consider the sentence It is the electric car that I chose.
+English
+French
+Sometimes, there is an ambiguity between a relative clause and a cleft clause. Consider the sentence It is the electric car that I chose.
 If someone utters this sentence in a context where they must choose between a gasoline car and an electric car, the sentence is interpreted as a cleft sentence with the following annotation.</description>
     </item>
     
@@ -147,10 +147,10 @@ If someone utters this sentence in a context where they must choose between a ga
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_obj/</guid>
       <description>The comp:obj relation is used for direct object complements, including direct complements of an adposition or a subordinating conjunction.
-Direct object complements  English
-   French
-   Russian
-  Usually, in order to determine whether an object is direct or not, it suffices to know if it forms a construction with a preposition. If it doesn&amp;rsquo;t, the object is direct. According to different languages, this criterion may be insufficient.</description>
+Direct object complements English
+French
+Russian
+Usually, in order to determine whether an object is direct or not, it suffices to know if it forms a construction with a preposition. If it doesn&amp;rsquo;t, the object is direct. According to different languages, this criterion may be insufficient. In the following examples we can see direct objects of the Spanish verb ver.</description>
     </item>
     
     <item>
@@ -161,10 +161,12 @@ Direct object complements  English
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_obl/</guid>
       <description>The comp:obl relation is used for oblique arguments of verbs, adjectives, adverbs, nouns or pronouns, regardless of their form. Unlike UD, SUD does not make a distinction between indirect objects and oblique arguments. SUD instead makes the distinction between arguments and modifiers.
 Consider the following sentence analyzed in UD.
- English
-  In SUD, it would be analyzed as follows:
- English
-  Oblique complement of a verb  English</description>
+English
+In SUD, it would be analyzed as follows:
+English
+Oblique complement of a verb English
+English
+The comp:obl relation is also used for clausal complements commuting with an adpositional complement.</description>
     </item>
     
     <item>
@@ -174,15 +176,14 @@ Consider the following sentence analyzed in UD.
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/comp_pred/</guid>
       <description>The comp:pred relation is used for predicative arguments of verbs.
- English
-   English
-   English
-   English
-   French
-   French
-  The comp:pred relation can also be used in certain subordinating constructions.
- French
-  </description>
+English
+English
+English
+English
+French
+French
+The comp:pred relation can also be used in certain subordinating constructions.
+French</description>
     </item>
     
     <item>
@@ -192,8 +193,8 @@ Consider the following sentence analyzed in UD.
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/comparative/</guid>
       <description>In comparative constructions where each term is introduced with a grammatical pair like more&amp;hellip; than, the relation between the two grammatical words is labeled comp:obj, with the first word being the head of the second. Consider the example:
- French
-  Note that the first grammatical word of the comparison (plus) is considered a modifier of the property being compared. Examples in other languages: plus &amp;hellip; que (French), più &amp;hellip; di (Italian), bardziej &amp;hellip; niż (Polish).</description>
+French
+Note that the first grammatical word of the comparison (plus) is considered a modifier of the property being compared. Examples in other languages: plus &amp;hellip; que (French), più &amp;hellip; di (Italian), bardziej &amp;hellip; niż (Polish).</description>
     </item>
     
     <item>
@@ -214,9 +215,8 @@ Naija in particular makes heavy use of this relation, which is used to link noun
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj_appos/</guid>
       <description>This relation is used for appositions. In an apposition, conjuncts have the same referent, but two clearly different denotations. The conjunct in apposition forms a predication in the background (in Mary, my best friend, the second conjunct my best friend is a predication on the first conjunct Mary, it is equivalent to Mary is my best friend).
 Ex:
- French
-   Naija
-  </description>
+French
+Naija</description>
     </item>
     
     <item>
@@ -226,9 +226,9 @@ Ex:
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/conj_coord/</guid>
       <description>This relation is used to link elements connected with a coordinating conjunction such as and and or. The conjunction itself is linked to the second element with a cc relation. It is analogous to conj relation in UD and SUD for written language.
- French
-   Naija
-  In case of multiple coordinating constructions, we analyze them in a chain in contrast to UD, which analyzes them as a bouquet structure.</description>
+French
+Naija
+In case of multiple coordinating constructions, we analyze them in a chain in contrast to UD, which analyzes them as a bouquet structure. This helps to reduce cumbersome long-distance relations.</description>
     </item>
     
     <item>
@@ -249,9 +249,9 @@ The ability of conj:dicto to anlyse both disfluencies and reformulations is the 
       <guid>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/coord/</guid>
       <description>Chained conjuncts In UD, all conjuncts of a coordination are attached to the head of the first conjunct in a bouquet. In SUD, each conjunct is attached to the head of the previous one in a chain.
 The first example below shows the annotation of a coordination in UD and the second one the corresponding annotation in SUD.
- English
-   English
-  Embedded coordination The conjunct of a coordination can itself be a coordination.</description>
+English
+English
+Embedded coordination The conjunct of a coordination can itself be a coordination.</description>
     </item>
     
     <item>
@@ -272,8 +272,8 @@ In some cases the discourse marker can be another proposition. Ex: He comes on w
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/disfulencies/</guid>
       <description>In oral language, speakers form sentences while speaking, which means that sometimes they might search for words while speaking. They may repeat a word until they find the right one, or they may try with one word and then decide to change.
 Repetitions and reformulations To analyse constructions of repetition or reformulation, we use the relation conj:dicto.
- French
-  The conj:dicto relation applies also when the linked words are not the same.</description>
+French
+The conj:dicto relation applies also when the linked words are not the same.</description>
     </item>
     
     <item>
@@ -283,12 +283,12 @@ Repetitions and reformulations To analyse constructions of repetition or reformu
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/dislocated/</guid>
       <description>The dislocated relation is used to analyze detached elements that do not enter in the core grammatical relations of a sentence.
- French
-   Naija
-  This relation can also be used for pronouns which are detached from the core syntactic structure of an utterance, such as French tonic pronouns.
- French
-   Naija
-  In case of multiple propositions in one sentence, dislocated is used when the second proposition doesn&amp;rsquo;t hold any actual information value and it cannot be neither separated nor negated.</description>
+French
+Naija
+This relation can also be used for pronouns which are detached from the core syntactic structure of an utterance, such as French tonic pronouns.
+French
+Naija
+In case of multiple propositions in one sentence, dislocated is used when the second proposition doesn&amp;rsquo;t hold any actual information value and it cannot be neither separated nor negated.</description>
     </item>
     
     <item>
@@ -298,8 +298,8 @@ Repetitions and reformulations To analyse constructions of repetition or reformu
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/particular_phenomena/lvc/</guid>
       <description>A light verb construction (LVC) is a type of verbal structure in which a verb is coupled with another element – typically a noun phrase – which provides the primary semantic value. Common examples of LVCs in English include take a walk, give a kiss, or have a drink. In SUD, LVCs are marked with the deep feature @lvc.
- French
-  The complements of these constructions are sometimes attached to the noun rather than the verb because:</description>
+French
+The complements of these constructions are sometimes attached to the noun rather than the verb because:</description>
     </item>
     
     <item>
@@ -319,11 +319,11 @@ This approach can be used to analyse two elements that are placed side by side w
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/mod/</guid>
       <description>The modrelation is used for modifiers of verbs, nouns, adjectives, adverbs, auxiliaries, adpositions and conjunctions.
- English
-   English
-   French
-  Deep syntactic features The relation mod can have these features:
- @relcl @x  </description>
+English
+English
+French
+Deep syntactic features The relation mod can have these features:
+@relcl @x </description>
     </item>
     
     <item>
@@ -335,7 +335,7 @@ This approach can be used to analyse two elements that are placed side by side w
       <description>In UD there are three relations reparandum, conj, appos that SUD only uses for analysing written texts.
 These three relations work as paradigmatic lists. That&amp;rsquo;s why in SUD for oral speech, we decided to gather these three relations under the relation conj to underline the similarity between the three.
 We distinguish:
- conj:dicto for disfluencies when the speaker corrects his speech (parallel to reparandum in written texts) conj:coord for elements connected by a coordinating conjunction (parallel to conj in written texts) conj:appos for appositional modifiers that serve to define better the previous noun (parallel to appos in written texts)  Note : for analysing oral speech we never use the conj relationship alone.</description>
+conj:dicto for disfluencies when the speaker corrects his speech (parallel to reparandum in written texts) conj:coord for elements connected by a coordinating conjunction (parallel to conj in written texts) conj:appos for appositional modifiers that serve to define better the previous noun (parallel to appos in written texts) Note : for analysing oral speech we never use the conj relationship alone.</description>
     </item>
     
     <item>
@@ -345,8 +345,7 @@ We distinguish:
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_insert/</guid>
       <description>The parataxis:insert is used for inserted clause. Contrary to a parenthetical clause, an inserted clause could not form an independent sentence
- French
-  </description>
+French</description>
     </item>
     
     <item>
@@ -357,9 +356,8 @@ We distinguish:
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_obj/</guid>
       <description>The depency relation parataxis:obj has been deleted.
 Direct discourse is attached its governor by the relation comp:obj with the features Reported = &amp;ldquo;Yes&amp;rdquo;.
- French
-   Naija
-  </description>
+French
+Naija</description>
     </item>
     
     <item>
@@ -369,9 +367,8 @@ Direct discourse is attached its governor by the relation comp:obj with the feat
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/parataxis_parenth/</guid>
       <description>The parataxis:parenth relation is used for parenthetical clauses, in the sense that the clause is backgrounded (as if it were inside parentheses). A parenthetical clause could form an independent sentence.
- French
-   Naija
-  </description>
+French
+Naija</description>
     </item>
     
     <item>
@@ -381,9 +378,9 @@ Direct discourse is attached its governor by the relation comp:obj with the feat
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/relations/subj/</guid>
       <description>The subj relation is used for all subjects, regardless of their form (nominal or verbal). This relationship encompasses both the nsubj and csubj relationships as defined by UD, as the following examples show.
- English
-   English
-  Deep syntactic features The subj relation has two deep syntactic sub-relations. The sub-relation subj@expl is used to indicate that the subject is present to fill in an obligatory syntactic position and has no semantic value.</description>
+English
+English
+Deep syntactic features The subj relation has two deep syntactic sub-relations. The sub-relation subj@expl is used to indicate that the subject is present to fill in an obligatory syntactic position and has no semantic value. You can find more information about the expletive constructions on this page.</description>
     </item>
     
     <item>
@@ -403,9 +400,8 @@ The governor and the dependent of a udep relation can have any POS. The udep rel
       
       <guid>https://surfacesyntacticud.github.io/guidelines/u/oral_language/vocative/</guid>
       <description>The vocative relation is used when a speaker directly addresses a listener in an utterance.
- French
-   Naija
-  </description>
+French
+Naija</description>
     </item>
     
   </channel>
