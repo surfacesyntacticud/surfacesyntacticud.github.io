@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>SUD data • Version 2.12 on SUD</title>
+    <title>SUD data • Version 2.13 on SUD</title>
     <link>https://surfacesyntacticud.github.io/data/</link>
-    <description>Recent content in SUD data • Version 2.12 on SUD</description>
+    <description>Recent content in SUD data • Version 2.13 on SUD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://surfacesyntacticud.github.io/data/index.xml" rel="self" type="application/rss+xml" />
   </channel>
