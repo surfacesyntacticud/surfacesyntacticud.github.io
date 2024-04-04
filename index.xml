@@ -412,7 +412,17 @@ Deep syntactic features The subj relation has two deep syntactic sub-relations. 
       
       <guid>https://surfacesyntacticud.github.io/features/ha/</guid>
       <description>back to SUD features
-NB: The Grew-match links above are relative to the virtual treebank SUD_Hausa-All which is the union of the two Hausa treebanks.
+⚠️ The Grew-match links above are relative to the virtual treebank SUD_Hausa-All which is the union of the two Hausa treebanks. Individual treebanks:
+Northern Hausa Southern Hausa feature Grew-match UD declaration Doc Hausa (may not exist) Doc Univ Aspect GM UD Web • GitHub Web • GitHub • Table Case GM UD Web • GitHub Web • GitHub • Table Definite GM UD Web • GitHub Web • GitHub • Table Deixis GM UD Web • GitHub Web • GitHub Evident GM UD Web • GitHub Web • GitHub • Table ExtPos GM UD Web • GitHub Web • GitHub Foreign GM UD Web • GitHub Web • GitHub • Table Gender GM UD Web • GitHub Web • GitHub • Table Lang GM UD Web • GitHub Web • GitHub Mood GM UD Web • GitHub Web • GitHub • Table Number GM UD Web • GitHub Web • GitHub • Table PartType GM UD Web • GitHub Web • GitHub Person GM UD Web • GitHub Web • GitHub • Table Polarity GM UD Web • GitHub Web • GitHub • Table PronType GM UD Web • GitHub Web • GitHub • Table Reflex GM UD Web • GitHub Web • GitHub • Table Tense GM UD Web • GitHub Web • GitHub • Table VerbForm GM UD Web • GitHub Web • GitHub • Table Voice GM UD Web • GitHub Web • GitHub • Table </description>
+    </item>
+    
+    <item>
+      <title>SUD features for Northern Hausa</title>
+      <link>https://surfacesyntacticud.github.io/features/ha_north/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://surfacesyntacticud.github.io/features/ha_north/</guid>
+      <description>back to SUD features
 feature Grew-match UD declaration Doc Hausa (may not exist) Doc Univ Aspect GM UD Web • GitHub Web • GitHub • Table Case GM UD Web • GitHub Web • GitHub • Table Definite GM UD Web • GitHub Web • GitHub • Table Deixis GM UD Web • GitHub Web • GitHub Evident GM UD Web • GitHub Web • GitHub • Table ExtPos GM UD Web • GitHub Web • GitHub Foreign GM UD Web • GitHub Web • GitHub • Table Gender GM UD Web • GitHub Web • GitHub • Table Lang GM UD Web • GitHub Web • GitHub Mood GM UD Web • GitHub Web • GitHub • Table Number GM UD Web • GitHub Web • GitHub • Table PartType GM UD Web • GitHub Web • GitHub Person GM UD Web • GitHub Web • GitHub • Table Polarity GM UD Web • GitHub Web • GitHub • Table PronType GM UD Web • GitHub Web • GitHub • Table Reflex GM UD Web • GitHub Web • GitHub • Table Tense GM UD Web • GitHub Web • GitHub • Table VerbForm GM UD Web • GitHub Web • GitHub • Table Voice GM UD Web • GitHub Web • GitHub • Table </description>
     </item>
     
@@ -427,6 +437,16 @@ feature Grew-match UD declaration Doc Hausa (may not exist) Doc Univ Aspect GM U
     </item>
     
     <item>
+      <title>SUD features for Southern Hausa</title>
+      <link>https://surfacesyntacticud.github.io/features/ha_south/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://surfacesyntacticud.github.io/features/ha_south/</guid>
+      <description>back to SUD features
+feature Grew-match UD declaration Doc Hausa (may not exist) Doc Univ Aspect GM UD Web • GitHub Web • GitHub • Table Case GM UD Web • GitHub Web • GitHub • Table Definite GM UD Web • GitHub Web • GitHub • Table Deixis GM UD Web • GitHub Web • GitHub Evident GM UD Web • GitHub Web • GitHub • Table ExtPos GM UD Web • GitHub Web • GitHub Foreign GM UD Web • GitHub Web • GitHub • Table Gender GM UD Web • GitHub Web • GitHub • Table Lang GM UD Web • GitHub Web • GitHub Mood GM UD Web • GitHub Web • GitHub • Table Number GM UD Web • GitHub Web • GitHub • Table PartType GM UD Web • GitHub Web • GitHub Person GM UD Web • GitHub Web • GitHub • Table Polarity GM UD Web • GitHub Web • GitHub • Table PronType GM UD Web • GitHub Web • GitHub • Table Reflex GM UD Web • GitHub Web • GitHub • Table Tense GM UD Web • GitHub Web • GitHub • Table VerbForm GM UD Web • GitHub Web • GitHub • Table Voice GM UD Web • GitHub Web • GitHub • Table </description>
+    </item>
+    
+    <item>
       <title>SUD features for Tuwari</title>
       <link>https://surfacesyntacticud.github.io/features/tww/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -434,6 +454,16 @@ feature Grew-match UD declaration Doc Hausa (may not exist) Doc Univ Aspect GM U
       <guid>https://surfacesyntacticud.github.io/features/tww/</guid>
       <description>back to SUD features
 feature Grew-match UD declaration Doc Tuwari (may not exist) Doc Univ Animacy GM UD Web • GitHub Web • GitHub • Table Aspect GM UD Web • GitHub Web • GitHub • Table Case GM UD Web • GitHub Web • GitHub • Table Definite GM UD Web • GitHub Web • GitHub • Table Gender GM UD Web • GitHub Web • GitHub • Table NounClass GM UD Web • GitHub Web • GitHub • Table Number GM UD Web • GitHub Web • GitHub • Table Person GM UD Web • GitHub Web • GitHub • Table Polarity GM UD Web • GitHub Web • GitHub • Table PronType GM UD Web • GitHub Web • GitHub • Table Tense GM UD Web • GitHub Web • GitHub • Table VerbForm GM UD Web • GitHub Web • GitHub • Table VerbType GM UD Web • GitHub Web • GitHub • Table </description>
+    </item>
+    
+    <item>
+      <title>SUD features for Zaar</title>
+      <link>https://surfacesyntacticud.github.io/features/say/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://surfacesyntacticud.github.io/features/say/</guid>
+      <description>back to SUD features
+feature Grew-match UD declaration Doc Hausa (may not exist) Doc Univ Aspect GM UD Web • GitHub Web • GitHub • Table Case GM UD Web • GitHub Web • GitHub • Table Definite GM UD Web • GitHub Web • GitHub • Table Deixis GM UD Web • GitHub Web • GitHub ExtPos GM UD Web • GitHub Web • GitHub Foreign GM UD Web • GitHub Web • GitHub • Table Incorporated GM UD Web • GitHub Web • GitHub • Table Lang GM UD Web • GitHub Web • GitHub Mood GM UD Web • GitHub Web • GitHub • Table NumType GM UD Web • GitHub Web • GitHub • Table Number GM UD Web • GitHub Web • GitHub • Table PartType GM UD Web • GitHub Web • GitHub Person GM UD Web • GitHub Web • GitHub • Table Polarity GM UD Web • GitHub Web • GitHub • Table Poss GM UD Web • GitHub Web • GitHub • Table PronType GM UD Web • GitHub Web • GitHub • Table Reflex GM UD Web • GitHub Web • GitHub • Table SVC GM UD Web • GitHub Web • GitHub • Table Tense GM UD Web • GitHub Web • GitHub • Table VerbForm GM UD Web • GitHub Web • GitHub • Table Voice GM UD Web • GitHub Web • GitHub • Table </description>
     </item>
     
     <item>
