@@ -4,18 +4,15 @@
     <title>Correspondences between SUD and UD on SUD</title>
     <link>https://surfacesyntacticud.github.io/conversions/</link>
     <description>Recent content in Correspondences between SUD and UD on SUD</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://surfacesyntacticud.github.io/conversions/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://surfacesyntacticud.github.io/conversions/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Conversion from UD to SUD</title>
       <link>https://surfacesyntacticud.github.io/conversions/ud_to_sud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://surfacesyntacticud.github.io/conversions/ud_to_sud/</guid>
-      <description>This page describes the process used in the conversion from UD to SUD. It also explains how this can be adapted to languages specificities.
-The main sequence Onf (eud_to_ud): Remove all enhanced annotation; the conversion supposes that the input is in basic UD format. Note that it can be safely applied to basic UD, the annotations are left unchanged.
-Onf (idioms): Add the features encoding of idioms in SUD; namely, features ExtPos, PhraseType, InTitle and InIdiom (see Idioms and titles).</description>
+      <description>&lt;p&gt;This page describes the process used in the conversion from UD to SUD.&#xA;It also explains how this can be adapted to languages specificities.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-main-sequence&#34;&gt;The main sequence&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;Onf (eud_to_ud)&lt;/code&gt;: Remove all enhanced annotation; the conversion supposes that the input is in basic UD format. Note that it can be safely applied to basic UD, the annotations are left unchanged.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;Onf (idioms)&lt;/code&gt;: Add the features encoding of idioms in SUD; namely, features &lt;code&gt;ExtPos&lt;/code&gt;, &lt;code&gt;PhraseType&lt;/code&gt;, &lt;code&gt;InTitle&lt;/code&gt; and &lt;code&gt;InIdiom&lt;/code&gt; (see &lt;a href=&#34;../../guidelines/u/extpos/idioms_titles&#34;&gt;Idioms and titles&lt;/a&gt;). Note that relations are not changed here.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
